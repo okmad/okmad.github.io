@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 WizTree - 极速磁盘空间分析工具</title>
+    <meta name="description" content="下载 WizTree 最新版本，提供 64 位安装版、便携版及 32 位版本，个人使用免费，支持 Windows 11/10/8/7。">
+    <meta name="keywords" content="WizTree 下载,WizTree 安装包,WizTree 便携版,WizTree 最新版">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .download-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .version-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .version-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #06b6d4;
+            margin-bottom: 10px;
+        }
+        .version-date {
+            color: #6b7280;
+            font-size: 16px;
+        }
+        .download-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .download-table th,
+        .download-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .download-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .download-table tr:hover {
+            background: #ecfeff;
+        }
+        .download-table tr:last-child td {
+            border-bottom: none;
+        }
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .table-wrapper::-webkit-scrollbar {
+            height: 6px;
+        }
+        .table-wrapper::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        .table-wrapper::-webkit-scrollbar-thumb {
+            background: #06b6d4;
+            border-radius: 3px;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 10px 24px;
+            background: #06b6d4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .download-link:hover {
+            background: #0891b2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+        }
+        .file-size {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .platform-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .platform-badge.x64 {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .platform-badge.install {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .platform-badge.portable {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .category-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #06b6d4;
+        }
+        .info-box {
+            background: #ecfeff;
+            border-left: 4px solid #06b6d4;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .info-box h4 {
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .info-box p {
+            color: #6b7280;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .version-section {
+            margin-bottom: 60px;
+        }
+        .version-section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+        .version-section-date {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+        .password-note {
+            color: #dc2626;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        @media (max-width: 768px) {
+            .version-number {
+                font-size: 36px;
+            }
+            .category-title {
+                font-size: 20px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 12px 10px;
+                font-size: 13px;
+                white-space: nowrap;
+            }
+            .download-table th:nth-child(3),
+            .download-table td:nth-child(3) {
+                white-space: normal;
+                min-width: 150px;
+            }
+            .download-link {
+                padding: 8px 14px;
+                font-size: 12px;
+            }
+            .platform-badge {
+                padding: 3px 8px;
+                font-size: 11px;
+                margin-right: 4px;
+            }
+            .table-wrapper {
+                margin: 20px -15px;
+                padding: 0 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .version-number {
+                font-size: 28px;
+            }
+            .category-title {
+                font-size: 18px;
+            }
+            .version-section-title {
+                font-size: 22px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 10px 8px;
+                font-size: 12px;
+            }
+            .download-link {
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+            .platform-badge {
+                padding: 2px 6px;
+                font-size: 10px;
+                margin-right: 3px;
+            }
+            .password-note {
+                font-size: 11px;
+            }
+            .file-size {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-mark">W</span>
+                <div class="logo-text">
+                    <h1>WizTree</h1>
+                    <span class="tagline">MFT 直读 · 秒级扫描 · 可视化</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="download.html" class="active">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="download-section">
+        <div class="container">
+            <div class="info-box">
+                <h4>💡 下载提示</h4>
+                <p>安装版需要安装到系统，会自动创建快捷方式和右键菜单集成，适合日常使用。便携版无需安装，解压即可使用，适合 U 盘携带或在多台电脑间切换使用。</p>
+            </div>
+
+            <div class="version-section">
+                <div class="version-section-title">WizTree 4.31</div>
+                <div class="version-section-date">最新稳定版本 - 个人使用免费</div>
+
+                <h3 class="category-title">Windows 版本</h3>
+                <div class="table-wrapper">
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>UC网盘</th>
+                            <th>夸克网盘</th>
+                            <th>迅雷网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x64">64位</span><span class="platform-badge install">安装版</span></td>
+                            <td>wiztree_4_31_setup.exe<br><span class="file-size">约 5 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/a95d72eda0374" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/793d3f3e637e" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvoD_zJ3aDYuBmI6yf9osl3A1?pwd=3ydf" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：3ydf</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.zip</td>
+                            <td><span class="platform-badge x64">64位</span><span class="platform-badge portable">便携版</span></td>
+                            <td>wiztree_4_31_portable.zip<br><span class="file-size">约 3 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/944c96fce4ae4" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/e90a44ba9d9a" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvoD_zH8bbz06IXavzpC4OZA1?pwd=af2p" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：af2p</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4>⚙️ 版本说明</h4>
+                <p><strong>安装版</strong>：推荐 64 位 Windows 用户使用，安装后自动创建快捷方式，支持开机自启动和右键菜单集成。<br>
+                <strong>便携版</strong>：无需安装，解压到任意目录即可运行，适合 U 盘携带，不写入注册表，配置随程序走。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">系统要求</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>操作系统</h3>
+                    <p>Windows 11 / 10 / 8 / 7 / XP<br>支持 32 位和 64 位</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>磁盘空间</h3>
+                    <p>安装仅需约 5 MB<br>极轻量，不占资源</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>文件系统</h3>
+                    <p>NTFS（推荐，支持 MFT 直读）<br>FAT / FAT32 / 网络驱动器</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>内存要求</h3>
+                    <p>推荐 4GB 及以上内存<br>大硬盘建议 8GB+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">安装步骤</h2>
+            <div class="quickstart-grid">
+                <div class="quickstart-card">
+                    <span class="quickstep-number">1</span>
+                    <h3>下载安装包</h3>
+                    <p>点击上方下载按钮，获取 WizTree 安装包或便携版 ZIP 压缩包，保存到本地任意位置。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">2</span>
+                    <h3>运行安装程序</h3>
+                    <p>安装版：双击运行 EXE 文件，按提示完成安装。便携版：解压 ZIP 到任意目录，双击 WizTree.exe 运行。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">3</span>
+                    <h3>选择磁盘扫描</h3>
+                    <p>打开 WizTree，在顶部下拉菜单中选择要分析的磁盘分区，点击扫描按钮开始分析。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">4</span>
+                    <h3>查看结果清理</h3>
+                    <p>扫描完成后查看树状图，定位大文件。选中不需要的文件按 Delete 键删除，释放磁盘空间。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-section">
+        <div class="container">
+            <h2 class="section-title">版本对比</h2>
+            <p class="section-subtitle">免费版与专业版功能对比</p>
+            <div style="overflow-x: auto;">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>功能特性</th>
+                            <th class="highlight">个人免费版</th>
+                            <th>专业版（Pro）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MFT 极速扫描</td>
+                            <td class="highlight yes">✓ 支持</td>
+                            <td class="yes">✓ 支持</td>
+                        </tr>
+                        <tr>
+                            <td>可视化树状图</td>
+                            <td class="highlight yes">✓ 支持</td>
+                            <td class="yes">✓ 支持</td>
+                        </tr>
+                        <tr>
+                            <td>文件视图排序</td>
+                            <td class="highlight yes">✓ 支持</td>
+                            <td class="yes">✓ 支持</td>
+                        </tr>
+                        <tr>
+                            <td>重复文件查找</td>
+                            <td class="highlight yes">✓ 支持</td>
+                            <td class="yes">✓ 支持</td>
+                        </tr>
+                        <tr>
+                            <td>CSV 报告导出</td>
+                            <td class="highlight yes">✓ 支持</td>
+                            <td class="yes">✓ 支持</td>
+                        </tr>
+                        <tr>
+                            <td>商业用途使用</td>
+                            <td class="highlight no">✗ 不允许</td>
+                            <td class="yes">✓ 允许</td>
+                        </tr>
+                        <tr>
+                            <td>命令行批量操作</td>
+                            <td class="highlight no">✗ 受限</td>
+                            <td class="yes">✓ 完整支持</td>
+                        </tr>
+                        <tr>
+                            <td>价格</td>
+                            <td class="highlight yes">免费</td>
+                            <td>$29.95/年</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="text-align: center; color: #6b7280; margin-top: 20px;">个人非商业使用完全免费，企业商业用途请购买专业版许可证。</p>
+        </div>
+    </section>
+
+    <section class="features-section" style="background: #fff;">
+        <div class="container">
+            <h2 class="section-title">下载说明</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>安全可靠</h3>
+                    <p>建议下载后使用杀毒软件扫描验证，确保软件安全无毒。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>只读扫描</h3>
+                    <p>WizTree 是只读扫描工具，不写入、不修改任何文件，100% 安全。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🆓</div>
+                    <h3>个人免费</h3>
+                    <p>个人非商业使用完全免费，无功能限制，无广告，无内购。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>持续更新</h3>
+                    <p>自 2011 年发布至今持续维护，定期发布新版本，跟进 Windows 最新特性。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">需要帮助？</h2>
+            <p class="cta-subtitle">查看功能介绍或常见问题获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="features.html" class="btn btn-large btn-secondary">功能介绍</a>
+                <a href="faq.html" class="btn btn-large btn-secondary">常见问题</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>WizTree</h4>
+                    <p>极速磁盘空间分析工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2025 WizTree 中文网站</p>
+                    <p>个人使用免费</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站为非官方中文资讯站，WizTree 软件版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

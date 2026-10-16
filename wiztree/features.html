@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>功能介绍 - WizTree 极速磁盘空间分析工具</title>
+    <meta name="description" content="WizTree 功能详细介绍：MFT 直读扫描、可视化树状图、文件视图、重复文件查找、命令行支持、CSV 导出等核心特性。">
+    <meta name="keywords" content="WizTree 功能,WizTree 特性,MFT扫描,树状图,磁盘分析,文件查找">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-mark">W</span>
+                <div class="logo-text">
+                    <h1>WizTree</h1>
+                    <span class="tagline">MFT 直读 · 秒级扫描 · 可视化</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html" class="active">功能介绍</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container" style="text-align: center;">
+            <h2 class="hero-title">功能介绍</h2>
+            <p class="hero-subtitle">了解 WizTree 的核心功能与使用技巧</p>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">核心功能</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>⚡ 极速 MFT 扫描</h3>
+                    <p>WizTree 直接从 NTFS 格式的驱动器读取主文件表（MFT），类似于 Everything 搜索引擎的工作方式。绕过文件系统遍历，直接解析磁盘元数据，秒级完成全盘分析。1TB 硬盘扫描仅需约 46 秒，比传统工具快 10 倍以上。还可快速扫描非 NTFS 和网络驱动器。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📊 可视化树状图</h3>
+                    <p>独创 Treemap 热力图，根据文件大小直观地显示所有文件和文件夹。文件越大色块越大，一眼看出磁盘空间分布。这使您可以一目了然地发现大文件和大量较小文件的集合，快速定位"空间杀手"。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📁 文件视图排序</h3>
+                    <p>"文件视图"按大小顺序列出硬盘上的每个单独的文件和文件夹。支持按名称、大小、日期等多维度排序筛选。快速定位占用空间最大的 Top 1000 文件，高效管理磁盘空间。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔁 重复文件查找</h3>
+                    <p>WizTree 根据名称、大小和（可选的）日期自动定位重复文件。如果文件有重复项，可以通过单击文件名旁边的"+"来查看它们。帮助您快速清理冗余文件，释放宝贵磁盘空间。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔍 文件名搜索</h3>
+                    <p>使用文件视图搜索过滤器按名称或类型快速定位文件。支持通配符搜索（例如 *.mp3）和正则表达式。输入即搜索，无需点击搜索按钮，实时匹配结果，秒级定位任意文件位置。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💾 多种文件系统支持</h3>
+                    <p>WizTree 可以扫描 Windows 支持的所有硬盘类型（NTFS、FAT、FAT32、网络等）。通过 USB 连接时，还可以扫描智能手机和相机等 MTP/PTP 设备。覆盖几乎所有存储场景。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📤 导出文件和 MFT 数据</h3>
+                    <p>可以将全部或选定的文件信息导出到 CSV（逗号分隔值）文件或复制到剪贴板。可以提取 MFT 文件并转储到文件中。导出的数据可导入回 WizTree 查看，非常适合跟踪文件系统变化。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⌨️ 命令行支持</h3>
+                    <p>可以通过命令行参数导出 CSV 和 MFT 文件，实现自动化磁盘审计。非常适合企业 IT 管理员批量分析多台电脑的磁盘使用情况，无需人工干预即可生成报告。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🎯 精准的硬链接处理</h3>
+                    <p>与同类应用程序不同，WizTree 可以正确处理硬链接文件（不会多次计算它们）。WizTree 报告的总分配空间将实际匹配 Windows 报告的空间，确保分析结果准确可靠。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔄 实时刷新</h3>
+                    <p>文件变化即时反映，无需重新扫描。删除文件后树状图自动更新，保持分析结果与实际磁盘状态一致。让磁盘管理更加高效流畅。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-section">
+        <div class="container">
+            <h2 class="section-title">工作原理</h2>
+            <p class="section-subtitle">MFT 直读技术让 WizTree 比传统工具快 10 倍以上</p>
+            <div class="how-grid">
+                <div class="how-card">
+                    <div class="how-icon">📖</div>
+                    <h3>就像查字典索引</h3>
+                    <p>WizTree 直接读取 NTFS 主文件表（MFT）—— 就像直接查字典的索引目录，而不是逐页翻阅。MFT 记录了磁盘上所有文件的元数据，一次读取即可获取全部信息。</p>
+                </div>
+                <div class="how-card">
+                    <div class="how-icon">⚡</div>
+                    <h3>绕过文件系统 API</h3>
+                    <p>传统工具需要逐个遍历文件系统 API 获取文件信息，速度慢。WizTree 直接解析 MFT 二进制数据，跳过低速的文件系统 API，实现秒级扫描。</p>
+                </div>
+                <div class="how-card">
+                    <div class="how-icon">🎯</div>
+                    <h3>准确无误</h3>
+                    <p>正确处理硬链接文件，不会多次计算。报告的总分配空间与 Windows 资源管理器显示一致，确保分析结果准确可靠。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">两种视图模式</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌳</div>
+                    <h3>树状图视图（Treemap）</h3>
+                    <p>可视化热力图，文件越大色块越大。直观展示磁盘空间分布，一眼定位大文件。支持点击色块进入子文件夹，逐层深入分析。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>文件视图（File View）</h3>
+                    <p>按大小排序列出所有文件和文件夹。支持搜索过滤、通配符匹配。快速定位 Top 1000 大文件，配合重复文件查找功能高效清理。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quickstart-section">
+        <div class="container">
+            <h2 class="section-title">使用技巧</h2>
+            <div class="quickstart-grid">
+                <div class="quickstart-card">
+                    <span class="quickstep-number">1</span>
+                    <h3>右键菜单集成</h3>
+                    <p>安装后可在资源管理器右键菜单中直接启动 WizTree 分析当前文件夹，无需每次打开程序选择路径。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">2</span>
+                    <h3>多磁盘同时扫描</h3>
+                    <p>支持同时选择多个磁盘分区进行分析，对比不同磁盘的使用情况，全面掌握存储状态。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">3</span>
+                    <h3>导出 CSV 报告</h3>
+                    <p>扫描结果可导出为 CSV 文件，用 Excel 打开进一步分析。适合长期跟踪磁盘使用变化趋势。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">4</span>
+                    <h3>命令行自动化</h3>
+                    <p>使用命令行参数实现批量扫描和导出，配合计划任务实现定期磁盘审计，无需人工干预。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">支持的文件系统</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>NTFS（推荐）</h3>
+                    <p>支持 MFT 直读，秒级扫描。Windows 默认文件系统，性能最佳。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>FAT / FAT32</h3>
+                    <p>传统文件系统，支持常规扫描。适合 U 盘等移动存储设备。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>网络驱动器</h3>
+                    <p>支持网络映射驱动器扫描，分析 NAS 和共享文件夹空间。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>MTP/PTP 设备</h3>
+                    <p>通过 USB 连接的智能手机、相机等设备也可扫描分析。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">准备好释放磁盘空间了吗？</h2>
+            <p class="cta-subtitle">立即下载 WizTree，体验秒级扫描的快感</p>
+            <a href="download.html" class="btn btn-large btn-primary">免费下载</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>WizTree</h4>
+                    <p>极速磁盘空间分析工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="faq.html">帮助中心</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="https://www.diskanalyzer.com/" target="_blank" rel="noopener">官方网站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2026 WizTree 中文网站</p>
+                    <p>个人使用免费</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站为非官方中文资讯站，WizTree 软件版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

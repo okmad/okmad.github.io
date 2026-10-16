@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WizTree - 极速磁盘空间分析工具 | MFT 直读 秒级扫描</title>
+    <meta name="description" content="WizTree 是 Windows 平台最快的磁盘空间分析工具，直接读取 NTFS MFT 主文件表，秒级扫描整个硬盘，可视化树状图直观展示文件分布，快速定位大文件释放磁盘空间。">
+    <meta name="keywords" content="WizTree,磁盘分析,磁盘空间,MFT扫描,树状图,清理磁盘,大文件查找">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-mark">W</span>
+                <div class="logo-text">
+                    <h1>WizTree</h1>
+                    <span class="tagline">MFT 直读 · 秒级扫描 · 可视化</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">极速磁盘空间分析工具</h2>
+                <p class="hero-subtitle">WizTree 直接读取 NTFS 主文件表（MFT），以闪电般的速度帮您定位硬盘上占用空间最大的文件和文件夹。几秒扫描整个硬盘，比传统工具快 10 倍以上。</p>
+                <div class="hero-buttons">
+                    <a href="download.html" class="btn btn-primary">免费下载</a>
+                    <a href="features.html" class="btn btn-secondary">了解功能</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">46秒</span>
+                        <span class="stat-label">扫描 1TB 硬盘</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10倍+</span>
+                        <span class="stat-label">速度优势</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500万+</span>
+                        <span class="stat-label">全球用户</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="treemap-demo">
+                    <div class="treemap-titlebar">
+                        <span class="app-dot red"></span>
+                        <span class="app-dot yellow"></span>
+                        <span class="app-dot green"></span>
+                        <span class="treemap-name">WizTree - C:\ 树状图视图</span>
+                    </div>
+                    <div class="treemap-toolbar">
+                        <span class="toolbar-btn active">树状图</span>
+                        <span class="toolbar-btn">文件视图</span>
+                        <span class="toolbar-btn">导出 CSV</span>
+                    </div>
+                    <div class="treemap-grid">
+                        <div class="tm-block tm-windows">
+                            <span class="tm-label">Windows</span>
+                            <span class="tm-size">42.3 GB</span>
+                        </div>
+                        <div class="tm-block tm-games">
+                            <span class="tm-label">Games</span>
+                            <span class="tm-size">28.1 GB</span>
+                        </div>
+                        <div class="tm-block tm-photos">
+                            <span class="tm-label">Photos</span>
+                            <span class="tm-size">15.7 GB</span>
+                        </div>
+                        <div class="tm-block tm-videos">
+                            <span class="tm-label">Videos</span>
+                            <span class="tm-size">12.4 GB</span>
+                        </div>
+                        <div class="tm-block tm-docs">
+                            <span class="tm-label">Docs</span>
+                            <span class="tm-size">8.9 GB</span>
+                        </div>
+                        <div class="tm-block tm-downloads">
+                            <span class="tm-label">DL</span>
+                            <span class="tm-size">5.2 GB</span>
+                        </div>
+                        <div class="tm-block tm-other">
+                            <span class="tm-label">其他</span>
+                            <span class="tm-size">3.1 GB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trusted-section">
+        <div class="container">
+            <p class="trusted-title">受到众多大型组织的信赖和使用</p>
+            <div class="trusted-orgs">
+                <span class="trusted-org">Meta Platforms</span>
+                <span class="trusted-org">劳力士</span>
+                <span class="trusted-org">Valve Software</span>
+                <span class="trusted-org">CD Projekt Red</span>
+                <span class="trusted-org">动视</span>
+                <span class="trusted-org">U-Haul</span>
+                <span class="trusted-org">Square Enix</span>
+                <span class="trusted-org">松下</span>
+                <span class="trusted-org">Nvidia</span>
+                <span class="trusted-org">KPMG</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">为什么选择 WizTree</h2>
+            <p class="section-subtitle">重新定义磁盘空间分析的效率标准</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>极速扫描</h3>
+                    <p>直接读取 NTFS 主文件表（MFT），无需遍历所有文件。比传统工具快 10 倍以上，几秒钟即可分析整个硬盘。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>可视化树状图</h3>
+                    <p>独创 Treemap 热力图，文件越大区域越大，一眼看出磁盘空间分布。支持按文件类型、大小、日期多维筛选排序。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗂️</div>
+                    <h3>深度分析</h3>
+                    <p>快速定位占用空间最大的 Top 1000 文件。一键导出 CSV 报告，支持命令行批量操作，高效管理磁盘空间。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>即时搜索</h3>
+                    <p>输入即搜索，支持通配符和正则表达式。无需点击搜索按钮，实时匹配结果，秒级定位任意文件位置。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔁</div>
+                    <h3>重复文件查找</h3>
+                    <p>根据名称、大小和日期自动定位重复文件。一键查看所有重复项，帮助您快速清理冗余文件释放空间。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🆓</div>
+                    <h3>个人免费</h3>
+                    <p>个人使用完全免费，提供便携版解压即用。商业用途可购买企业许可证，支持持续开发。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-section">
+        <div class="container">
+            <h2 class="section-title">让磁盘管理变得简单</h2>
+            <p class="section-subtitle">WizTree 直接读取硬盘的 NTFS 主文件表（MFT）—— 就像直接查字典的索引目录，而不是逐页翻阅。这就是为什么它能比其他工具快 10 倍以上的秘密。</p>
+            <div class="how-grid">
+                <div class="how-card">
+                    <div class="how-icon">📂</div>
+                    <h3>MFT 直读技术</h3>
+                    <p>绕过文件系统遍历，直接解析磁盘元数据。类似于 Everything 搜索引擎的工作方式，秒级完成全盘分析。</p>
+                </div>
+                <div class="how-card">
+                    <div class="how-icon">🔄</div>
+                    <h3>实时刷新</h3>
+                    <p>文件变化即时反映，无需重新扫描。支持 NTFS、FAT、FAT32 及网络驱动器，还可扫描 MTP/PTP 设备。</p>
+                </div>
+                <div class="how-card">
+                    <div class="how-icon">💡</div>
+                    <h3>零学习成本</h3>
+                    <p>界面简洁直观，打开即用，无需配置。可视化树状图让磁盘占用分布一目了然，新手也能快速上手。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quickstart-section">
+        <div class="container">
+            <h2 class="section-title">三步释放磁盘空间</h2>
+            <p class="section-subtitle">从扫描到清理，只需三步</p>
+            <div class="quickstart-grid">
+                <div class="quickstart-card">
+                    <span class="quickstep-number">1</span>
+                    <h3>选择磁盘扫描</h3>
+                    <p>打开 WizTree，选择需要分析的磁盘分区，点击扫描按钮。MFT 直读技术让 1TB 硬盘仅需几秒即可完成扫描。</p>
+                    <a href="download.html" class="quick-link">前往下载 →</a>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">2</span>
+                    <h3>查看可视化结果</h3>
+                    <p>扫描完成后，树状图直观显示磁盘占用分布。文件越大色块越大，一眼定位占用空间最多的文件和文件夹。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">3</span>
+                    <h3>清理释放空间</h3>
+                    <p>选中不需要的大文件或文件夹，按 Delete 键即可删除。支持导出 CSV 报告，方便后续分析和管理。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">适用场景</h2>
+            <div class="features-grid">
+                <div class="scenario-card">
+                    <h3>💾 磁盘空间不足</h3>
+                    <p>系统提示磁盘空间不足？WizTree 帮您快速找出占用空间最大的文件和文件夹，几秒钟定位"空间杀手"。</p>
+                    <span class="scenario-badge">秒级定位</span>
+                </div>
+                <div class="scenario-card">
+                    <h3>🖥️ 系统清理维护</h3>
+                    <p>定期清理系统临时文件、缓存、日志。WizTree 可视化展示让清理目标一目了然，保持系统流畅。</p>
+                    <span class="scenario-badge">运维必备</span>
+                </div>
+                <div class="scenario-card">
+                    <h3>📦 查找重复文件</h3>
+                    <p>不知不觉下载了重复的文件？WizTree 自动识别重复文件，帮助您清理冗余，释放宝贵磁盘空间。</p>
+                    <span class="scenario-badge">智能去重</span>
+                </div>
+                <div class="scenario-card">
+                    <h3>🏢 企业磁盘审计</h3>
+                    <p>IT 管理员需要审计磁盘使用情况？命令行支持批量导出 CSV 报告，适合自动化磁盘审计场景。</p>
+                    <span class="scenario-badge">企业级</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">WizTree vs 其他工具</h2>
+            <p class="section-subtitle">对比主流磁盘分析工具，了解 WizTree 的优势</p>
+            <div style="overflow-x: auto;">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>功能特性</th>
+                            <th class="highlight">WizTree</th>
+                            <th>WinDirStat</th>
+                            <th>SpaceSniffer</th>
+                            <th>TreeSize</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MFT 直读扫描</td>
+                            <td class="highlight yes">✓ 支持</td>
+                            <td class="no">✗ 不支持</td>
+                            <td class="no">✗ 不支持</td>
+                            <td class="no">✗ 不支持</td>
+                        </tr>
+                        <tr>
+                            <td>扫描速度</td>
+                            <td class="highlight yes">秒级</td>
+                            <td class="no">较慢</td>
+                            <td class="no">较慢</td>
+                            <td class="no">较慢</td>
+                        </tr>
+                        <tr>
+                            <td>个人免费</td>
+                            <td class="highlight yes">✓ 完全免费</td>
+                            <td class="yes">✓ 免费</td>
+                            <td class="yes">✓ 免费</td>
+                            <td class="no">✗ 付费</td>
+                        </tr>
+                        <tr>
+                            <td>便携版</td>
+                            <td class="highlight yes">✓ 提供</td>
+                            <td class="yes">✓ 提供</td>
+                            <td class="yes">✓ 提供</td>
+                            <td class="no">✗ 不提供</td>
+                        </tr>
+                        <tr>
+                            <td>重复文件查找</td>
+                            <td class="highlight yes">✓ 支持</td>
+                            <td class="no">✗ 不支持</td>
+                            <td class="no">✗ 不支持</td>
+                            <td class="yes">✓ 支持</td>
+                        </tr>
+                        <tr>
+                            <td>命令行支持</td>
+                            <td class="highlight yes">✓ 支持</td>
+                            <td class="no">✗ 不支持</td>
+                            <td class="no">✗ 不支持</td>
+                            <td class="yes">✓ 支持</td>
+                        </tr>
+                        <tr>
+                            <td>CSV 报告导出</td>
+                            <td class="highlight yes">✓ 支持</td>
+                            <td class="no">✗ 不支持</td>
+                            <td class="no">✗ 不支持</td>
+                            <td class="yes">✓ 支持</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">用户评价</h2>
+            <div class="features-grid">
+                <div class="testimonial">
+                    <p class="testimonial-quote">"WizTree 帮我找出了占用 200GB 的系统临时文件。界面清晰，速度飞快，强烈推荐给所有 Windows 用户！"</p>
+                    <p class="testimonial-author">— 张先生，软件工程师</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-quote">"作为 IT 运维，WizTree 是我的必备工具。MFT 直读技术让磁盘分析快到不可思议，一键导出报告功能特别实用。"</p>
+                    <p class="testimonial-author">— 李女士，IT 运维经理</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-quote">"免费、便携、速度快 —— 这三个词完美概括了 WizTree。每次帮朋友清理电脑，我第一个打开的就是它。"</p>
+                    <p class="testimonial-author">— 王同学，计算机专业学生</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">准备好释放磁盘空间了吗？</h2>
+            <p class="cta-subtitle">加入数百万满意用户，体验前所未有的磁盘分析速度</p>
+            <a href="download.html" class="btn btn-large btn-primary">免费下载 WizTree</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>WizTree</h4>
+                    <p>极速磁盘空间分析工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="faq.html">帮助中心</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="https://www.diskanalyzer.com/" target="_blank" rel="noopener">官方网站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2026 WizTree 中文网站</p>
+                    <p>个人使用免费</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站为非官方中文资讯站，WizTree 软件版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见问题 - WizTree 极速磁盘空间分析工具</title>
+    <meta name="description" content="WizTree 常见问题解答，包括安装、使用、扫描速度、MFT 技术、与同类工具对比等方面的帮助。">
+    <meta name="keywords" content="WizTree 常见问题,WizTree 帮助,WizTree FAQ,磁盘分析工具">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-mark">W</span>
+                <div class="logo-text">
+                    <h1>WizTree</h1>
+                    <span class="tagline">MFT 直读 · 秒级扫描 · 可视化</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="faq.html" class="active">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container" style="text-align: center;">
+            <h2 class="hero-title">常见问题</h2>
+            <p class="hero-subtitle">这里有您可能遇到的问题和解答</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">安装与下载</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">WizTree 是免费的吗？</div>
+                    <div class="faq-answer">
+                        WizTree 个人非商业使用完全免费，无功能限制。商业用途需购买专业版（Pro）许可证，$29.95/年。大型组织应购买企业许可证以无限制使用。可通过购买"支持者代码"支持进一步开发。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">WizTree 支持哪些操作系统？</div>
+                    <div class="faq-answer">
+                        WizTree 仅支持 Windows 平台，包括 Windows 11、10、8、7、XP，提供 32 位和 64 位版本。不支持 macOS 和 Linux。Mac 用户推荐使用 DaisyDisk 或 GrandPerspective。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">安装版和便携版有什么区别？</div>
+                    <div class="faq-answer">
+                        安装版会注册到系统，创建开始菜单快捷方式，支持右键菜单集成。便携版无需安装，下载 ZIP 包解压到任意目录即可运行，不写入注册表，适合 U 盘携带或在多台电脑间使用。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何卸载 WizTree？</div>
+                    <div class="faq-answer">
+                        安装版：通过 Windows 设置 → 应用 → 找到 WizTree → 卸载。便携版：直接删除程序文件夹即可，不会留下任何残留文件或注册表项。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">扫描与使用</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">为什么 WizTree 扫描这么快？</div>
+                    <div class="faq-answer">
+                        因为它直接读取 NTFS 文件系统的 MFT 主文件表（Master File Table），跳过逐个文件扫描。MFT 记录了磁盘上所有文件的元数据，一次读取即可获取全部信息。这类似于 Everything 搜索引擎的工作方式，所以秒级出结果，比传统工具快 10 倍以上。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">扫描会损坏数据吗？</div>
+                    <div class="faq-answer">
+                        绝对不会。WizTree 是只读扫描工具，不写入、不修改任何文件，100% 安全。它只读取文件元数据进行分析展示，不会对您的文件造成任何影响。删除文件操作需要您手动确认。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">支持哪些文件系统？</div>
+                    <div class="faq-answer">
+                        WizTree 可以扫描 Windows 支持的所有硬盘类型：NTFS（推荐，支持 MFT 直读）、FAT、FAT32、网络驱动器等。通过 USB 连接时，还可以扫描智能手机和相机等 MTP/PTP 设备。NTFS 格式下扫描速度最快。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何使用树状图（Treemap）？</div>
+                    <div class="faq-answer">
+                        树状图以色块大小直观展示文件占用空间。文件越大色块越大，一眼看出磁盘空间分布。点击色块可进入对应文件夹，逐层深入分析。配合文件视图可快速定位大文件，选中后按 Delete 键删除。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何查找重复文件？</div>
+                    <div class="faq-answer">
+                        在文件视图中，WizTree 会根据名称、大小和（可选的）日期自动识别重复文件。如果文件有重复项，文件名旁边会显示"+"号，点击可展开查看所有重复项。选中后可批量删除，释放空间。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何导出扫描报告？</div>
+                    <div class="faq-answer">
+                        支持将全部或选定的文件信息导出到 CSV（逗号分隔值）文件，或复制到剪贴板。CSV 文件可用 Excel 打开进一步分析。还可提取 MFT 文件转储到文件中，导出的数据可导入回 WizTree 查看。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何使用命令行批量扫描？</div>
+                    <div class="faq-answer">
+                        WizTree 支持命令行参数，可自动导出 CSV 和 MFT 文件。非常适合企业 IT 管理员批量分析多台电脑的磁盘使用情况。配合计划任务可实现定期自动审计，无需人工干预。详细参数请参考官方文档。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">与其他工具对比</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">WizTree 和 SpaceSniffer 哪个好？</div>
+                    <div class="faq-answer">
+                        各有优势。WizTree 读 MFT 表，速度快 10 倍以上，几秒完成扫描；SpaceSniffer 逐簇扫描更细致但速度慢。日常清理磁盘选 WizTree 效率更高，需要精细分析可选 SpaceSniffer。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">WizTree 和 WinDirStat 有什么区别？</div>
+                    <div class="faq-answer">
+                        WizTree 比 WinDirStat 快约 46 倍！WinDirStat 采用传统逐文件遍历方式，扫描大硬盘需要几分钟甚至更久。WizTree 直接读取 MFT，秒级完成。两者都免费，但 WizTree 在速度上具有压倒性优势。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">WizTree 和 TreeSize 哪个好？</div>
+                    <div class="faq-answer">
+                        WizTree 个人免费，TreeSize 需付费。WizTree 支持 MFT 直读速度更快，TreeSize 功能更全面但免费版限制较多。个人用户推荐 WizTree，企业用户可根据需求选择。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">其他问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">WizTree 会收集用户数据吗？</div>
+                    <div class="faq-answer">
+                        不会。WizTree 是只读扫描工具，所有操作都在本地完成，不收集、不上传任何用户数据。不发送任何遥测信息，保护您的隐私。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">扫描结果显示的空间与 Windows 不一致？</div>
+                    <div class="faq-answer">
+                        WizTree 正确处理硬链接文件（不会多次计算），报告的总分配空间应与 Windows 一致。如不一致，可能是由于：1) 系统保护文件未计入；2) 文件系统权限限制；3) 快照文件占用。建议以 WizTree 显示为准进行清理。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何参与 WizTree 开发或反馈问题？</div>
+                    <div class="faq-answer">
+                        WizTree 由 Antibody Software 开发维护。如需反馈问题或建议新功能，请访问官方网站 diskanalyzer.com 联系开发者。也可通过购买"支持者代码"支持进一步开发。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">WizTree 有手机版吗？</div>
+                    <div class="faq-answer">
+                        目前 WizTree 只有 Windows 版本，没有手机版。但通过 USB 连接时，可以扫描智能手机和相机等 MTP/PTP 设备的存储空间。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">免费版够用吗？</div>
+                    <div class="faq-answer">
+                        够用。免费版功能完整，包含 MFT 扫描、树状图、文件视图、重复文件查找、CSV 导出等所有核心功能。仅商业场景需购 Pro 版，个人清理磁盘完全免费。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">还有其他问题？</h2>
+            <p class="cta-subtitle">访问官方网站或联系我们获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="about.html" class="btn btn-large btn-secondary">联系我们</a>
+                <a href="https://www.diskanalyzer.com/" target="_blank" rel="noopener" class="btn btn-large btn-secondary">官方网站</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>WizTree</h4>
+                    <p>极速磁盘空间分析工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="faq.html">帮助中心</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="https://www.diskanalyzer.com/" target="_blank" rel="noopener">官方网站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2026 WizTree 中文网站</p>
+                    <p>个人使用免费</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站为非官方中文资讯站，WizTree 软件版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
