@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见问题 - QuickLook 空格键极速文件预览工具</title>
+    <meta name="description" content="QuickLook 常见问题解答，包括安装、使用、插件、格式支持、故障排查等方面的帮助。">
+    <meta name="keywords" content="QuickLook 常见问题,QuickLook 帮助,QuickLook FAQ,QuickLook 使用">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-mark">Q</span>
+                <div class="logo-text">
+                    <h1>QuickLook</h1>
+                    <span class="tagline">空格键 · 极速预览 · 格式通吃</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="faq.html" class="active">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container" style="text-align: center;">
+            <h2 class="hero-title">常见问题</h2>
+            <p class="hero-subtitle">这里有您可能遇到的问题和解答</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">安装与下载</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">QuickLook 完全免费吗？</div>
+                    <div class="faq-answer">
+                        是的！QuickLook 是完全免费的开源软件，基于 GPLv3 协议。无广告、无内购、无付费版本，所有功能均可免费使用。代码托管在 GitHub，欢迎查看与贡献。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">QuickLook 支持哪些操作系统？</div>
+                    <div class="faq-answer">
+                        QuickLook 仅支持 Windows 平台，包括 Windows 11、10、8.1、7，需要 64 位系统。不支持 macOS 和 Linux。macOS 用户可使用系统自带的 Quick Look 功能。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">安装版和便携版有什么区别？</div>
+                    <div class="faq-answer">
+                        安装版（MSI）会注册到系统，支持开机自启动，配置保存在用户目录。便携版（ZIP）无需安装，解压即用，不写入注册表，配置保存在程序目录，适合 U 盘携带。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">安装时提示缺少 .NET Framework？</div>
+                    <div class="faq-answer">
+                        QuickLook 依赖 .NET Framework 4.6.1 或更高版本。请前往微软官网下载并安装最新版 .NET Framework，安装完成后重新运行 QuickLook 安装程序。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何卸载 QuickLook？</div>
+                    <div class="faq-answer">
+                        安装版：通过 Windows 设置 → 应用 → 找到 QuickLook → 卸载。便携版：直接删除程序文件夹即可。卸载后不会影响系统的其他文件关联设置。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">使用与功能</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">如何使用 QuickLook 预览文件？</div>
+                    <div class="faq-answer">
+                        非常简单：1) 在文件资源管理器中单击选中文件；2) 按下键盘空格键，预览窗口立即弹出；3) 再次按空格键或 Esc 关闭预览。也可使用方向键切换文件预览。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">QuickLook 支持哪些文件格式？</div>
+                    <div class="faq-answer">
+                        开箱即用支持 100+ 种格式，包括图片（PNG/JPG/GIF/PSD/RAW）、视频（MP4/MKV/AVI）、音频（MP3/OGG/FLAC）、文档（PDF/TXT/HTML/MD）、Office（DOC/XLS/PPT）、压缩包（ZIP/RAR/7Z）等。通过插件可扩展更多格式。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何安装插件？</div>
+                    <div class="faq-answer">
+                        方法一：在 QuickLook 系统托盘图标上右键 → 插件管理 → 浏览并安装所需插件。方法二：从 GitHub 下载插件压缩包，解压到 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">%APPDATA%\QuickLook\Plugins</code> 目录，重启 QuickLook 即可。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">预览窗口可以调整大小吗？</div>
+                    <div class="faq-answer">
+                        可以。预览窗口支持拖动边缘调整大小，也可拖动标题栏移动位置。窗口大小和位置会被记住，下次预览时保持上次设置。部分格式还支持滚轮缩放。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何设置开机自启动？</div>
+                    <div class="faq-answer">
+                        安装版默认开机自启动。如需手动设置：在系统托盘 QuickLook 图标上右键 → 选项 → 勾选"开机时自动启动"。便携版需手动将快捷方式添加到启动文件夹。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">支持在第三方文件管理器中使用吗？</div>
+                    <div class="faq-answer">
+                        支持。QuickLook 兼容 Directory Opus、Total Commander、XYplorer、Explorer++ 等主流第三方文件管理器。在支持的文件管理器中选中文件按空格键即可预览。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何在"打开/保存"对话框中预览？</div>
+                    <div class="faq-answer">
+                        在任何软件的"打开文件"或"保存文件"对话框中，选中文件后按空格键即可预览。这是 QuickLook 的特色功能，帮助您在保存或打开文件时确认内容，避免选错。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">故障排查</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">按下空格键没有反应？</div>
+                    <div class="faq-answer">
+                        可能原因：1) QuickLook 未运行，检查系统托盘是否有图标；2) 焦点不在文件管理器，点击文件管理器窗口后再试；3) 与其他软件快捷键冲突，关闭可能冲突的软件；4) 重新启动 QuickLook 或重启电脑。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">视频无法播放或只有声音没有画面？</div>
+                    <div class="faq-answer">
+                        可能是 LAVFilters 解码器问题。v4.5.0 更新了 LAVFilters 至 0.81.0，部分旧 GPU 可能不兼容。建议：1) 更新显卡驱动；2) 安装最新 VC++ Redistributable；3) 如仍无法解决，可参考 GitHub Issue #1362 降级 LAVFilters 版本。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Office 文档预览显示不正常？</div>
+                    <div class="faq-answer">
+                        Office 文档预览依赖系统已安装的 Office 或对应查看器。请确保已安装 Microsoft Office 或免费的 Word/Excel/PowerPoint Viewer。安装后重启 QuickLook 即可正常预览。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">预览窗口闪烁或卡顿？</div>
+                    <div class="faq-answer">
+                        尝试以下方法：1) 更新显卡驱动到最新版本；2) 在 QuickLook 选项中切换 WindowBackdrop 为 None；3) 关闭其他可能冲突的窗口管理软件；4) 检查系统是否有足够的资源。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">插件安装后不生效？</div>
+                    <div class="faq-answer">
+                        请确认：1) 插件文件已正确解压到 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">%APPDATA%\QuickLook\Plugins</code> 目录；2) 插件版本与 QuickLook 版本兼容；3) 已重启 QuickLook。如仍不生效，查看插件说明文档或 GitHub Issues。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">其他问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">QuickLook 会收集用户数据吗？</div>
+                    <div class="faq-answer">
+                        不会。QuickLook 是完全开源的软件，不收集、不上传任何用户数据。所有操作都在本地完成，不发送任何遥测信息，保护您的隐私。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何参与 QuickLook 开发或反馈问题？</div>
+                    <div class="faq-answer">
+                        QuickLook 是开源项目，欢迎在 GitHub 上提交 Issue 反馈问题或建议，也欢迎提交 Pull Request 贡献代码。访问 github.com/QL-Win/QuickLook 参与开发。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">QuickLook 有手机版吗？</div>
+                    <div class="faq-answer">
+                        目前 QuickLook 只有 Windows 版本，没有手机版。iOS 和 Android 系统自带文件预览功能，无需额外安装类似软件。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何备份配置？</div>
+                    <div class="faq-answer">
+                        配置文件保存在 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">%APPDATA%\QuickLook\</code> 目录，复制该目录即可备份所有配置和插件。恢复时将文件复制回原目录即可。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">QuickLook 和 macOS 的 Quick Look 有什么关系？</div>
+                    <div class="faq-answer">
+                        QuickLook 的灵感来源于 macOS 的 Quick Look 功能，旨在为 Windows 用户提供相同的空格键预览体验。两者是独立的项目，QuickLook 由 Windows 社区开发者维护，并非苹果官方产品。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">还有其他问题？</h2>
+            <p class="cta-subtitle">访问 GitHub 或联系我们获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="about.html" class="btn btn-large btn-secondary">联系我们</a>
+                <a href="https://github.com/QL-Win/QuickLook" target="_blank" rel="noopener" class="btn btn-large btn-secondary">GitHub 仓库</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>QuickLook</h4>
+                    <p>Windows 空格键极速文件预览工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="faq.html">帮助中心</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="https://github.com/QL-Win/QuickLook" target="_blank" rel="noopener">GitHub 源码</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2026 QuickLook 中文网站</p>
+                    <p>基于 GPLv3 协议开源</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站为非官方中文资讯站，QuickLook 软件版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

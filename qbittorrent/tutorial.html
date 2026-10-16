@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="qBittorrent使用教程，从安装到高级设置的完整指南，帮助您快速掌握BT下载技巧。">
+    <meta name="keywords" content="qBittorrent教程,qBittorrent使用方法,qBittorrent设置,BT下载教程">
+    <meta name="author" content="qBittorrent">
+    <title>使用教程 - qBittorrent | qbittorrent.net.cn</title>
+    <link rel="canonical" href="https://qbittorrent.net.cn/tutorial.html">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>qBittorrent</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">返回主站</a></li>
+                <li><a href="download.html">下载</a></li>
+                <li><a href="features.html">功能特性</a></li>
+                <li><a href="tutorial.html" class="active">使用教程</a></li>
+                <li><a href="changelog.html">更新日志</a></li>
+                <li><a href="faq.html">常见问题</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>使用教程</h1>
+                <p>从安装到高级设置的完整指南</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <div class="container">
+                <div class="tutorial-nav">
+                    <h3>目录</h3>
+                    <ul>
+                        <li><a href="#install">安装指南</a></li>
+                        <li><a href="#basic">基础使用</a></li>
+                        <li><a href="#advanced">高级设置</a></li>
+                        <li><a href="#tips">使用技巧</a></li>
+                    </ul>
+                </div>
+
+                <div class="tutorial-content">
+                    <article id="install" class="tutorial-article">
+                        <h2>安装指南</h2>
+                        
+                        <div class="tutorial-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>下载安装包</h3>
+                                <p>访问<a href="download.html">下载页面</a>，选择适合您操作系统的版本。建议下载增强版以获得更好的体验。</p>
+                                <div class="step-note">
+                                    <strong>提示：</strong>Windows用户可以选择安装版或绿色便携版。便携版无需安装，解压即可使用。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Windows 安装</h3>
+                                <ol>
+                                    <li>双击下载的 .exe 文件启动安装程序</li>
+                                    <li>选择安装语言（建议选择简体中文）</li>
+                                    <li>阅读并同意许可协议</li>
+                                    <li>选择安装路径（建议使用默认路径）</li>
+                                    <li>选择要创建的快捷方式</li>
+                                    <li>点击"安装"按钮开始安装</li>
+                                    <li>安装完成后，勾选"启动 qBittorrent"并点击"完成"</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>macOS 安装</h3>
+                                <ol>
+                                    <li>打开下载的 .dmg 文件</li>
+                                    <li>将 qBittorrent 图标拖拽到"应用程序"文件夹</li>
+                                    <li>在"应用程序"文件夹中找到 qBittorrent 并双击启动</li>
+                                    <li>首次启动可能需要在"系统偏好设置 → 安全性与隐私"中允许运行</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Linux 安装</h3>
+                                <p>Linux 用户有多种安装方式：</p>
+                                <div class="code-block">
+                                    <code>
+# Ubuntu/Debian
+sudo apt-get update && sudo apt-get install qbittorrent
+
+# Fedora
+sudo dnf install qbittorrent
+
+# Arch Linux
+sudo pacman -S qbittorrent
+                                    </code>
+                                </div>
+                                <p>或者下载 AppImage 文件，赋予执行权限后直接运行：</p>
+                                <div class="code-block">
+                                    <code>
+chmod +x qbittorrent-*.AppImage
+./qbittorrent-*.AppImage
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="basic" class="tutorial-article">
+                        <h2>基础使用</h2>
+                        
+                        <div class="tutorial-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>添加下载任务</h3>
+                                <p>qBittorrent 支持多种方式添加下载任务：</p>
+                                <ul>
+                                    <li><strong>种子文件：</strong>点击"文件" → "添加种子文件"，或直接拖拽 .torrent 文件到窗口</li>
+                                    <li><strong>磁力链接：</strong>点击"文件" → "添加链接"，粘贴磁力链接（magnet:?xt=...）</li>
+                                    <li><strong>批量添加：</strong>支持一次添加多个种子文件</li>
+                                </ul>
+                                <div class="step-tip">
+                                    <strong>小技巧：</strong>复制磁力链接后，qBittorrent 会自动识别并弹出添加窗口。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>管理下载任务</h3>
+                                <p>在任务列表中，您可以：</p>
+                                <ul>
+                                    <li><strong>暂停/恢复：</strong>右键点击任务，选择"暂停"或"恢复"</li>
+                                    <li><strong>设置优先级：</strong>右键 → "优先级"，选择高、最高、低、最低</li>
+                                    <li><strong>限制速度：</strong>右键 → "限制上传速度/下载速度"</li>
+                                    <li><strong>删除任务：</strong>右键 → "删除"，可选择是否同时删除文件</li>
+                                    <li><strong>打开文件夹：</strong>右键 → "打开目标文件夹"</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>文件选择</h3>
+                                <p>添加种子后，可以选择性下载部分文件：</p>
+                                <ol>
+                                    <li>添加种子时，在弹出的窗口中切换到"内容"标签</li>
+                                    <li>勾选需要下载的文件，取消不需要的文件</li>
+                                    <li>可以设置单个文件的下载优先级</li>
+                                    <li>点击"确定"开始下载</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>搜索功能</h3>
+                                <p>增强版内置了搜索功能：</p>
+                                <ol>
+                                    <li>点击"查看" → "搜索引擎"打开搜索面板</li>
+                                    <li>在搜索框中输入关键词</li>
+                                    <li>选择要使用的搜索引擎</li>
+                                    <li>点击搜索按钮</li>
+                                    <li>双击搜索结果即可添加下载</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="advanced" class="tutorial-article">
+                        <h2>高级设置</h2>
+                        
+                        <div class="tutorial-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>速度限制</h3>
+                                <p>在"工具" → "选项" → "速度"中可以设置：</p>
+                                <ul>
+                                    <li><strong>全局速度限制：</strong>设置全局上传/下载速度上限</li>
+                                    <li><strong>替代速度限制：</strong>快速启用/禁用速度限制</li>
+                                    <li><strong>计划任务：</strong>在特定时间段自动启用速度限制</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>连接设置</h3>
+                                <p>在"工具" → "选项" → "连接"中可以配置：</p>
+                                <ul>
+                                    <li><strong>监听端口：</strong>默认为随机端口，建议设置为固定端口（如 51413）</li>
+                                    <li><strong>UPnP：</strong>启用 UPnP 可自动配置路由器端口映射</li>
+                                    <li><strong>最大连接数：</strong>根据网络情况调整，一般设置为 500-1000</li>
+                                    <li><strong>代理设置：</strong>支持 SOCKS5 和 HTTP 代理</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Web UI 远程控制</h3>
+                                <p>启用 Web UI 可以通过浏览器远程管理：</p>
+                                <ol>
+                                    <li>打开"工具" → "选项" → "Web UI"</li>
+                                    <li>勾选"Web 用户界面"</li>
+                                    <li>设置监听端口（默认 8080）</li>
+                                    <li>设置用户名和密码</li>
+                                    <li>点击"应用"保存设置</li>
+                                    <li>在浏览器中访问 <code>http://本机IP:8080</code></li>
+                                </ol>
+                                <div class="step-warning">
+                                    <strong>注意：</strong>请设置强密码，并考虑启用 HTTPS 加密连接。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>RSS 订阅</h3>
+                                <p>使用 RSS 订阅可以自动下载更新的资源：</p>
+                                <ol>
+                                    <li>点击"查看" → "RSS 阅读器"</li>
+                                    <li>点击"新建订阅"，输入 RSS 地址</li>
+                                    <li>右键订阅 → "编辑 RSS 订阅"</li>
+                                    <li>设置下载规则（如关键词过滤）</li>
+                                    <li>启用自动下载</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h3>IP 过滤</h3>
+                                <p>启用 IP 过滤可以屏蔽恶意 IP：</p>
+                                <ol>
+                                    <li>打开"工具" → "选项" → "连接"</li>
+                                    <li>勾选"启用 IP 过滤"</li>
+                                    <li>下载 IP 过滤规则文件（如 level1.bin）</li>
+                                    <li>指定过滤文件路径</li>
+                                    <li>点击"应用"生效</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="tips" class="tutorial-article">
+                        <h2>使用技巧</h2>
+                        
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h3>提升下载速度</h3>
+                                <ul>
+                                    <li>确保端口映射正确（启用 UPnP 或手动映射）</li>
+                                    <li>适当增加最大连接数</li>
+                                    <li>启用 DHT、PEX、LPD</li>
+                                    <li>选择健康度高的种子</li>
+                                    <li>使用增强版的内置 Tracker 列表</li>
+                                </ul>
+                            </div>
+
+                            <div class="tip-card">
+                                <h3>节省磁盘空间</h3>
+                                <ul>
+                                    <li>选择性下载文件</li>
+                                    <li>设置下载完成后自动移动文件</li>
+                                    <li>定期清理已完成的任务</li>
+                                    <li>启用磁盘缓存减少写入次数</li>
+                                </ul>
+                            </div>
+
+                            <div class="tip-card">
+                                <h3>保护隐私安全</h3>
+                                <ul>
+                                    <li>启用加密连接</li>
+                                    <li>使用 IP 过滤规则</li>
+                                    <li>考虑使用 VPN 或代理</li>
+                                    <li>定期更新软件版本</li>
+                                </ul>
+                            </div>
+
+                            <div class="tip-card">
+                                <h3>快捷键</h3>
+                                <ul>
+                                    <li><kbd>Ctrl+N</kbd> - 添加种子文件</li>
+                                    <li><kbd>Ctrl+Shift+N</kbd> - 添加链接</li>
+                                    <li><kbd>Ctrl+P</kbd> - 暂停所有</li>
+                                    <li><kbd>Ctrl+R</kbd> - 恢复所有</li>
+                                    <li><kbd>Del</kbd> - 删除选中任务</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>qBittorrent</span>
+                    </a>
+                    <p>高效可靠的BT下载工具，为用户提供安全、快速、稳定的文件下载体验。</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>产品</h4>
+                        <ul>
+                            <li><a href="download.html">下载</a></li>
+                            <li><a href="features.html">功能特性</a></li>
+                            <li><a href="changelog.html">更新日志</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>帮助</h4>
+                        <ul>
+                            <li><a href="tutorial.html">使用教程</a></li>
+                            <li><a href="faq.html">常见问题</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 qBittorrent. 本站为非官方网站，仅提供软件下载与使用指南。</p>
+                <p>qBittorrent 是开源软件，基于 GPL 协议发布。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBS Studio 功能介绍 - 视频录制与直播软件 | 中文网站</title>
+    <meta name="description" content="OBS Studio 功能详解：视频录制、实时直播、场景管理、硬件编码、音频混音、插件系统、虚拟摄像头、游戏捕获等核心功能介绍。">
+    <meta name="keywords" content="OBS功能,OBS Studio功能,obs录屏,直播功能,场景管理,硬件编码,音频混音,虚拟摄像头,游戏捕获">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">OBS</span>
+                <div class="logo-text">
+                    <h1>OBS Studio</h1>
+                    <span class="tagline">免费开源视频录制与直播软件</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="features.html" class="active">功能</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">功能介绍</h2>
+                <p class="hero-subtitle">OBS Studio 集视频录制、实时直播、场景管理、硬件编码、音频混音于一体，提供专业级视频制作方案。支持所有主流直播平台，满足从入门到专业的各种需求。</p>
+                <div class="hero-buttons">
+                    <a href="download.html" class="btn btn-primary">免费下载</a>
+                    <a href="#features-detail" class="btn btn-secondary">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" id="features-detail">
+        <div class="container">
+            <h2 class="section-title">核心功能详解</h2>
+            <p class="section-subtitle">OBS Studio 主界面分为来源、预览、混音器、场景等面板，提供专业级的视频制作功能</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>🎥 视频录制（核心功能）</h3>
+                    <p>OBS Studio 最常用的功能。支持多种录制模式，实时合成视频、图像、文本等内容，输出高质量视频文件。包括：<br><br>
+                    • <strong>显示器采集</strong>：录制整个屏幕画面，适合制作教程视频和软件演示。<br>
+                    • <strong>游戏捕获</strong>：直接捕获游戏画面，支持 DirectX 和 OpenGL 游戏，无延迟。<br>
+                    • <strong>窗口采集</strong>：录制指定程序窗口，不影响其他窗口。<br>
+                    • <strong>视频采集设备</strong>：录制摄像头、采集卡等视频输入设备。<br>
+                    • <strong>图片/图像</strong>：添加图片、Logo、水印等静态图像。<br>
+                    • <strong>文本来源</strong>：添加文字内容，支持自定义字体、颜色、样式。<br>
+                    • <strong>媒体源</strong>：播放视频文件，支持循环播放。<br>
+                    • <strong>浏览器源</strong>：嵌入网页内容，如弹幕、聊天、网页动画等。<br><br>
+                    支持 MKV、MP4、FLV、MOV 等多种输出格式，建议使用 MKV 防止崩溃丢文件。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📡 实时直播（RTMP 推流）</h3>
+                    <p>OBS Studio 支持 RTMP 协议推流到所有主流直播平台：<br><br>
+                    • <strong>国际平台</strong>：Twitch、YouTube Live、Facebook Live、Trovo、Kick 等。<br>
+                    • <strong>国内平台</strong>：Bilibili、虎牙、斗鱼、抖音、快手、西瓜视频等。<br>
+                    • <strong>自定义服务器</strong>：支持任意 RTMP 服务器推流。<br><br>
+                    在"设置 → 推流"中填入平台推流地址和流密钥，点击"开始推流"即可直播。支持多码率自适应，根据网络状况自动调整画质。原生支持单路推流，多平台同步需安装 Multiple RTMP 插件或使用 Restream 服务。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🎨 场景管理</h3>
+                    <p>无限场景切换，通过快捷键平滑过渡。每个场景可以包含不同的来源组合，适合不同直播内容。<br><br>
+                    • <strong>场景切换</strong>：通过快捷键或点击切换场景，支持淡入淡出、滑动、缩放等转场特效。<br>
+                    • <strong>画中画</strong>：在一个画面中同时显示多个来源，如摄像头画面叠加在游戏画面上。<br>
+                    • <strong>实时字幕</strong>：自动生成字幕，支持多种语言识别，提升直播可访问性。<br>
+                    • <strong>场景预览</strong>：在切换前预览场景效果，避免直播事故。<br>
+                    • <strong>工作室模式</strong>：双视图模式，左侧预览下一个场景，右侧显示当前直播画面，专业切换。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⚡ 硬件编码</h3>
+                    <p>支持多种硬件编码器，大幅降低 CPU 占用，提升录制与直播性能：<br><br>
+                    • <strong>NVIDIA NVENC</strong>：使用 NVIDIA 显卡的硬件编码器，需 GTX 600 系列及以上。支持 H.264、H.265/HEVC、AV1 编码。<br>
+                    • <strong>AMD AMF</strong>：使用 AMD 显卡的硬件编码器，支持 H.264、H.265/HEVC 编码。<br>
+                    • <strong>Intel QuickSync</strong>：使用 Intel 核显的硬件编码器，支持 H.264、H.265/HEVC 编码。<br>
+                    • <strong>Apple VideoToolbox</strong>：macOS 平台硬件编码，支持 Apple Silicon 和 Intel 芯片。<br>
+                    • <strong>软件编码 x264</strong>：CPU 软件编码，兼容性最好但占用高。<br><br>
+                    建议优先使用硬件编码器，在"设置 → 输出 → 编码器"中选择。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🎙️ 音频混音</h3>
+                    <p>内置多通道音频混音器，支持独立调节各音频源的音量：<br><br>
+                    • <strong>多音频源</strong>：支持桌面音频、麦克风、音乐播放器等多个音频源同时输入。<br>
+                    • <strong>实时混音</strong>：实时调整各音频源音量、静音、独奏等。<br>
+                    • <strong>音频滤镜</strong>：支持降噪、增益、压缩、限制器、噪声门等音频滤镜。<br>
+                    • <strong>VST 插件</strong>：支持加载 VST2 音频插件，实现专业级音频处理。<br>
+                    • <strong>音频监控</strong>：支持监听音频输出，避免回声。<br>
+                    • <strong>多音轨录制</strong>：可将不同音频源录制到不同音轨，方便后期编辑。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔌 插件系统</h3>
+                    <p>强大的插件系统，可扩展各种功能：<br><br>
+                    • <strong>虚拟摄像头</strong>：将 OBS 画面输出为虚拟摄像头，可在 Zoom、Teams、微信、QQ 等视频会议软件中使用。<br>
+                    • <strong>多路推流</strong>：Multiple RTMP 插件支持同时推流到多个平台。<br>
+                    • <strong>场景切换器</strong>：自动场景切换插件，根据时间、窗口、进程等条件自动切换场景。<br>
+                    • <strong>聊天互动</strong>：显示直播平台聊天弹幕、礼物、关注等互动信息。<br>
+                    • <strong>字幕生成</strong>：语音识别自动生成字幕。<br>
+                    • <strong>源码滤镜</strong>：各种视频滤镜插件，如美颜、背景移除、色彩调整等。<br>
+                    • <strong>第三方插件</strong>：丰富的社区插件生态，满足各种定制需求。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🎬 转场与滤镜</h3>
+                    <p>提供专业的转场特效和视频滤镜：<br><br>
+                    • <strong>转场特效</strong>：淡入淡出、滑动、缩放、旋转、颜色过渡等多种转场效果。<br>
+                    • <strong>视频滤镜</strong>：色彩校正、锐化、模糊、色度键（绿幕）、图像掩码混合等。<br>
+                    • <strong>音频滤镜</strong>：降噪、增益、压缩、噪声门、VST 插件等。<br>
+                    • <strong>自定义着色器</strong>：支持自定义 GLSL 着色器，实现各种视觉效果。<br>
+                    • <strong>卷积滤镜</strong>：通过卷积矩阵实现各种图像处理效果。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⌨️ 快捷键与热键</h3>
+                    <p>全面的快捷键支持，让操作更加高效：<br><br>
+                    • <strong>场景切换</strong>：为每个场景设置快捷键，一键切换。<br>
+                    • <strong>来源控制</strong>：显示/隐藏来源、锁定来源等。<br>
+                    • <strong>录制控制</strong>：开始/停止录制、暂停录制等。<br>
+                    • <strong>推流控制</strong>：开始/停止推流等。<br>
+                    • <strong>音频控制</strong>：静音/取消静音各音频源、调整音量等。<br>
+                    • <strong>截图</strong>：快速截取当前画面。<br>
+                    • <strong>自定义热键</strong>：几乎所有操作都支持自定义快捷键。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📊 录制与输出设置</h3>
+                    <p>灵活的录制与输出配置选项：<br><br>
+                    • <strong>分辨率</strong>：基础分辨率与输出分辨率独立设置，支持 4K、1080p、720p 等。<br>
+                    • <strong>帧率</strong>：支持 60fps、30fps、24fps 等多种帧率。<br>
+                    • <strong>码率控制</strong>：CBR、VBR、CRF 等多种码率控制模式。<br>
+                    • <strong>输出格式</strong>：MKV（推荐，防崩溃）、MP4、FLV、MOV 等。<br>
+                    • <strong>多路输出</strong>：可同时录制和推流，使用不同设置。<br>
+                    • <strong>回放缓冲</strong>：支持回放缓冲，录制过去几秒的画面。<br>
+                    • <strong>自动分段</strong>：按时间或大小自动分段录制。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">工作原理</h2>
+            <p class="section-subtitle">基于模块化架构，高效捕获、合成、编码、输出视频内容</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>🔬 模块化架构</h3>
+                    <p>OBS Studio 采用模块化插件架构，所有功能模块（来源、编码器、滤镜、输出）均可扩展。核心引擎负责音视频数据的捕获、合成、编码和输出，各模块通过插件接口与核心交互。<br><br>
+                    这种架构使得 OBS 能够灵活地添加新功能，开发者可以编写自定义插件实现各种定制需求，而无需修改核心代码。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⚡ 多线程处理</h3>
+                    <p>OBS Studio 采用多线程处理架构，充分利用多核 CPU：<br><br>
+                    • <strong>捕获线程</strong>：负责从各来源捕获音视频数据。<br>
+                    • <strong>渲染线程</strong>：负责合成画面，应用滤镜和转场。<br>
+                    • <strong>编码线程</strong>：负责将音视频数据编码压缩。<br>
+                    • <strong>输出线程</strong>：负责将编码后的数据写入文件或推流。<br><br>
+                    多线程架构确保各环节并行处理，最大化性能。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🌐 跨平台原生</h3>
+                    <p>OBS Studio 原生支持 Windows、macOS、Linux 三大平台，各平台均提供原生构建版本：<br><br>
+                    • <strong>Windows 版</strong>：使用 DirectX 作为图形 API，支持 Windows 10/11。<br>
+                    • <strong>macOS 版</strong>：使用 Metal 作为图形 API，支持 Apple Silicon 和 Intel 双架构。<br>
+                    • <strong>Linux 版</strong>：使用 OpenGL 作为图形 API，支持 Flatpak 和 PPA 安装方式。<br><br>
+                    各平台共享核心代码，确保功能一致性和最佳性能。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">使用技巧</h2>
+            <p class="section-subtitle">让 OBS Studio 发挥最大效能的实用技巧</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>💡 使用 MKV 格式录制</h3>
+                    <p>建议使用 MKV 格式录制，即使程序崩溃或断电，已录制的内容也不会丢失。录制完成后可在"设置 → 输出 → 录制"中将 MKV 转换为 MP4。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💡 优先使用硬件编码器</h3>
+                    <p>如果您的显卡支持 NVENC、AMF 或 QuickSync，建议优先使用硬件编码器，可大幅降低 CPU 占用，让系统有更多资源处理其他任务。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💡 运行自动配置向导</h3>
+                    <p>首次使用时运行自动配置向导，根据您的硬件和网络状况自动优化设置。也可以在"工具 → 自动配置向导"中重新运行。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💡 使用场景预设</h3>
+                    <p>为不同用途创建不同场景，如"开始画面"、"游戏画面"、"聊天画面"、"结束画面"等，通过快捷键快速切换，让直播更加专业。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💡 添加降噪滤镜</h3>
+                    <p>在麦克风音频源上添加"降噪"滤镜，可有效去除背景噪音。再添加"噪声门"滤镜，可在不说话时自动静音，避免呼吸声等杂音。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💡 以管理员身份运行</h3>
+                    <p>Windows 下如果游戏捕获黑屏，尝试以管理员身份运行 OBS。笔记本用户需在 NVIDIA 控制面板中将 OBS 设为"高性能"显卡运行。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">支持的编码与格式</h2>
+            <p class="section-subtitle">OBS Studio 支持的视频编码与输出格式</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3>视频编码</h3>
+                    <p>H.264、H.265/HEVC、AV1<br>支持软件和硬件编码</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>音频编码</h3>
+                    <p>AAC、Opus<br>支持多种码率和采样率</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>输出格式</h3>
+                    <p>MKV、MP4、FLV、MOV<br>推荐 MKV 防崩溃</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📡</div>
+                    <h3>推流协议</h3>
+                    <p>RTMP、SRT、RIST<br>支持自定义服务器</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>操作系统</h3>
+                    <p>Windows 10/11<br>macOS 12+、Linux</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>开源协议</h3>
+                    <p>GPL 许可证<br>可自由使用、修改、分发</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">立即体验强大功能</h2>
+            <p class="cta-subtitle">免费下载 OBS Studio，开启专业级视频录制与直播</p>
+            <a href="download.html" class="btn btn-primary btn-large">免费下载</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OBS Studio</h4>
+                    <p>由 OBS Project 开发维护的开源免费视频录制与直播软件，支持 Windows、macOS、Linux 三大平台，遵循 GPL 协议开源。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>资源</h4>
+                    <ul>
+                        <li><a href="https://github.com/obsproject/obs-studio" target="_blank" rel="noopener">GitHub 项目</a></li>
+                        <li><a href="https://github.com/obsproject/obs-studio/releases" target="_blank" rel="noopener">版本发布</a></li>
+                        <li><a href="https://obsproject.com" target="_blank" rel="noopener">官方网站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li>GPL 开源协议</li>
+                        <li>完全免费无广告</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 OBS Studio 中文网站 · 本站为非官方中文资源站 · OBS Studio 由 OBS Project 开发，遵循 GPL 协议开源</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

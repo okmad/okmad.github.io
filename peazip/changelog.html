@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeaZip更新日志 - 版本历史与新功能 | 中文官网</title>
+    <meta name="description" content="查看PeaZip的版本更新历史，了解每个版本的新功能、改进和修复内容。最新版本v11.1.0。">
+    <meta name="keywords" content="PeaZip更新日志, PeaZip版本历史, PeaZip新功能, PeaZip更新内容">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">PeaZip</a></h1>
+                <span class="tagline">免费开源压缩工具</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能特性</a></li>
+                    <li><a href="tutorial.html">使用教程</a></li>
+                    <li><a href="changelog.html" class="active">更新日志</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">更新日志</h1>
+            <p class="page-subtitle">查看PeaZip的版本更新历史和新功能</p>
+        </div>
+    </section>
+
+    <section class="changelog-main-section">
+        <div class="container">
+            <div class="changelog-list">
+                <article class="changelog-item latest">
+                    <div class="changelog-header">
+                        <div class="version-info">
+                            <h2>版本 11.1.0</h2>
+                            <span class="version-badge">最新版本</span>
+                        </div>
+                        <div class="release-date">发布日期：2026年5月</div>
+                    </div>
+                    
+                    <div class="changelog-content">
+                        <div class="change-category">
+                            <h3>🆕 新功能</h3>
+                            <ul>
+                                <li>新增对Zstandard (ZST)格式的完整支持</li>
+                                <li>改进了Apple Silicon (M1/M2/M3)芯片的性能优化</li>
+                                <li>新增深色主题选项，支持系统主题自动切换</li>
+                                <li>增强了对大文件（超过4GB）的处理能力</li>
+                                <li>新增批量重命名功能</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>⚡ 改进</h3>
+                            <ul>
+                                <li>提高了7Z格式的压缩速度，平均提升15-20%</li>
+                                <li>优化了内存使用，减少大文件压缩时的内存占用</li>
+                                <li>改进了文件列表的加载速度</li>
+                                <li>增强了右键菜单的响应速度</li>
+                                <li>优化了用户界面，提升了易用性</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>🐛 修复</h3>
+                            <ul>
+                                <li>修复了某些情况下解压RAR5格式文件失败的问题</li>
+                                <li>修复了在macOS上文件关联不正确的问题</li>
+                                <li>修复了分卷压缩时文件名编码错误的问题</li>
+                                <li>修复了在Linux上GTK3主题显示异常的问题</li>
+                                <li>修复了密码管理器在某些情况下崩溃的问题</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>🌐 语言更新</h3>
+                            <ul>
+                                <li>更新了简体中文翻译</li>
+                                <li>新增了泰语支持</li>
+                                <li>改进了日语翻译的准确性</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="changelog-item">
+                    <div class="changelog-header">
+                        <div class="version-info">
+                            <h2>版本 11.0.0</h2>
+                        </div>
+                        <div class="release-date">发布日期：2026年3月</div>
+                    </div>
+                    
+                    <div class="changelog-content">
+                        <div class="change-category">
+                            <h3>🆕 新功能</h3>
+                            <ul>
+                                <li>全新的用户界面设计，更加现代化</li>
+                                <li>支持Brotli压缩格式</li>
+                                <li>新增文件预览功能，支持图片、文本等格式</li>
+                                <li>改进的搜索功能，支持正则表达式</li>
+                                <li>新增云存储集成支持</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>⚡ 改进</h3>
+                            <ul>
+                                <li>重新设计了压缩设置界面，更加直观</li>
+                                <li>提高了多线程压缩的效率</li>
+                                <li>优化了启动速度</li>
+                                <li>改进了错误提示信息</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>🐛 修复</h3>
+                            <ul>
+                                <li>修复了在Windows 11上的兼容性问题</li>
+                                <li>修复了加密文件名解压时的错误</li>
+                                <li>修复了拖放文件时的路径问题</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="changelog-item">
+                    <div class="changelog-header">
+                        <div class="version-info">
+                            <h2>版本 10.9.0</h2>
+                        </div>
+                        <div class="release-date">发布日期：2026年1月</div>
+                    </div>
+                    
+                    <div class="changelog-content">
+                        <div class="change-category">
+                            <h3>🆕 新功能</h3>
+                            <ul>
+                                <li>新增Flatpak安装包支持</li>
+                                <li>支持更多压缩级别的自定义选项</li>
+                                <li>新增文件校验和计算功能</li>
+                                <li>改进的密码强度指示器</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>⚡ 改进</h3>
+                            <ul>
+                                <li>优化了ZIP格式的压缩性能</li>
+                                <li>改进了文件列表的排序算法</li>
+                                <li>增强了压缩包损坏时的错误恢复能力</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>🐛 修复</h3>
+                            <ul>
+                                <li>修复了分卷解压时的进度显示错误</li>
+                                <li>修复了某些特殊字符文件名的问题</li>
+                                <li>修复了在macOS上的权限问题</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="changelog-item">
+                    <div class="changelog-header">
+                        <div class="version-info">
+                            <h2>版本 10.8.0</h2>
+                        </div>
+                        <div class="release-date">发布日期：2025年11月</div>
+                    </div>
+                    
+                    <div class="changelog-content">
+                        <div class="change-category">
+                            <h3>🆕 新功能</h3>
+                            <ul>
+                                <li>新增命令行脚本导出功能</li>
+                                <li>支持创建自解压文件（SFX）</li>
+                                <li>新增文件重复检测功能</li>
+                                <li>改进的书签管理功能</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>⚡ 改进</h3>
+                            <ul>
+                                <li>优化了用户界面的响应速度</li>
+                                <li>改进了文件关联管理</li>
+                                <li>增强了便携版本的功能</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>🐛 修复</h3>
+                            <ul>
+                                <li>修复了在Linux上的桌面集成问题</li>
+                                <li>修复了某些加密算法的兼容性问题</li>
+                                <li>修复了文件时间戳保存错误</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="changelog-item">
+                    <div class="changelog-header">
+                        <div class="version-info">
+                            <h2>版本 10.7.0</h2>
+                        </div>
+                        <div class="release-date">发布日期：2025年9月</div>
+                    </div>
+                    
+                    <div class="changelog-content">
+                        <div class="change-category">
+                            <h3>🆕 新功能</h3>
+                            <ul>
+                                <li>新增对PAQ和ZPAQ格式的支持</li>
+                                <li>改进的加密选项界面</li>
+                                <li>新增文件属性编辑功能</li>
+                                <li>支持批量文件重命名</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>⚡ 改进</h3>
+                            <ul>
+                                <li>优化了压缩算法，提高压缩率</li>
+                                <li>改进了错误处理机制</li>
+                                <li>增强了文件搜索功能</li>
+                            </ul>
+                        </div>
+
+                        <div class="change-category">
+                            <h3>🐛 修复</h3>
+                            <ul>
+                                <li>修复了在Windows 10上的高DPI显示问题</li>
+                                <li>修复了某些情况下内存泄漏的问题</li>
+                                <li>修复了文件拖放时的错误</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="changelog-footer">
+                <p>想查看更早的版本历史？请访问：</p>
+                <div class="changelog-links">
+                    <a href="https://peazip.github.io/changelog.html" target="_blank" rel="noopener" class="btn btn-secondary">官方更新日志</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PeaZip</h3>
+                    <p>免费开源的跨平台文件压缩解压工具，为全球用户提供安全、高效的文件处理解决方案。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="features.html">功能特性</a></li>
+                        <li><a href="tutorial.html">使用教程</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="changelog.html">更新日志</a></li>
+                        <li><a href="https://peazip.github.io/peazip-help-faq.html" target="_blank" rel="noopener">帮助文档</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>本站为PeaZip软件中文官网，提供软件下载、使用教程和技术支持。</p>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PeaZip中文官网. 保留所有权利. | PeaZip由Giorgio Tani开发</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

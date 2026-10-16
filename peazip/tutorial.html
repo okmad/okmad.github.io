@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeaZip使用教程 - 快速上手指南 | 中文官网</title>
+    <meta name="description" content="PeaZip使用教程，包括安装指南、压缩解压操作、加密设置、高级功能等详细教程，帮助您快速掌握PeaZip的使用方法。">
+    <meta name="keywords" content="PeaZip教程, PeaZip使用方法, 压缩教程, 解压教程, 加密压缩, PeaZip中文教程">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">PeaZip</a></h1>
+                <span class="tagline">免费开源压缩工具</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能特性</a></li>
+                    <li><a href="tutorial.html" class="active">使用教程</a></li>
+                    <li><a href="changelog.html">更新日志</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">使用教程</h1>
+            <p class="page-subtitle">从入门到精通，全面掌握PeaZip的使用方法</p>
+        </div>
+    </section>
+
+    <section class="tutorial-section">
+        <div class="container">
+            <div class="tutorial-nav">
+                <h3>目录</h3>
+                <ul>
+                    <li><a href="#install">安装与语言设置</a></li>
+                    <li><a href="#compress">如何压缩文件</a></li>
+                    <li><a href="#extract">如何解压文件</a></li>
+                    <li><a href="#encrypt">如何加密压缩</a></li>
+                    <li><a href="#split">如何分卷压缩</a></li>
+                    <li><a href="#convert">如何转换格式</a></li>
+                    <li><a href="#shortcuts">常用快捷键</a></li>
+                    <li><a href="#tips">使用技巧</a></li>
+                </ul>
+            </div>
+
+            <div class="tutorial-content">
+                <article id="install" class="tutorial-article">
+                    <h2>安装与语言设置</h2>
+                    
+                    <div class="tutorial-step">
+                        <h3>步骤1：下载安装包</h3>
+                        <p>访问<a href="download.html">下载页面</a>，选择适合您操作系统的版本：</p>
+                        <ul>
+                            <li><strong>Windows用户：</strong>推荐下载64位安装版</li>
+                            <li><strong>macOS用户：</strong>根据芯片类型选择Apple Silicon或Intel版本</li>
+                            <li><strong>Linux用户：</strong>可选择DEB、RPM或Flatpak包</li>
+                        </ul>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h3>步骤2：安装程序</h3>
+                        <p><strong>Windows系统：</strong></p>
+                        <ol>
+                            <li>双击下载的.exe文件</li>
+                            <li>如果出现"Windows已保护你的电脑"提示，点击"更多信息"→"仍要运行"</li>
+                            <li>按照安装向导完成安装</li>
+                            <li>可选择文件关联和右键菜单选项</li>
+                        </ol>
+                        
+                        <p><strong>macOS系统：</strong></p>
+                        <ol>
+                            <li>双击.dmg文件打开</li>
+                            <li>将PeaZip拖入Applications文件夹</li>
+                            <li>首次运行需在终端执行：<code>xattr -dr com.apple.quarantine /Applications/peazip.app</code></li>
+                        </ol>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h3>步骤3：设置中文界面</h3>
+                        <p>PeaZip支持30多种语言，设置中文界面的方法：</p>
+                        <ol>
+                            <li>启动PeaZip</li>
+                            <li>点击菜单栏的 <strong>Options</strong> → <strong>Settings</strong></li>
+                            <li>切换到 <strong>Localization</strong> 标签</li>
+                            <li>在语言列表中选择 <strong>chs.txt</strong>（简体中文）</li>
+                            <li>点击 <strong>OK</strong> 保存设置</li>
+                        </ol>
+                        <p>重启程序后界面将变为中文。</p>
+                    </div>
+                </article>
+
+                <article id="compress" class="tutorial-article">
+                    <h2>如何压缩文件</h2>
+                    
+                    <div class="tutorial-step">
+                        <h3>方法一：使用右键菜单（推荐）</h3>
+                        <ol>
+                            <li>在文件资源管理器中选中要压缩的文件或文件夹</li>
+                            <li>右键点击，选择 <strong>PeaZip</strong> → <strong>添加到压缩文件</strong></li>
+                            <li>在弹出的窗口中设置压缩选项</li>
+                            <li>点击 <strong>确定</strong> 开始压缩</li>
+                        </ol>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h3>方法二：使用PeaZip主界面</h3>
+                        <ol>
+                            <li>启动PeaZip</li>
+                            <li>浏览并选中要压缩的文件</li>
+                            <li>点击工具栏的 <strong>添加</strong> 按钮（或按 Ctrl+N）</li>
+                            <li>在压缩设置窗口中配置选项</li>
+                            <li>点击 <strong>确定</strong> 开始压缩</li>
+                        </ol>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h3>压缩选项说明</h3>
+                        <ul>
+                            <li><strong>格式：</strong>推荐使用7Z（高压缩率）或ZIP（兼容性好）</li>
+                            <li><strong>压缩级别：</strong>
+                                <ul>
+                                    <li>存储：不压缩，仅打包</li>
+                                    <li>快速：压缩速度快，压缩率较低</li>
+                                    <li>标准：平衡速度和压缩率</li>
+                                    <li>最大：压缩率高，速度较慢</li>
+                                    <li>极限：最高压缩率，速度最慢</li>
+                                </ul>
+                            </li>
+                            <li><strong>字典大小：</strong>越大压缩率越高，但占用内存更多</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="extract" class="tutorial-article">
+                    <h2>如何解压文件</h2>
+                    
+                    <div class="tutorial-step">
+                        <h3>方法一：使用右键菜单</h3>
+                        <ol>
+                            <li>右键点击压缩包文件</li>
+                            <li>选择 <strong>PeaZip</strong> 菜单</li>
+                            <li>选择解压选项：
+                                <ul>
+                                    <li><strong>解压到当前文件夹：</strong>快速解压到同一目录</li>
+                                    <li><strong>解压到...：</strong>自定义解压路径</li>
+                                    <li><strong>解压到 [文件夹名]：</strong>创建同名文件夹并解压</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h3>方法二：使用PeaZip主界面</h3>
+                        <ol>
+                            <li>双击压缩包在PeaZip中打开</li>
+                            <li>浏览压缩包内容，选择要解压的文件</li>
+                            <li>点击工具栏的 <strong>解压</strong> 按钮（或按 Ctrl+E）</li>
+                            <li>选择解压路径和选项</li>
+                            <li>点击 <strong>确定</strong> 开始解压</li>
+                        </ol>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h3>解压加密文件</h3>
+                        <p>如果压缩包有密码保护：</p>
+                        <ol>
+                            <li>解压时会弹出密码输入框</li>
+                            <li>输入正确密码后点击 <strong>确定</strong></li>
+                            <li>如果密码正确，文件将正常解压</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article id="encrypt" class="tutorial-article">
+                    <h2>如何加密压缩</h2>
+                    
+                    <div class="tutorial-step">
+                        <h3>设置密码加密</h3>
+                        <ol>
+                            <li>在压缩设置窗口中，点击 <strong>加密</strong> 选项卡</li>
+                            <li>输入密码并确认</li>
+                            <li>选择加密算法：
+                                <ul>
+                                    <li><strong>AES-256：</strong>推荐，安全且速度快</li>
+                                    <li><strong>Twofish：</strong>高安全性加密算法</li>
+                                    <li><strong>Serpent：</strong>最高安全性，速度较慢</li>
+                                </ul>
+                            </li>
+                            <li>勾选 <strong>加密文件名</strong> 可隐藏文件列表</li>
+                            <li>点击 <strong>确定</strong> 开始压缩</li>
+                        </ol>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h3>使用双重认证（高级）</h3>
+                        <p>PeaZip支持密码+密钥文件的双重认证：</p>
+                        <ol>
+                            <li>准备一个密钥文件（任意文件，如图片、文档等）</li>
+                            <li>在加密设置中勾选 <strong>使用密钥文件</strong></li>
+                            <li>选择或创建密钥文件</li>
+                            <li>设置密码</li>
+                            <li>解压时需要同时提供密码和密钥文件</li>
+                        </ol>
+                        <div class="warning-box">
+                            <p><strong>⚠️ 重要提示：</strong>请妥善保管密钥文件，丢失后将无法解压文件！</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="split" class="tutorial-article">
+                    <h2>如何分卷压缩</h2>
+                    
+                    <div class="tutorial-step">
+                        <h3>创建分卷压缩包</h3>
+                        <ol>
+                            <li>在压缩设置窗口中，找到 <strong>分卷</strong> 选项</li>
+                            <li>设置分卷大小：
+                                <ul>
+                                    <li>可选择预设大小（如100MB、700MB等）</li>
+                                    <li>或自定义大小（如10M、1G等）</li>
+                                </ul>
+                            </li>
+                            <li>设置其他压缩选项</li>
+                            <li>点击 <strong>确定</strong> 开始压缩</li>
+                        </ol>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h3>解压分卷文件</h3>
+                        <p>解压分卷压缩包时：</p>
+                        <ul>
+                            <li>确保所有分卷文件在同一目录下</li>
+                            <li>只需打开第一个分卷文件（通常为.001或.part1.rar）</li>
+                            <li>PeaZip会自动识别并合并所有分卷</li>
+                            <li>按正常流程解压即可</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="convert" class="tutorial-article">
+                    <h2>如何转换格式</h2>
+                    
+                    <div class="tutorial-step">
+                        <h3>转换压缩包格式</h3>
+                        <ol>
+                            <li>在PeaZip中打开要转换的压缩包</li>
+                            <li>点击菜单 <strong>转换</strong> → <strong>转换压缩包</strong></li>
+                            <li>选择目标格式（如从ZIP转为7Z）</li>
+                            <li>设置压缩选项</li>
+                            <li>选择输出路径</li>
+                            <li>点击 <strong>确定</strong> 开始转换</li>
+                        </ol>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h3>批量转换</h3>
+                        <ol>
+                            <li>选中多个压缩包文件</li>
+                            <li>右键选择 <strong>转换</strong></li>
+                            <li>设置统一的转换选项</li>
+                            <li>点击 <strong>确定</strong> 批量转换</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article id="shortcuts" class="tutorial-article">
+                    <h2>常用快捷键</h2>
+                    
+                    <div class="shortcuts-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>快捷键</th>
+                                    <th>功能</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><kbd>Ctrl+N</kbd></td>
+                                    <td>新建压缩包</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl+O</kbd></td>
+                                    <td>打开文件</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl+E</kbd></td>
+                                    <td>解压到当前文件夹</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl+F</kbd></td>
+                                    <td>搜索文件</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl+W</kbd></td>
+                                    <td>关闭当前标签页</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl+Tab</kbd></td>
+                                    <td>切换标签页</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>F2</kbd></td>
+                                    <td>重命名</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>F5</kbd></td>
+                                    <td>刷新</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Delete</kbd></td>
+                                    <td>删除文件</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Alt+Left</kbd></td>
+                                    <td>后退</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Alt+Right</kbd></td>
+                                    <td>前进</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article id="tips" class="tutorial-article">
+                    <h2>使用技巧</h2>
+                    
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <h3>💡 提高压缩率</h3>
+                            <ul>
+                                <li>使用7Z格式而非ZIP</li>
+                                <li>选择"最大"或"极限"压缩级别</li>
+                                <li>增加字典大小（需要更多内存）</li>
+                                <li>启用固实压缩</li>
+                            </ul>
+                        </div>
+
+                        <div class="tip-card">
+                            <h3>⚡ 提高压缩速度</h3>
+                            <ul>
+                                <li>选择"快速"压缩级别</li>
+                                <li>启用多线程压缩</li>
+                                <li>使用较小的字典大小</li>
+                                <li>禁用固实压缩</li>
+                            </ul>
+                        </div>
+
+                        <div class="tip-card">
+                            <h3>🔒 增强安全性</h3>
+                            <ul>
+                                <li>使用AES-256加密</li>
+                                <li>启用双重认证（密码+密钥文件）</li>
+                                <li>加密文件名以隐藏文件列表</li>
+                                <li>使用强密码（混合字符、数字、符号）</li>
+                            </ul>
+                        </div>
+
+                        <div class="tip-card">
+                            <h3>📂 文件管理技巧</h3>
+                            <ul>
+                                <li>使用标签页同时管理多个位置</li>
+                                <li>设置书签快速访问常用文件夹</li>
+                                <li>使用搜索功能快速定位文件</li>
+                                <li>利用过滤功能显示特定类型文件</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PeaZip</h3>
+                    <p>免费开源的跨平台文件压缩解压工具，为全球用户提供安全、高效的文件处理解决方案。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="features.html">功能特性</a></li>
+                        <li><a href="tutorial.html">使用教程</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="changelog.html">更新日志</a></li>
+                        <li><a href="https://peazip.github.io/peazip-help-faq.html" target="_blank" rel="noopener">帮助文档</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>本站为PeaZip软件中文官网，提供软件下载、使用教程和技术支持。</p>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PeaZip中文官网. 保留所有权利. | PeaZip由Giorgio Tani开发</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

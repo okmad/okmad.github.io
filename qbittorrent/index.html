@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="qBittorrent是一款免费开源的跨平台BitTorrent客户端，无广告、无捆绑，支持磁力链接、DHT、PEX、加密连接，内置搜索引擎、RSS订阅、IP过滤、Web远程控制。">
+    <meta name="keywords" content="qBittorrent,BT下载,种子下载,磁力链接,BitTorrent客户端,开源下载工具">
+    <meta name="author" content="qBittorrent">
+    <title>qBittorrent - 免费开源的BitTorrent客户端 | qbittorrent.net.cn</title>
+    <link rel="canonical" href="https://qbittorrent.net.cn/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>qBittorrent</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">返回主站</a></li>
+                <li><a href="download.html">下载</a></li>
+                <li><a href="features.html">功能特性</a></li>
+                <li><a href="tutorial.html">使用教程</a></li>
+                <li><a href="changelog.html">更新日志</a></li>
+                <li><a href="faq.html">常见问题</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">开源免费 · 无广告 · 全功能</div>
+                    <h1>轻量、强大、自由下载</h1>
+                    <p class="hero-desc">qBittorrent — 免费开源的轻量级BitTorrent客户端。无广告、无捆绑，支持磁力链接、DHT、PEX、加密连接，内置搜索引擎、RSS订阅、IP过滤、Web远程控制，全平台支持。</p>
+                    <div class="hero-buttons">
+                        <a href="download.html" class="btn btn-primary btn-large">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            免费下载
+                        </a>
+                        <a href="features.html" class="btn btn-secondary btn-large">了解更多</a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            无广告无捆绑
+                        </div>
+                        <div class="hero-feature">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            磁力链接支持
+                        </div>
+                        <div class="hero-feature">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Web远程控制
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="screenshot-wrapper">
+                        <div class="screenshot-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="screenshot-title">qBittorrent</span>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="download-status">
+                                <div class="status-item">
+                                    <span class="status-label">正在下载...</span>
+                                    <span class="status-value">3个任务</span>
+                                </div>
+                                <div class="speed-bars">
+                                    <div class="speed-bar download">
+                                        <span class="arrow">↓</span>
+                                        <span class="speed">8.2 MB/s</span>
+                                    </div>
+                                    <div class="speed-bar upload">
+                                        <span class="arrow">↑</span>
+                                        <span class="speed">1.3 MB/s</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="download-list">
+                                <div class="download-item">
+                                    <div class="item-icon">📥</div>
+                                    <div class="item-info">
+                                        <div class="item-name">ubuntu-24.04-desktop.iso</div>
+                                        <div class="item-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 67%"></div>
+                                            </div>
+                                            <span class="progress-text">67% - 2.8 GB / 4.2 GB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download-item">
+                                    <div class="item-icon">📥</div>
+                                    <div class="item-info">
+                                        <div class="item-name">opensource-project.tar.gz</div>
+                                        <div class="item-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 45%"></div>
+                                            </div>
+                                            <span class="progress-text">45% - 890 MB / 1.9 GB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download-item">
+                                    <div class="item-icon">✅</div>
+                                    <div class="item-info">
+                                        <div class="item-name">document-pack.pdf</div>
+                                        <div class="item-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill complete" style="width: 100%"></div>
+                                            </div>
+                                            <span class="progress-text">完成 - 156 MB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>为什么选择 qBittorrent</h2>
+                    <p>纯净、高效、全面</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>纯净无广告</h3>
+                        <p>完全免费，没有任何广告、弹窗或捆绑软件。开源透明，社区驱动开发。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>高性能下载</h3>
+                        <p>基于 libtorrent 内核，支持 DHT、PEX、LPD、加密连接，最大化下载速度。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 13C10.4295 13.5741 10.9774 14.0492 11.6066 14.3929C12.2357 14.7367 12.9315 14.9411 13.6467 14.9923C14.3618 15.0435 15.0796 14.9404 15.7513 14.6898C16.4231 14.4392 17.0331 14.0471 17.54 13.54L20.54 10.54C21.4508 9.59699 21.9548 8.33397 21.9434 7.02299C21.932 5.71201 21.4061 4.45794 20.4791 3.5309C19.5521 2.60386 18.298 2.07802 16.987 2.06663C15.676 2.05523 14.413 2.55921 13.47 3.47L11.75 5.18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 11C13.5705 10.4259 13.0226 9.95083 12.3934 9.60707C11.7642 9.26331 11.0685 9.05889 10.3533 9.00768C9.63816 8.95648 8.92037 9.05964 8.24861 9.31023C7.57685 9.56082 6.96684 9.95294 6.45996 10.46L3.45996 13.46C2.54917 14.403 2.04519 15.666 2.05659 16.977C2.06798 18.288 2.59382 19.5421 3.52086 20.4691C4.4479 21.3961 5.70197 21.922 7.01295 21.9334C8.32393 21.9448 9.58694 21.4408 10.53 20.53L12.24 18.82" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>磁力链接支持</h3>
+                        <p>直接支持磁力链接，无需下载 .torrent 文件，一键添加任务。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>内置搜索引擎</h3>
+                        <p>集成主流BT搜索引擎，支持多站点同时搜索，快速找到资源。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 11C4 9.89543 4.89543 9 6 9H18C19.1046 9 20 9.89543 20 11V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V11Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 9V6C8 4.93913 8.42143 3.92172 9.17157 3.17157C9.92172 2.42143 10.9391 2 12 2C13.0609 2 14.0783 2.42143 14.8284 3.17157C15.5786 3.92172 16 4.93913 16 6V9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 14V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>RSS订阅器</h3>
+                        <p>自动订阅 RSS 种子源，定时更新下载，追番追剧神器。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 21H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M12 17V21" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Web远程控制</h3>
+                        <p>通过浏览器远程管理下载任务，支持手机、平板、电脑跨平台控制。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="platforms-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>全平台支持</h2>
+                    <p>无论您使用哪个系统，都能享受同样的体验</p>
+                </div>
+                <div class="platforms-grid">
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 5.5L10.5 4.5V11.5H3V5.5Z" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M3 12.5H10.5V19.5L3 18.5V12.5Z" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M11.5 4.35L21 3V11.5H11.5V4.35Z" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M11.5 12.5H21V21L11.5 19.65V12.5Z" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <h3>Windows</h3>
+                        <p>Win 7/8/10/11</p>
+                    </div>
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C14.5 2 16.5 4 16.5 6.5C16.5 9 14.5 11 12 11C9.5 11 7.5 9 7.5 6.5C7.5 4 9.5 2 12 2Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 11V22" stroke="currentColor" stroke-width="2"/>
+                                <path d="M7 22H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>macOS</h3>
+                        <p>10.15 及以上</p>
+                    </div>
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 2V4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 20V22" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 12H4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 12H22" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Linux</h3>
+                        <p>Debian/Ubuntu/Fedora</p>
+                    </div>
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>FreeBSD</h3>
+                        <p>FreeBSD / NetBSD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>三步开启下载</h2>
+                    <p>简单到不用教</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>下载安装</h3>
+                        <p>选择对应平台的安装包或便携版</p>
+                    </div>
+                    <div class="step-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>添加种子</h3>
+                        <p>拖拽 .torrent 文件或粘贴磁力链接</p>
+                    </div>
+                    <div class="step-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>开始下载</h3>
+                        <p>等待完成，享受高速下载</p>
+                    </div>
+                </div>
+                <div class="steps-note">
+                    <p>Web 界面：访问 <code>http://localhost:8080</code> 远程管理</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">100万+</div>
+                        <div class="stat-label">活跃用户</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1258万+</div>
+                        <div class="stat-label">总下载量</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">186</div>
+                        <div class="stat-label">覆盖国家</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">用户评分</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="compare-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>软件对比</h2>
+                    <p>了解 qBittorrent 与其他 BT 下载工具的优势对比</p>
+                </div>
+                <div class="compare-table-wrapper">
+                    <table class="compare-table">
+                        <thead>
+                            <tr>
+                                <th>功能特性</th>
+                                <th>qBittorrent</th>
+                                <th>其他BT客户端A</th>
+                                <th>其他BT客户端B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>开源免费</td>
+                                <td><span class="check">✓</span></td>
+                                <td><span class="check">✓</span></td>
+                                <td><span class="partial">部分功能收费</span></td>
+                            </tr>
+                            <tr>
+                                <td>无广告</td>
+                                <td><span class="check">✓</span></td>
+                                <td><span class="check">✓</span></td>
+                                <td><span class="cross">✗</span></td>
+                            </tr>
+                            <tr>
+                                <td>跨平台支持</td>
+                                <td><span class="check">✓</span></td>
+                                <td><span class="partial">仅支持Windows</span></td>
+                                <td><span class="check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>下载速度</td>
+                                <td><span class="badge badge-high">高速</span></td>
+                                <td><span class="badge badge-medium">中等</span></td>
+                                <td><span class="badge badge-high">高速</span></td>
+                            </tr>
+                            <tr>
+                                <td>资源占用</td>
+                                <td><span class="badge badge-low">低</span></td>
+                                <td><span class="badge badge-high">高</span></td>
+                                <td><span class="badge badge-medium">中等</span></td>
+                            </tr>
+                            <tr>
+                                <td>用户界面</td>
+                                <td><span class="badge badge-good">简洁直观</span></td>
+                                <td><span class="badge badge-bad">复杂</span></td>
+                                <td><span class="badge badge-good">友好</span></td>
+                            </tr>
+                            <tr>
+                                <td>安全性</td>
+                                <td><span class="badge badge-high">高</span></td>
+                                <td><span class="badge badge-medium">中等</span></td>
+                                <td><span class="badge badge-medium">中等</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="download-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>开源 · 免费 · 透明</h2>
+                    <p>qBittorrent 是开源软件，基于 GPL 协议发布，完全免费使用。</p>
+                    <div class="cta-buttons">
+                        <a href="download.html" class="btn btn-primary btn-large">马上下载！</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题</h2>
+                    <p>解答您的疑惑</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>qBittorrent 安全吗？</h3>
+                        <p>完全安全！开源软件，代码公开可审查，无后门、无病毒。建议从官方渠道下载。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>如何设置下载速度？</h3>
+                        <p>工具菜单 → 选项 → 速度，可以分别设置全局下载/上传限速，也可对单个任务限速。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>支持磁力链接吗？</h3>
+                        <p>完全支持！复制磁力链接，点击"添加链接"即可自动解析下载。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>如何开启 Web 远程控制？</h3>
+                        <p>工具 → 选项 → Web UI，勾选"启用 Web 用户界面"，设置用户名密码后即可访问。</p>
+                    </div>
+                </div>
+                <div class="faq-more">
+                    <a href="faq.html" class="btn btn-secondary">查看更多问题</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>qBittorrent</span>
+                    </a>
+                    <p>高效可靠的BT下载工具，为用户提供安全、快速、稳定的文件下载体验。</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>产品</h4>
+                        <ul>
+                            <li><a href="download.html">下载</a></li>
+                            <li><a href="features.html">功能特性</a></li>
+                            <li><a href="changelog.html">更新日志</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>帮助</h4>
+                        <ul>
+                            <li><a href="tutorial.html">使用教程</a></li>
+                            <li><a href="faq.html">常见问题</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 qBittorrent. 本站为非官方网站，仅提供软件下载与使用指南。</p>
+                <p>qBittorrent 是开源软件，基于 GPL 协议发布。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

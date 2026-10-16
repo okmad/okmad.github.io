@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian 常见问题 - 使用教程与解答 | 中文资源站</title>
+    <meta name="description" content="Obsidian 常见问题解答：如何安装使用、个人版是否免费、如何同步笔记、插件如何安装、数据如何迁移等使用问题详解。">
+    <meta name="keywords" content="Obsidian常见问题,Obsidian教程,Obsidian使用,Obsidian同步,Obsidian插件安装,Obsidian数据迁移">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Ob</span>
+                <div class="logo-text">
+                    <h1>Obsidian</h1>
+                    <span class="tagline">打造你的第二大脑</span>
+                </div>
+            </a>
+            <button class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="features.html">功能</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="changelog.html">更新日志</a></li>
+                    <li><a href="faq.html" class="active">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">常见问题解答</h2>
+            <p class="section-subtitle">关于 Obsidian 使用、授权、同步、数据等方面的常见问题</p>
+
+            <div class="faq-list">
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">Obsidian 是免费的吗？</div>
+                    <div class="faq-answer">
+                        <p>Obsidian 对个人非商业使用<strong>完全免费</strong>，包含双向链接、关系图谱、插件市场、主题自定义等全部核心功能。仅在以下情况需要付费：</p>
+                        <p>• <strong>商业版</strong>：用于公司或商业环境需购买商业版授权（年付制）。</p>
+                        <p>• <strong>Sync 同步</strong>：官方端到端加密跨设备同步服务（年付制订阅）。</p>
+                        <p>• <strong>Publish 发布</strong>：将笔记发布为在线知识库网站（年付制订阅）。</p>
+                        <p>注意：Sync 和 Publish 是可选增值服务，你可以使用 iCloud、Google Drive、Git、Syncthing 等第三方方案免费实现同步。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">Obsidian 的数据存储在哪里？安全吗？</div>
+                    <div class="faq-answer">
+                        <p>Obsidian 采用<strong>本地优先</strong>的设计理念，所有笔记以标准 Markdown 纯文本文件存储在你指定的本地文件夹中，不依赖任何云端服务器。</p>
+                        <p>这意味着：</p>
+                        <p>• 数据完全掌握在你手中，即使 Obsidian 停止运营，笔记依然可用。</p>
+                        <p>• 可用任何文本编辑器打开笔记，无供应商锁定风险。</p>
+                        <p>• 离线也能正常使用，断网不影响写作。</p>
+                        <p>• 官方不读取或上传你的笔记内容，隐私安全有保障。</p>
+                        <p>如需跨设备同步，建议使用官方端到端加密的 Sync 服务，或通过 Git 等方案自行管理。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">如何创建双向链接？</div>
+                    <div class="faq-answer">
+                        <p>在编辑笔记时，输入 <strong>[[</strong> 会自动弹出笔记列表，你可以：</p>
+                        <p>• 选择已有笔记创建链接，如 <strong>[[读书笔记]]</strong></p>
+                        <p>• 输入新名称创建尚未存在的笔记链接，点击即可新建该笔记</p>
+                        <p>• 使用 <strong>[[笔记名|显示文字]]</strong> 自定义链接显示文本</p>
+                        <p>• 使用 <strong>[[笔记名#标题]]</strong> 链接到笔记中的特定标题</p>
+                        <p>• 使用 <strong>[[笔记名#^块ID]]</strong> 链接到特定块</p>
+                        <p>创建链接后，被链接的笔记会自动在"反向链接"面板中显示引用来源。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">如何安装社区插件？</div>
+                    <div class="faq-answer">
+                        <p>安装社区插件的步骤：</p>
+                        <p>1. 进入 <strong>设置 → 第三方插件</strong>，关闭"安全模式"。</p>
+                        <p>2. 点击"浏览"打开社区插件市场。</p>
+                        <p>3. 搜索需要的插件，点击"安装"。</p>
+                        <p>4. 安装完成后，在插件列表中点击启用。</p>
+                        <p>推荐新手插件：</p>
+                        <p>• <strong>Calendar</strong>：日历视图浏览日记</p>
+                        <p>• <strong>Kanban</strong>：看板式任务管理</p>
+                        <p>• <strong>Dataview</strong>：数据查询与动态视图</p>
+                        <p>• <strong>Excalidraw</strong>：手绘风格绘图</p>
+                        <p>• <strong>obsidian-git</strong>：Git 版本控制与同步</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">Obsidian 支持哪些平台？如何跨设备同步？</div>
+                    <div class="faq-answer">
+                        <p>Obsidian 原生支持 <strong>5 大平台</strong>：Windows、macOS、Linux、iOS、Android。</p>
+                        <p>跨设备同步方案：</p>
+                        <p>• <strong>官方 Sync（付费）</strong>：端到端加密，体验最佳，密钥仅你拥有。</p>
+                        <p>• <strong>iCloud</strong>：苹果生态用户可在 iOS 与 macOS 间免费同步。</p>
+                        <p>• <strong>Google Drive / OneDrive</strong>：安卓与桌面端通过云盘文件夹同步。</p>
+                        <p>• <strong>Git</strong>：配合 obsidian-git 插件实现版本控制与自动同步，适合技术用户。</p>
+                        <p>• <strong>Syncthing</strong>：开源免费的 P2P 同步方案，不依赖第三方服务器。</p>
+                        <p>注意：不要直接将库放在同步盘根目录，建议使用 obsidian-git 或官方 Sync 避免同步冲突。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">如何从其他笔记软件迁移到 Obsidian？</div>
+                    <div class="faq-answer">
+                        <p>Obsidian 支持从多种笔记软件导入：</p>
+                        <p>• <strong>Evernote（印象笔记）</strong>：使用官方 Importer 工具，可保留标签与附件。</p>
+                        <p>• <strong>Notion</strong>：使用 Importer 工具导出为 Markdown。</p>
+                        <p>• <strong>OneNote</strong>：通过第三方工具或脚本转换。</p>
+                        <p>• <strong>Apple Notes</strong>：通过第三方脚本导出。</p>
+                        <p>• <strong>Markdown 文件</strong>：直接将文件夹作为库打开即可。</p>
+                        <p>迁移前建议先备份原始数据。由于 Markdown 是开放标准，导入后可直接用其他编辑器打开，无锁定风险。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">什么是"库"（Vault）？如何管理多个库？</div>
+                    <div class="faq-answer">
+                        <p><strong>库（Vault）</strong>是 Obsidian 中存储笔记的文件夹，每个库是一个独立的 Markdown 文件目录，拥有独立的配置、插件与主题。</p>
+                        <p>你可以创建多个库来分离不同用途的笔记，例如：</p>
+                        <p>• 工作库：项目文档、会议纪要</p>
+                        <p>• 学习库：课程笔记、读书摘录</p>
+                        <p>• 个人库：日记、生活记录</p>
+                        <p>切换库：点击左下角库图标 → 选择"打开其他库"或"创建新库"。</p>
+                        <p>注意：不同库之间的笔记无法直接建立链接。如需关联，建议合并到同一库用文件夹区分。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">如何设置中文界面？</div>
+                    <div class="faq-answer">
+                        <p>Obsidian 默认会根据系统语言自动设置界面语言。如需手动切换：</p>
+                        <p>1. 打开 <strong>设置（齿轮图标）</strong>。</p>
+                        <p>2. 进入 <strong>通用（General）</strong> 选项卡。</p>
+                        <p>3. 在"语言"下拉菜单中选择 <strong>中文（简体）</strong>。</p>
+                        <p>4. 重启 Obsidian 即可应用更改。</p>
+                        <p>部分社区插件可能未提供中文翻译，但核心功能界面均支持完整中文化。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">关系图谱有什么用？如何使用？</div>
+                    <div class="faq-answer">
+                        <p><strong>关系图谱</strong>是 Obsidian 的核心特色之一，它将整个知识库可视化为一张节点网络图，每个节点代表一篇笔记，节点间的连线代表双向链接关系。</p>
+                        <p>用途：</p>
+                        <p>• <strong>洞察结构</strong>：直观查看知识库的整体结构与笔记分布。</p>
+                        <p>• <strong>发现联系</strong>：发现笔记间意想不到的关联，激发新灵感。</p>
+                        <p>• <strong>识别孤岛</strong>：找出无链接的孤立笔记，补充关联。</p>
+                        <p>• <strong>导航跳转</strong>：点击节点快速跳转到对应笔记。</p>
+                        <p>打开方式：点击左侧边栏的图谱图标，或使用命令面板搜索"关系图谱"。支持按标签、文件夹筛选，调整节点大小、颜色等。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">本站分享的资源与官方有什么区别？</div>
+                    <div class="faq-answer">
+                        <p>本站分享的 Obsidian 安装包均为<strong>官方原版资源</strong>，未作任何修改，与官方网站及 GitHub Releases 发布的版本完全一致。</p>
+                        <p>本站定位：</p>
+                        <p>• 为国内用户提供更便捷的网盘下载渠道，解决 GitHub 访问慢的问题。</p>
+                        <p>• 提供中文使用说明与常见问题解答，降低使用门槛。</p>
+                        <p>• 本站为非官方资源分享站，仅供学习交流使用。</p>
+                        <p><strong>重要提示</strong>：本站分享资源版权归原作者所有，请于下载后 24 小时内删除。如需长期使用或商业使用，请支持正版并购买相应授权。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="disclaimer" style="margin-top: 50px;">
+                <h4>⚠️ 提示</h4>
+                <p>以上内容基于 Obsidian 官方文档与社区经验整理，仅供参考。软件功能与界面可能随版本更新而变化，请以实际版本为准。如需了解版本变化，可查看本站<a href="changelog.html">更新日志</a>。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">还有其他问题？</h2>
+            <p class="cta-subtitle">下载体验 Obsidian，在使用中探索更多可能</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="download.html" class="btn btn-primary btn-large">立即下载</a>
+                <a href="features.html" class="btn btn-large btn-secondary">查看功能</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Obsidian</h4>
+                    <p>本地优先的 Markdown 知识管理笔记软件</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="changelog.html">更新日志</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于本站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>Obsidian 软件版权归原作者所有</p>
+                    <p>本站为非官方资源分享站</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站分享资源仅供学习交流，请于下载后 24 小时内删除。如需长期使用请支持正版。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

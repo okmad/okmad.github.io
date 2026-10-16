@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 QuickLook - Windows 空格键极速文件预览工具</title>
+    <meta name="description" content="下载 QuickLook 最新版本 v4.5.0，提供 MSI 安装版、EXE 安装版、便携版等多种格式，免费开源，支持 Windows 11/10/8/7。">
+    <meta name="keywords" content="QuickLook 下载,QuickLook 安装包,QuickLook 最新版,QuickLook 便携版">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .download-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .version-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .version-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #3b82f6;
+            margin-bottom: 10px;
+        }
+        .version-date {
+            color: #6b7280;
+            font-size: 16px;
+        }
+        .download-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .download-table th,
+        .download-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .download-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .download-table tr:hover {
+            background: #eff6ff;
+        }
+        .download-table tr:last-child td {
+            border-bottom: none;
+        }
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .table-wrapper::-webkit-scrollbar {
+            height: 6px;
+        }
+        .table-wrapper::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        .table-wrapper::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 3px;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 10px 24px;
+            background: #3b82f6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .download-link:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+        .file-size {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .platform-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .platform-badge.msi {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .platform-badge.exe {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .platform-badge.zip {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .platform-badge.7z {
+            background: #fce7f3;
+            color: #9f1239;
+        }
+        .platform-badge.appx {
+            background: #e0e7ff;
+            color: #4338ca;
+        }
+        .category-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3b82f6;
+        }
+        .info-box {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .info-box h4 {
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .info-box p {
+            color: #6b7280;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .version-section {
+            margin-bottom: 60px;
+        }
+        .version-section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+        .version-section-date {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+        .password-note {
+            color: #dc2626;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        @media (max-width: 768px) {
+            .version-number {
+                font-size: 36px;
+            }
+            .category-title {
+                font-size: 20px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 12px 10px;
+                font-size: 13px;
+                white-space: nowrap;
+            }
+            .download-table th:nth-child(3),
+            .download-table td:nth-child(3) {
+                white-space: normal;
+                min-width: 150px;
+            }
+            .download-link {
+                padding: 8px 14px;
+                font-size: 12px;
+            }
+            .platform-badge {
+                padding: 3px 8px;
+                font-size: 11px;
+                margin-right: 4px;
+            }
+            .table-wrapper {
+                margin: 20px -15px;
+                padding: 0 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .version-number {
+                font-size: 28px;
+            }
+            .category-title {
+                font-size: 18px;
+            }
+            .version-section-title {
+                font-size: 22px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 10px 8px;
+                font-size: 12px;
+            }
+            .download-link {
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+            .platform-badge {
+                padding: 2px 6px;
+                font-size: 10px;
+                margin-right: 3px;
+            }
+            .password-note {
+                font-size: 11px;
+            }
+            .file-size {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-mark">Q</span>
+                <div class="logo-text">
+                    <h1>QuickLook</h1>
+                    <span class="tagline">空格键 · 极速预览 · 格式通吃</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="download.html" class="active">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="download-section">
+        <div class="container">
+            <div class="info-box">
+                <h4>💡 下载提示</h4>
+                <p>MSI 安装版：推荐大多数用户使用，双击安装即可，自动注册到系统并开机自启动。EXE 安装版：独立安装程序，适合不喜欢 MSI 格式的用户。便携版（ZIP/7z）：无需安装，解压即用，适合 U 盘携带。APPX：Windows Store 应用格式，适合从商店安装的用户。</p>
+            </div>
+
+            <div class="version-section">
+                <div class="version-section-title">QuickLook 4.5.0</div>
+                <div class="version-section-date">最新稳定版本 - 2026年4月14日发布</div>
+
+                <h3 class="category-title">Windows 版本</h3>
+                <div class="table-wrapper">
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>格式</th>
+                            <th>描述</th>
+                            <th>UC网盘</th>
+                            <th>夸克网盘</th>
+                            <th>迅雷网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.msi</td>
+                            <td><span class="platform-badge msi">MSI安装版</span></td>
+                            <td>QuickLook-4.5.0.msi<br><span class="file-size">约 117 MB（含插件）</span></td>
+                            <td><a href="https://drive.uc.cn/s/c8202eaa64984" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/749724e20f46" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvoMXXQkb8ZRNMpvuGQqakDA1?pwd=5txz" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：5txz</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge exe">EXE安装版</span></td>
+                            <td>QuickLook-4.5.0.exe<br><span class="file-size">约 117 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/ecbf8f57d1b24" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/46f9cee21344" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvoMXXBETfnB3YfE31PNA8PA1?pwd=5n6x" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：5n6x</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.zip</td>
+                            <td><span class="platform-badge zip">ZIP便携版</span></td>
+                            <td>QuickLook-4.5.0.zip<br><span class="file-size">约 55 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/b31c98f0a9204" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/effbef778d9c" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvoMXXGYM1MBHMZdbUX22gSA1?pwd=apf7" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：apf7</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.7z</td>
+                            <td><span class="platform-badge 7z">7z便携版</span></td>
+                            <td>QuickLook-4.5.0.7z<br><span class="file-size">约 45 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/403736d2523a4" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/14caf1f41d41" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvoMXXFkb8ZRNMpvuGQqak8A1?pwd=j9u4" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：j9u4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.appx</td>
+                            <td><span class="platform-badge appx">APPX版本</span></td>
+                            <td>QuickLook-4.5.0.appx<br><span class="file-size">约 50 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/32cf5de3b5874" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/b0deda86ba92" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvoMXXCBNwfW8nKGgVdHCyqA1?pwd=tjgi" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：tjgi</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4>⚙️ 版本说明</h4>
+                <p><strong>MSI安装版</strong>：推荐大多数用户使用，双击安装即可，自动注册到系统并开机自启动。<br>
+                <strong>EXE安装版</strong>：独立安装程序，适合不喜欢 MSI 格式的用户。<br>
+                <strong>便携版（ZIP/7z）</strong>：无需安装，解压即用，适合 U 盘携带或不想在系统注册表写入内容的用户。<br>
+                <strong>APPX版本</strong>：Windows Store 应用格式，适合从商店安装的用户。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">系统要求</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>操作系统</h3>
+                    <p>Windows 11 / 10 / 8.1 / 7<br>支持 64 位系统</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>运行环境</h3>
+                    <p>.NET Framework 4.6.1+<br>VC++ Redistributable</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>磁盘空间</h3>
+                    <p>安装约需 200 MB<br>含常用插件</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧩</div>
+                    <h3>可选插件</h3>
+                    <p>按需安装插件<br>扩展更多格式支持</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">安装步骤</h2>
+            <div class="quickstart-grid">
+                <div class="quickstart-card">
+                    <span class="quickstep-number">1</span>
+                    <h3>下载安装包</h3>
+                    <p>点击上方下载按钮，获取 QuickLook 安装包或便携版压缩包，保存到本地任意位置。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">2</span>
+                    <h3>运行安装程序</h3>
+                    <p>安装版：双击 MSI 或 EXE 文件，按提示完成安装。便携版：解压 ZIP/7z 到任意目录，双击 QuickLook.exe 运行。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">3</span>
+                    <h3>完成安装</h3>
+                    <p>等待安装完成，QuickLook 会自动启动并在系统托盘运行，开机自启动。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">4</span>
+                    <h3>开始使用</h3>
+                    <p>在资源管理器中选中任意文件，按下空格键即可预览。享受极速预览体验！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background: #fff;">
+        <div class="container">
+            <h2 class="section-title">下载说明</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>安全可靠</h3>
+                    <p>建议下载后使用杀毒软件扫描验证，确保软件安全无毒。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>安全认证</h3>
+                    <p>软件基于 GPLv3 协议开源，代码可自行审查，无任何恶意代码。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🆓</div>
+                    <h3>永久免费</h3>
+                    <p>基于 GPLv3 协议开源，无任何付费版本或内购，所有功能永久免费使用。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>持续更新</h3>
+                    <p>项目持续维护中，定期发布新版本，修复问题并增加新功能。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">需要帮助？</h2>
+            <p class="cta-subtitle">查看功能介绍或常见问题获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="features.html" class="btn btn-large btn-secondary">功能介绍</a>
+                <a href="faq.html" class="btn btn-large btn-secondary">常见问题</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>QuickLook</h4>
+                    <p>Windows 空格键极速文件预览工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2025 QuickLook 中文网站</p>
+                    <p>基于 GPLv3 协议开源</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站为非官方中文资讯站，QuickLook 软件版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

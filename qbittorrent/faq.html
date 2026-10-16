@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="qBittorrent常见问题解答，包括安装、使用、设置等方面的疑问，帮助您快速解决问题。">
+    <meta name="keywords" content="qBittorrent常见问题,qBittorrent FAQ,qBittorrent问题解答">
+    <meta name="author" content="qBittorrent">
+    <title>常见问题 - qBittorrent | qbittorrent.net.cn</title>
+    <link rel="canonical" href="https://qbittorrent.net.cn/faq.html">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>qBittorrent</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">返回主站</a></li>
+                <li><a href="download.html">下载</a></li>
+                <li><a href="features.html">功能特性</a></li>
+                <li><a href="tutorial.html">使用教程</a></li>
+                <li><a href="changelog.html">更新日志</a></li>
+                <li><a href="faq.html" class="active">常见问题</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>常见问题</h1>
+                <p>解答您的疑惑</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-categories">
+                    <button class="faq-category active" data-category="all">全部</button>
+                    <button class="faq-category" data-category="install">安装问题</button>
+                    <button class="faq-category" data-category="usage">使用问题</button>
+                    <button class="faq-category" data-category="settings">设置问题</button>
+                    <button class="faq-category" data-category="other">其他问题</button>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item" data-category="install">
+                        <div class="faq-question">
+                            <h3>qBittorrent 安全吗？是否有后门？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>完全安全！qBittorrent 是完全开源的软件（GPLv2 协议），代码托管在 GitHub 上，全球开发者都可以审查代码。没有任何后门、间谍软件或恶意代码。长期被安全社区推荐，是值得信赖的开源软件。</p>
+                            <p><strong>建议：</strong>请从官方网站或可信渠道下载，避免从不明来源下载可能被篡改的版本。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="usage">
+                        <div class="faq-question">
+                            <h3>下载速度很慢怎么办？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>下载速度慢可能有多种原因，请按以下步骤排查：</p>
+                            <ol>
+                                <li><strong>检查种子健康度：</strong>确保种子有足够的做种者（Seeders）</li>
+                                <li><strong>检查端口映射：</strong>确保防火墙/路由器已正确映射端口（默认 6881 或自定义端口）</li>
+                                <li><strong>启用 UPnP：</strong>在"工具 → 选项 → 连接"中启用 UPnP</li>
+                                <li><strong>增加连接数：</strong>适当增加全局最大连接数（建议 500-1000）</li>
+                                <li><strong>使用增强版：</strong>增强版内置了优化的 Tracker 列表，可以提升连接效率</li>
+                                <li><strong>启用 DHT/PEX：</strong>确保在"工具 → 选项 → BitTorrent"中启用了 DHT 和 PEX</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="settings">
+                        <div class="faq-question">
+                            <h3>如何设置中文界面？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>设置中文界面的方法：</p>
+                            <ol>
+                                <li><strong>安装时选择：</strong>Windows 安装程序在安装过程中可以选择"简体中文"</li>
+                                <li><strong>已安装后更改：</strong>
+                                    <ul>
+                                        <li>打开 qBittorrent</li>
+                                        <li>点击菜单 "Tools" → "Options"（或按 Ctrl+Alt+S）</li>
+                                        <li>在左侧选择 "Behavior"</li>
+                                        <li>在 "Interface" 区域找到 "Language"</li>
+                                        <li>从下拉菜单中选择 "简体中文"</li>
+                                        <li>点击 "Apply" 然后 "OK"</li>
+                                        <li>重启 qBittorrent 生效</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="usage">
+                        <div class="faq-question">
+                            <h3>是否支持下载百度网盘/迅雷链接？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>不支持。qBittorrent 仅支持以下协议：</p>
+                            <ul>
+                                <li><strong>BitTorrent 协议：</strong>.torrent 种子文件</li>
+                                <li><strong>磁力链接：</strong>magnet:?xt=... 格式的链接</li>
+                            </ul>
+                            <p>不支持以下协议：</p>
+                            <ul>
+                                <li>百度网盘链接</li>
+                                <li>迅雷专用链接（thunder://）</li>
+                                <li>电驴链接（ed2k://）</li>
+                                <li>HTTP/FTP 直接下载</li>
+                            </ul>
+                            <p>如需下载这些类型的资源，请使用相应的专用工具。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="settings">
+                        <div class="faq-question">
+                            <h3>如何设置下载速度限制？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>设置速度限制的方法：</p>
+                            <ol>
+                                <li><strong>全局速度限制：</strong>
+                                    <ul>
+                                        <li>点击"工具" → "选项" → "速度"</li>
+                                        <li>设置全局上传和下载速度上限</li>
+                                    </ul>
+                                </li>
+                                <li><strong>快速切换：</strong>
+                                    <ul>
+                                        <li>点击工具栏上的"替代速度限制"按钮（乌龟图标）</li>
+                                        <li>或按快捷键 Ctrl+Shift+Alt+S</li>
+                                    </ul>
+                                </li>
+                                <li><strong>单个任务限制：</strong>
+                                    <ul>
+                                        <li>右键点击任务</li>
+                                        <li>选择"限制上传速度"或"限制下载速度"</li>
+                                        <li>输入限制值（单位：KB/s）</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="usage">
+                        <div class="faq-question">
+                            <h3>支持磁力链接吗？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>完全支持！使用方法：</p>
+                            <ol>
+                                <li>复制磁力链接（magnet:?xt=... 格式）</li>
+                                <li>qBittorrent 会自动识别剪贴板内容并弹出添加窗口</li>
+                                <li>或者手动点击"文件" → "添加链接"</li>
+                                <li>粘贴磁力链接</li>
+                                <li>点击"确定"开始下载</li>
+                            </ol>
+                            <p><strong>提示：</strong>磁力链接会先获取元数据，可能需要几秒到几分钟时间。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="settings">
+                        <div class="faq-question">
+                            <h3>如何开启 Web 远程控制？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>启用 Web UI 的步骤：</p>
+                            <ol>
+                                <li>打开"工具" → "选项" → "Web UI"</li>
+                                <li>勾选"Web 用户界面"</li>
+                                <li>设置监听端口（默认 8080）</li>
+                                <li>设置用户名和密码（必须设置强密码！）</li>
+                                <li>可选：启用 HTTPS 增强安全性</li>
+                                <li>点击"应用"保存设置</li>
+                            </ol>
+                            <p>访问方式：</p>
+                            <ul>
+                                <li>本机访问：<code>http://localhost:8080</code></li>
+                                <li>局域网访问：<code>http://本机IP:8080</code></li>
+                                <li>外网访问：需要配置路由器端口映射</li>
+                            </ul>
+                            <p><strong>安全提示：</strong>请务必设置强密码，避免被他人非法访问。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="install">
+                        <div class="faq-question">
+                            <h3>Windows 安装时提示缺少 DLL 文件？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>这通常是因为缺少 Visual C++ 运行库。解决方法：</p>
+                            <ol>
+                                <li>下载并安装 <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank" rel="noopener noreferrer">Visual C++ Redistributable</a></li>
+                                <li>如果使用 32 位系统，下载 <a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank" rel="noopener noreferrer">x86 版本</a></li>
+                                <li>安装完成后重启电脑</li>
+                                <li>再次尝试安装 qBittorrent</li>
+                            </ol>
+                            <p>如果问题仍然存在，请尝试使用便携版（绿色版）。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="other">
+                        <div class="faq-question">
+                            <h3>与 µTorrent 相比如何？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>qBittorrent 是 µTorrent 的优秀替代品，主要优势：</p>
+                            <table class="compare-table-small">
+                                <tr>
+                                    <th>对比项</th>
+                                    <th>qBittorrent</th>
+                                    <th>µTorrent</th>
+                                </tr>
+                                <tr>
+                                    <td>开源</td>
+                                    <td>✓ 完全开源</td>
+                                    <td>✗ 闭源</td>
+                                </tr>
+                                <tr>
+                                    <td>广告</td>
+                                    <td>✓ 无广告</td>
+                                    <td>✗ 有广告</td>
+                                </tr>
+                                <tr>
+                                    <td>价格</td>
+                                    <td>✓ 完全免费</td>
+                                    <td>部分功能收费</td>
+                                </tr>
+                                <tr>
+                                    <td>功能</td>
+                                    <td>功能齐全</td>
+                                    <td>功能齐全</td>
+                                </tr>
+                                <tr>
+                                    <td>资源占用</td>
+                                    <td>低</td>
+                                    <td>中等</td>
+                                </tr>
+                            </table>
+                            <p>结论：qBittorrent 在功能上与 µTorrent 相当，但更干净、更安全、更自由。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="other">
+                        <div class="faq-question">
+                            <h3>增强版和普通版有什么区别？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>增强版在官方原版基础上增加了以下功能：</p>
+                            <ul>
+                                <li><strong>优化的下载引擎：</strong>提升下载速度和稳定性</li>
+                                <li><strong>内置 Tracker 列表：</strong>自动更新优质 Tracker，提升连接效率</li>
+                                <li><strong>自动屏蔽吸血客户端：</strong>保护上传资源</li>
+                                <li><strong>IP 过滤规则：</strong>内置恶意 IP 屏蔽列表</li>
+                                <li><strong>界面优化：</strong>支持更多主题和自定义选项</li>
+                            </ul>
+                            <p>普通版保持官方原版的简洁体验，适合喜欢原汁原味的用户。</p>
+                            <p><strong>推荐：</strong>普通用户建议使用增强版，可以获得更好的下载体验。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="usage">
+                        <div class="faq-question">
+                            <h3>如何选择性下载文件？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>选择性下载文件的方法：</p>
+                            <ol>
+                                <li>添加种子时，在弹出的窗口中切换到"内容"标签</li>
+                                <li>可以看到种子中包含的所有文件列表</li>
+                                <li>勾选需要下载的文件，取消不需要的文件</li>
+                                <li>可以设置单个文件的下载优先级（高/正常/低/不下载）</li>
+                                <li>点击"确定"开始下载</li>
+                            </ol>
+                            <p><strong>提示：</strong>已添加的任务也可以右键选择"优先级"来调整文件下载顺序。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="install">
+                        <div class="faq-question">
+                            <h3>macOS 提示"无法打开，因为它来自身份不明的开发者"？</h3>
+                            <span class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>这是 macOS 的安全机制，解决方法：</p>
+                            <ol>
+                                <li>打开"系统偏好设置" → "安全性与隐私"</li>
+                                <li>在"通用"标签下，点击"仍要打开"</li>
+                                <li>或者在应用程序文件夹中，右键点击 qBittorrent，选择"打开"</li>
+                                <li>在弹出的对话框中点击"打开"</li>
+                            </ol>
+                            <p>或者使用命令行：</p>
+                            <div class="code-block">
+                                <code>sudo xattr -r -d com.apple.quarantine /Applications/qbittorrent.app</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>qBittorrent</span>
+                    </a>
+                    <p>高效可靠的BT下载工具，为用户提供安全、快速、稳定的文件下载体验。</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>产品</h4>
+                        <ul>
+                            <li><a href="download.html">下载</a></li>
+                            <li><a href="features.html">功能特性</a></li>
+                            <li><a href="changelog.html">更新日志</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>帮助</h4>
+                        <ul>
+                            <li><a href="tutorial.html">使用教程</a></li>
+                            <li><a href="faq.html">常见问题</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 qBittorrent. 本站为非官方网站，仅提供软件下载与使用指南。</p>
+                <p>qBittorrent 是开源软件，基于 GPL 协议发布。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian 功能介绍 - 双向链接、关系图谱、插件生态 | 中文资源站</title>
+    <meta name="description" content="详细介绍 Obsidian 的核心功能：双向链接、关系图谱、本地 Markdown 存储、插件市场、主题自定义、多平台同步等，打造你的第二大脑。">
+    <meta name="keywords" content="Obsidian功能,Obsidian双向链接,关系图谱,Obsidian插件,Markdown笔记,Obsidian主题,块引用,知识图谱">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Ob</span>
+                <div class="logo-text">
+                    <h1>Obsidian</h1>
+                    <span class="tagline">打造你的第二大脑</span>
+                </div>
+            </a>
+            <button class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="features.html" class="active">功能</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="changelog.html">更新日志</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">强大的功能体系</h2>
+                <p class="hero-subtitle">从基础笔记到高级知识管理，Obsidian 提供完整的功能矩阵，帮助你构建互联的个人知识网络。</p>
+                <div class="hero-buttons">
+                    <a href="download.html" class="btn btn-primary">免费下载</a>
+                    <a href="index.html" class="btn btn-secondary">返回首页</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="obsidian-demo">
+                    <div class="obsidian-titlebar">
+                        <span class="app-dot red"></span>
+                        <span class="app-dot yellow"></span>
+                        <span class="app-dot green"></span>
+                        <span class="obsidian-name">功能矩阵</span>
+                    </div>
+                    <div class="obsidian-body">
+                        <div class="obsidian-panel">
+                            <div class="obsidian-panel-title">核心功能</div>
+                            <div class="obsidian-file-item active">🔗 双向链接</div>
+                            <div class="obsidian-file-item">🕸️ 关系图谱</div>
+                            <div class="obsidian-file-item">📦 块引用</div>
+                            <div class="obsidian-file-item">🏷️ 标签系统</div>
+                            <div class="obsidian-file-item">🔍 全文搜索</div>
+                            <div class="obsidian-file-item">🧩 插件市场</div>
+                        </div>
+                        <div class="obsidian-editor">
+                            <div class="title">功能全景</div>
+                            <div class="heading">## 编辑能力</div>
+                            <div class="text">- 所见即所得 / 源码模式 / 阅读视图</div>
+                            <div class="text">- 标准 <span class="tag">Markdown</span> 语法</div>
+                            <div class="heading">## 知识管理</div>
+                            <div class="text">- <span class="link">[[双向链接]]</span> 自动关联</div>
+                            <div class="text">- 反向链接面板追踪引用</div>
+                            <div class="text">- 图谱可视化知识结构</div>
+                            <div class="heading">## 扩展生态</div>
+                            <div class="text">- 上千款社区插件</div>
+                        </div>
+                        <div class="obsidian-graph">
+                            <div class="obsidian-panel-title">功能图谱</div>
+                            <div class="graph-node center" style="top:45%;left:45%;"></div>
+                            <div class="graph-node" style="top:20%;left:30%;"></div>
+                            <div class="graph-node" style="top:25%;left:60%;"></div>
+                            <div class="graph-node" style="top:55%;left:25%;"></div>
+                            <div class="graph-node" style="top:65%;left:60%;"></div>
+                            <div class="graph-node" style="top:15%;left:50%;"></div>
+                            <div class="graph-node" style="top:75%;left:40%;"></div>
+                            <div class="graph-node" style="top:80%;left:65%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">编辑与书写</h2>
+            <p class="section-subtitle">原生 Markdown 支持，三种编辑模式自由切换，满足不同书写习惯</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>📝 三种编辑模式</h3>
+                    <p>支持实时预览（所见即所得）、源码模式（纯 Markdown 语法）、阅读视图（纯阅读排版）三种模式自由切换，满足从写作到阅读的各种场景需求。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📋 块级引用</h3>
+                    <p>使用 ^块ID 语法可以为任意段落、列表项创建唯一标识，通过 ![[笔记#^块ID]] 精确引用甚至嵌入该块内容，实现段落级别的知识关联。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🏷️ 标签系统</h3>
+                    <p>支持 #标签 和 [[标签]] 两种形式，可嵌套层级标签（如 #项目/工作）。配合标签面板快速筛选与浏览，多维度组织笔记内容。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔍 强大的搜索</h3>
+                    <p>全文搜索支持正则表达式、路径过滤、标签过滤等高级查询语法。配合搜索插件可按文件名、内容、标签等多维度快速定位笔记。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📊 嵌入内容</h3>
+                    <p>支持嵌入图片、音频、视频、PDF 等多种格式文件。通过 ![[笔记名]] 语法嵌入其他笔记内容，实现内容的复用与组合，自动同步更新。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⚡ 模板系统</h3>
+                    <p>内置模板功能，配合日期变量、光标定位等语法，一键生成标准化笔记结构。适合日记、会议纪要、读书笔记等重复性内容创作。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">知识管理</h2>
+            <p class="section-subtitle">构建互联的知识网络，让分散的笔记产生联系与价值</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>双向链接</h3>
+                    <p>使用 [[笔记名]] 语法即可创建笔记间的双向链接。Obsidian 自动追踪引用关系，在反向链接面板中展示所有引用当前笔记的其他笔记，让知识真正互联。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🕸️</div>
+                    <h3>关系图谱</h3>
+                    <p>将整个知识库可视化为节点网络图，直观展示笔记间的关联。支持按标签、文件夹、链接数等筛选与着色，发现孤立笔记，洞察知识结构。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>反向链接</h3>
+                    <p>每条笔记都展示哪些笔记引用了它，方便追溯知识的来源与脉络。配合未链接提及功能，自动发现潜在的关联笔记，促进知识连接。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗂️</div>
+                    <h3>多库管理</h3>
+                    <p>支持创建多个独立的库（Vault），将工作、学习、生活笔记分离管理。每个库拥有独立的配置、插件与主题设置，互不干扰。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>日记与日历</h3>
+                    <p>内置日记功能，配合日历插件直观浏览每日笔记。点击日期快速创建当日日记，支持自定义日记模板与命名格式，建立持续记录的习惯。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧭</div>
+                    <h3>大纲与书签</h3>
+                    <p>大纲面板展示当前笔记的标题层级结构，快速跳转。书签功能收藏常用笔记、搜索结果、图谱视图，打造个人快捷导航中心。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">扩展生态</h2>
+            <p class="section-subtitle">开放的插件架构，上千款社区插件，无限可能</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>🧩 社区插件市场</h3>
+                    <p>Obsidian 拥有活跃的社区插件生态，上千款插件覆盖看板、日历、思维导图、数据库、Excalidraw 绘图、PDF 标注、Git 版本控制等各种需求，几乎能找到满足任何工作流的插件。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🎨 主题市场</h3>
+                    <p>丰富的主题市场提供上百款精美主题，从极简到炫酷风格应有尽有。支持深度自定义 CSS 外观，调整字体、颜色、间距等每一个细节，打造专属编辑环境。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔧 核心插件</h3>
+                    <p>内置日记、模板、大纲、书签、关系图谱、反向链接、标签面板、命令面板等核心插件，可按需启用关闭。这些官方插件覆盖了最常见的使用场景。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💻 开发者 API</h3>
+                    <p>提供完整的 TypeScript 插件开发 API 与文档，开发者可以编写自定义插件扩展功能。开放的架构让 Obsidian 成为可无限扩展的知识管理平台。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔄 版本控制集成</h3>
+                    <p>基于纯文本文件存储的特性，天然适配 Git 版本控制。配合 obsidian-git 插件，实现笔记的自动提交、同步与历史版本管理，永不丢失任何修改。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🌐 Web Clipper</h3>
+                    <p>官方浏览器扩展（Chrome、Firefox、Safari、Edge），一键剪藏网页内容为 Markdown 笔记，支持自定义模板与高亮筛选，便捷收集网络资料。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">数据与安全</h2>
+            <p class="section-subtitle">本地优先，隐私至上，数据完全掌控在自己手中</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>纯文本本地存储</h3>
+                    <p>所有笔记以标准 Markdown 文件存储在本地硬盘，不锁定在云端。可用任意文本编辑器打开，无供应商锁定风险，数据永久可读可用。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>端到端加密同步</h3>
+                    <p>官方 Sync 服务采用端到端加密，密钥仅你拥有，服务器无法解密你的笔记内容。跨设备同步的同时确保数据绝对私密安全。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>隐私保护</h3>
+                    <p>Obsidian 不会读取或上传你的笔记内容，所有处理在本地完成。无遥测、无广告、无数据收集，你的知识库完全属于你自己。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>多平台同步</h3>
+                    <p>原生支持 Windows、macOS、Linux、iOS、Android。除官方 Sync 外，也可通过 iCloud、Google Drive、Git、Syncthing 等第三方方案实现同步。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">立即体验完整功能</h2>
+            <p class="cta-subtitle">免费下载 Obsidian，开启你的第二大脑</p>
+            <a href="download.html" class="btn btn-primary btn-large">立即下载</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Obsidian</h4>
+                    <p>本地优先的 Markdown 知识管理笔记软件</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="changelog.html">更新日志</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于本站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>Obsidian 软件版权归原作者所有</p>
+                    <p>本站为非官方资源分享站</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站分享资源仅供学习交流，请于下载后 24 小时内删除。如需长期使用请支持正版。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

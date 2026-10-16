@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见问题 - OBS Studio 中文网站</title>
+    <meta name="description" content="OBS Studio 常见问题解答：安装下载、录屏直播、黑屏问题、编码器选择、插件使用等问题详细解答。">
+    <meta name="keywords" content="OBS常见问题,OBS FAQ,obs录屏黑屏,obs直播问题,obs编码器,obs插件,obs虚拟摄像头">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">OBS</span>
+                <div class="logo-text">
+                    <h1>OBS Studio</h1>
+                    <span class="tagline">免费开源视频录制与直播软件</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="features.html">功能</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="faq.html" class="active">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">常见问题</h2>
+                <p class="hero-subtitle">关于 OBS Studio 的常见问题解答，帮助您更好地使用这款强大的视频录制与直播软件</p>
+                <div class="hero-buttons">
+                    <a href="download.html" class="btn btn-primary">免费下载</a>
+                    <a href="#faq-list" class="btn btn-secondary">查看问题</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq-list">
+        <div class="container">
+            <h2 class="section-title">安装与下载</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">OBS Studio 是否完全免费？</div>
+                    <div class="faq-answer">
+                        是的，OBS Studio 是完全免费的开源软件，遵循 GPL 协议。您可以免费下载、使用和分发，无任何隐藏费用或限制。软件不包含任何广告、捆绑软件或恶意代码。OBS Project 不提供任何付费版本，所有名称含"OBS"的第三方收费软件均非官方出品。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">OBS Studio 支持哪些操作系统？</div>
+                    <div class="faq-answer">
+                        OBS Studio 原生支持三大平台：<br><br>
+                        • <strong>Windows</strong>：Windows 10 / 11（64 位），Windows 10 1809 或更新版本。<br>
+                        • <strong>macOS</strong>：macOS 12 Monterey 或更高，支持 Apple Silicon 和 Intel 双架构。<br>
+                        • <strong>Linux</strong>：Ubuntu 22.04+、Fedora 38+ 等，支持 OpenGL 3.3+，提供 Flatpak 和 PPA 安装方式。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何确认下载的是正版 OBS？</div>
+                    <div class="faq-answer">
+                        请仅通过以下官方渠道获取 OBS Studio：<br><br>
+                        1. 官方网站 obsproject.com<br>
+                        2. GitHub 官方仓库 github.com/obsproject/obs-studio<br>
+                        3. 本中文网站提供的下载链接（均指向官方 CDN）<br><br>
+                        避免从第三方下载站获取，以免下载到捆绑广告软件或恶意程序的版本。所有官方发布版本均经过数字签名。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">安装后界面是英文怎么办？</div>
+                    <div class="faq-answer">
+                        OBS Studio 支持多语言，包括简体中文。设置方法：<br><br>
+                        1. 打开 OBS Studio。<br>
+                        2. 进入"Settings → General → Language"。<br>
+                        3. 选择"简体中文"。<br>
+                        4. 点击"确定"，重启 OBS Studio 即可显示中文界面。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">安装版和便携版有什么区别？</div>
+                    <div class="faq-answer">
+                        <strong>安装版（Installer）</strong>：通过安装程序安装到系统中，会在开始菜单和桌面创建快捷方式，设置保存在用户目录。<br><br>
+                        <strong>便携版（ZIP）</strong>：解压即用，无需安装。创建 obs_portable_mode.txt 文件后，所有设置、配置文件、场景、日志等都会保存在程序所在文件夹，适合 U 盘携带或在无权限安装的环境使用。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何获取旧版本 OBS？</div>
+                    <div class="faq-answer">
+                        如果您需要适用于旧版本 Windows 或 32 位 Windows 的 OBS Studio，可以访问 GitHub Releases 页面下载历史版本。例如 OBS Studio 27.2.4 是支持旧版本 Windows 的最后版本。访问 https://github.com/obsproject/obs-studio/releases 查看所有版本。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top:60px;">录屏与直播</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">obs录屏 文件保存在哪？</div>
+                    <div class="faq-answer">
+                        默认保存在"视频"文件夹中。您可以在"设置 → 输出 → 录制 → 录制路径"中修改保存位置。建议选择空间充足的硬盘分区，并使用有意义的文件名命名规则，方便管理。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">obs录屏 黑屏怎么解决？</div>
+                    <div class="faq-answer">
+                        录屏黑屏是常见问题，解决方法：<br><br>
+                        <strong>Windows 用户</strong>：<br>
+                        1. 以管理员身份运行 OBS（右键 → 以管理员身份运行）。<br>
+                        2. 笔记本用户需在 NVIDIA 控制面板中将 OBS 设为"高性能"显卡运行。<br>
+                        3. 游戏捕获模式下，确保游戏类型选择正确（自动或指定游戏）。<br>
+                        4. 尝试使用"显示器采集"代替"游戏捕获"。<br><br>
+                        <strong>macOS 用户</strong>：<br>
+                        1. 在"系统设置 → 隐私与安全性 → 屏幕录制"中授予 OBS 权限。<br>
+                        2. 重启 OBS Studio。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何开始直播推流？</div>
+                    <div class="faq-answer">
+                        开始直播推流的步骤：<br><br>
+                        1. 在直播平台（如 Bilibili、虎牙、斗鱼、Twitch、YouTube）获取推流地址和流密钥。<br>
+                        2. 在 OBS 中进入"设置 → 推流"。<br>
+                        3. 服务选择对应平台，或选择"自定义"填入推流地址。<br>
+                        4. 填入流密钥。<br>
+                        5. 点击"确定"保存设置。<br>
+                        6. 添加来源（如显示器采集、游戏捕获、摄像头等）。<br>
+                        7. 点击"开始推流"即可直播。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">可以同时在多个平台直播吗？</div>
+                    <div class="faq-answer">
+                        OBS Studio 原生支持单路推流。如需同时推流到多个平台，有两种方案：<br><br>
+                        <strong>方案一：安装 Multiple RTMP 插件</strong><br>
+                        安装 Multiple RTMP Output Plugin 后，可同时推流到多个 RTMP 服务器，无需额外服务。<br><br>
+                        <strong>方案二：使用 Restream 服务</strong><br>
+                        将 OBS 推流到 Restream，由 Restream 分发到多个平台。需要 Restream 账号，免费版有水印。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">应该选择哪个编码器？</div>
+                    <div class="faq-answer">
+                        编码器选择建议：<br><br>
+                        • <strong>NVIDIA NVENC</strong>：如果您有 NVIDIA GTX 600 及以上显卡，首选 NVENC，性能最佳，CPU 占用低。<br>
+                        • <strong>AMD AMF</strong>：如果您有 AMD 显卡，使用 AMF 硬件编码。<br>
+                        • <strong>Intel QuickSync</strong>：如果您有 Intel 核显，可使用 QuickSync。<br>
+                        • <strong>x264（软件编码）</strong>：兼容性最好，但 CPU 占用高，适合没有独立显卡或硬件编码器不可用的情况。<br><br>
+                        在"设置 → 输出 → 编码器"中选择，建议优先使用硬件编码器。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">录制什么格式最好？</div>
+                    <div class="faq-answer">
+                        推荐使用 <strong>MKV 格式</strong>录制。原因：<br><br>
+                        1. MKV 容器即使程序崩溃或断电，已录制的内容也不会丢失。<br>
+                        2. MP4 在异常关闭时可能导致整个文件损坏。<br>
+                        3. MKV 支持多种编码格式。<br><br>
+                        录制完成后，可在"设置 → 输出 → 录制"中将 MKV 转换为 MP4（工具 → MKV 到 MP4 转换），方便在其他软件中编辑。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何设置虚拟摄像头？</div>
+                    <div class="faq-answer">
+                        虚拟摄像头使用方法：<br><br>
+                        1. 启动 OBS Studio。<br>
+                        2. 点击"启动虚拟摄像机"按钮（在主界面控制面板）。<br>
+                        3. 在视频会议软件（Zoom、Teams、微信、QQ 等）中选择"OBS Virtual Camera"作为摄像头。<br><br>
+                        <strong>Linux 用户注意</strong>：需先安装 v4l2loopback-dkms 模块：<br>
+                        sudo apt install v4l2loopback-dkms（Debian/Ubuntu）<br>
+                        sudo dnf install kmod-v4l2loopback（Fedora）
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何降低直播延迟？</div>
+                    <div class="faq-answer">
+                        降低直播延迟的方法：<br><br>
+                        1. <strong>使用低延迟编码预设</strong>：在编码器设置中选择"低延迟"预设。<br>
+                        2. <strong>减少关键帧间隔</strong>：将关键帧间隔设置为 2 秒。<br>
+                        3. <strong>降低缓冲</strong>：在"设置 → 输出 → 高级"中调整缓冲大小。<br>
+                        4. <strong>使用 TCP 推流</strong>：比 UDP 更稳定，延迟略高但更可靠。<br>
+                        5. <strong>选择就近服务器</strong>：选择离您最近的直播平台服务器节点。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top:60px;">性能与优化</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">OBS Studio 卡顿怎么办？</div>
+                    <div class="faq-answer">
+                        卡顿优化方法：<br><br>
+                        1. <strong>使用硬件编码器</strong>：优先使用 NVENC、AMF 或 QuickSync，降低 CPU 占用。<br>
+                        2. <strong>降低分辨率和帧率</strong>：输出分辨率降至 1080p 或 720p，帧率降至 30fps。<br>
+                        3. <strong>降低码率</strong>：适当降低码率，减轻编码压力。<br>
+                        4. <strong>关闭不必要的来源</strong>：减少同时显示的来源数量。<br>
+                        5. <strong>关闭后台程序</strong>：关闭占用 CPU 和内存的程序。<br>
+                        6. <strong>以管理员运行</strong>：Windows 下以管理员身份运行 OBS，提升优先级。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">录制文件太大怎么办？</div>
+                    <div class="faq-answer">
+                        减小录制文件大小的方法：<br><br>
+                        1. <strong>使用 H.265/HEVC 编码</strong>：比 H.264 压缩率更高，同画质文件更小。<br>
+                        2. <strong>降低码率</strong>：适当降低录制码率，如 1080p 使用 6000kbps。<br>
+                        3. <strong>降低帧率</strong>：非游戏内容可使用 30fps 而非 60fps。<br>
+                        4. <strong>使用 CBR 码率控制</strong>：固定码率，文件大小可预估。<br>
+                        5. <strong>降低分辨率</strong>：1080p 改为 720p，文件大小减半。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何优化音频质量？</div>
+                    <div class="faq-answer">
+                        音频优化建议：<br><br>
+                        1. <strong>添加降噪滤镜</strong>：在麦克风源上添加"降噪"滤镜，去除背景噪音。<br>
+                        2. <strong>添加噪声门</strong>：设置阈值，不说话时自动静音，避免呼吸声。<br>
+                        3. <strong>添加压缩器</strong>：平衡音量，避免忽大忽小。<br>
+                        4. <strong>使用增益</strong>：提升麦克风音量，确保声音清晰。<br>
+                        5. <strong>采样率 48kHz</strong>：在"设置 → 音频"中设置采样率为 48kHz。<br>
+                        6. <strong>使用好的麦克风</strong>：硬件基础很重要，建议使用电容麦克风或动圈麦克风。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top:60px;">其他问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">OBS Studio 和 OBS Live 有什么区别？</div>
+                    <div class="faq-answer">
+                        <strong>OBS Studio</strong> 是官方正版免费软件，由 OBS Project 开发，遵循 GPL 协议开源，代码托管在 GitHub。<br><br>
+                        名称含"OBS"的第三方收费软件（如 OBS Live、OBS Pro 等）均非官方出品，可能包含广告或捆绑软件。请认准官方网站 obsproject.com 获取正版 OBS Studio。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何获取技术支持？</div>
+                    <div class="faq-answer">
+                        您可以通过以下方式获取技术支持：<br><br>
+                        1. <strong>GitHub Issues</strong>：访问 github.com/obsproject/obs-studio 提交 Issue。<br>
+                        2. <strong>官方文档</strong>：访问 obsproject.com/wiki 查看官方文档。<br>
+                        3. <strong>社区论坛</strong>：访问 OBS 官方社区论坛讨论问题。<br>
+                        4. <strong>Discord</strong>：加入 OBS 官方 Discord 服务器交流。<br>
+                        5. <strong>本网站</strong>：查看功能介绍和常见问题页面。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">OBS Studio 还会继续更新吗？</div>
+                    <div class="faq-answer">
+                        OBS Studio 仍在持续活跃开发中。OBS Project 拥有全球最活跃的直播软件社区，定期发布新版本，不断优化性能并添加新功能。最新版本 32.1.2 于 2026 年 4 月发布，新增 AV1 编码支持、画中画、实时字幕等功能。建议始终使用最新稳定版以获得最佳体验。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何参与 OBS Studio 的开发？</div>
+                    <div class="faq-answer">
+                        OBS Studio 是开源项目，欢迎社区参与：<br><br>
+                        1. <strong>提交 Issue</strong>：报告 Bug 或提出功能建议。<br>
+                        2. <strong>提交 Pull Request</strong>：修复 Bug 或添加新功能。<br>
+                        3. <strong>翻译本地化</strong>：帮助翻译成更多语言。<br>
+                        4. <strong>开发插件</strong>：编写第三方插件扩展功能。<br>
+                        5. <strong>赞助支持</strong>：通过 Patreon 或其他方式赞助 OBS Project。<br><br>
+                        访问 github.com/obsproject/obs-studio 参与开发。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">OBS Studio 支持哪些直播平台？</div>
+                    <div class="faq-answer">
+                        OBS Studio 支持 RTMP 协议推流到所有主流直播平台：<br><br>
+                        <strong>国际平台</strong>：Twitch、YouTube Live、Facebook Live、Trovo、Kick、DLive 等。<br><br>
+                        <strong>国内平台</strong>：Bilibili、虎牙、斗鱼、抖音、快手、西瓜视频、网易 CC 等。<br><br>
+                        <strong>自定义服务器</strong>：支持任意 RTMP 服务器推流，包括自建流媒体服务器。还支持 SRT 和 RIST 协议。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何安装插件？</div>
+                    <div class="faq-answer">
+                        安装插件的方法：<br><br>
+                        <strong>Windows</strong>：将插件文件（.dll 等）放入 OBS 安装目录的 obs-plugins 文件夹，或 obs-plugins/64bit 文件夹。<br><br>
+                        <strong>macOS</strong>：将插件放入 ~/Library/Application Support/obs-studio/plugins 文件夹。<br><br>
+                        <strong>Linux</strong>：将插件放入 /usr/lib/obs-plugins 或 ~/.config/obs-studio/plugins 文件夹。<br><br>
+                        部分插件提供安装程序，直接运行安装即可。安装后重启 OBS Studio 生效。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">还有其他问题？</h2>
+            <p class="cta-subtitle">访问 GitHub 项目页面获取更多帮助，或立即下载体验 OBS Studio</p>
+            <a href="download.html" class="btn btn-primary btn-large">免费下载</a>
+            <a href="https://github.com/obsproject/obs-studio/issues" target="_blank" rel="noopener" class="btn btn-secondary btn-large" style="margin-left:15px;">提交问题</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OBS Studio</h4>
+                    <p>由 OBS Project 开发维护的开源免费视频录制与直播软件，支持 Windows、macOS、Linux 三大平台，遵循 GPL 协议开源。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>资源</h4>
+                    <ul>
+                        <li><a href="https://github.com/obsproject/obs-studio" target="_blank" rel="noopener">GitHub 项目</a></li>
+                        <li><a href="https://github.com/obsproject/obs-studio/releases" target="_blank" rel="noopener">版本发布</a></li>
+                        <li><a href="https://obsproject.com" target="_blank" rel="noopener">官方网站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li>GPL 开源协议</li>
+                        <li>完全免费无广告</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 OBS Studio 中文网站 · 本站为非官方中文资源站 · OBS Studio 由 OBS Project 开发，遵循 GPL 协议开源</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                q.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

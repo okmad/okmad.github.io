@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeaZip常见问题 - FAQ与解答 | 中文官网</title>
+    <meta name="description" content="PeaZip常见问题解答，包括安装、使用、故障排除等问题的详细解答。帮助您快速解决使用中遇到的问题。">
+    <meta name="keywords" content="PeaZip常见问题, PeaZip FAQ, PeaZip问题解答, 压缩软件问题, PeaZip帮助">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">PeaZip</a></h1>
+                <span class="tagline">免费开源压缩工具</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能特性</a></li>
+                    <li><a href="tutorial.html">使用教程</a></li>
+                    <li><a href="changelog.html">更新日志</a></li>
+                    <li><a href="faq.html" class="active">常见问题</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">常见问题</h1>
+            <p class="page-subtitle">快速找到您需要的答案</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-search">
+                <input type="text" id="faq-search-input" placeholder="搜索问题..." class="search-input">
+            </div>
+
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">全部</button>
+                <button class="faq-category-btn" data-category="install">安装与设置</button>
+                <button class="faq-category-btn" data-category="usage">使用问题</button>
+                <button class="faq-category-btn" data-category="troubleshoot">故障排除</button>
+                <button class="faq-category-btn" data-category="other">其他问题</button>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item" data-category="install">
+                    <div class="faq-question">
+                        <h3>PeaZip是免费的吗？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>是的，PeaZip完全免费且开源。它采用LGPLv3许可证发布，您可以免费用于个人和商业用途，没有任何功能限制、广告或试用期。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="install">
+                    <div class="faq-question">
+                        <h3>如何将PeaZip界面设置为中文？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>设置中文界面的步骤：</p>
+                        <ol>
+                            <li>启动PeaZip</li>
+                            <li>点击菜单 <strong>Options</strong> → <strong>Settings</strong></li>
+                            <li>切换到 <strong>Localization</strong> 标签</li>
+                            <li>在语言列表中选择 <strong>chs.txt</strong></li>
+                            <li>点击 <strong>OK</strong> 保存</li>
+                        </ol>
+                        <p>重启程序后界面将变为简体中文。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="install">
+                    <div class="faq-question">
+                        <h3>安装版和便携版有什么区别？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>安装版：</strong></p>
+                        <ul>
+                            <li>会注册文件关联，双击压缩包自动用PeaZip打开</li>
+                            <li>添加右键菜单快捷选项</li>
+                            <li>在开始菜单创建快捷方式</li>
+                            <li>适合固定在一台电脑上使用</li>
+                        </ul>
+                        <p><strong>便携版：</strong></p>
+                        <ul>
+                            <li>解压即可运行，无需安装</li>
+                            <li>所有设置保存在程序目录</li>
+                            <li>适合U盘携带或多台电脑使用</li>
+                            <li>不会修改系统注册表</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="install">
+                    <div class="faq-question">
+                        <h3>Windows提示"Windows已保护你的电脑"怎么办？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>这是因为PeaZip是免费开源软件，没有购买商业代码签名证书。解决方法：</p>
+                        <ol>
+                            <li>点击提示框中的 <strong>"更多信息"</strong></li>
+                            <li>然后点击 <strong>"仍要运行"</strong></li>
+                            <li>PeaZip是安全的，可以放心使用</li>
+                        </ol>
+                        <p>您也可以从GitHub或SourceForge等官方渠道下载，确保软件安全。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="usage">
+                    <div class="faq-question">
+                        <h3>PeaZip支持哪些压缩格式？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>PeaZip支持超过200种压缩格式：</p>
+                        <p><strong>创建格式：</strong>7Z, ARC, Brotli (BR), BZ2, GZ, PEA, TAR, WIM, XZ, Zstandard (ZST), ZIP等</p>
+                        <p><strong>提取格式：</strong>7Z, ACE, ARC, ARJ, BZ2, CAB, DMG, GZ, ISO, LHA, PAQ, PEA, RAR, TAR, UDF, WIM, XZ, ZIP, ZIPX, ZST等200+种格式</p>
+                        <p>注：ACE格式需要安装UNACE插件；RAR创建需要安装WinRAR。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="usage">
+                    <div class="faq-question">
+                        <h3>如何创建加密的压缩包？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>创建加密压缩包的步骤：</p>
+                        <ol>
+                            <li>选择要压缩的文件，右键选择"添加到压缩文件"</li>
+                            <li>在压缩设置窗口中，切换到"加密"选项卡</li>
+                            <li>输入密码并确认</li>
+                            <li>选择加密算法（推荐AES-256）</li>
+                            <li>可选：勾选"加密文件名"以隐藏文件列表</li>
+                            <li>点击"确定"开始压缩</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="usage">
+                    <div class="faq-question">
+                        <h3>如何进行分卷压缩？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>分卷压缩的步骤：</p>
+                        <ol>
+                            <li>在压缩设置窗口中找到"分卷"选项</li>
+                            <li>设置分卷大小（如100MB、1GB等）</li>
+                            <li>设置其他压缩选项</li>
+                            <li>点击"确定"开始压缩</li>
+                        </ol>
+                        <p>解压时，确保所有分卷文件在同一目录下，只需打开第一个分卷文件即可。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="usage">
+                    <div class="faq-question">
+                        <h3>PeaZip可以创建RAR文件吗？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>由于RAR格式的许可限制，PeaZip无法独立创建RAR文件。但是：</p>
+                        <ul>
+                            <li>PeaZip可以<strong>解压</strong>RAR和RAR5格式的压缩包</li>
+                            <li>如果您的系统安装了WinRAR，PeaZip可以调用WinRAR来创建RAR文件</li>
+                            <li>建议使用7Z格式替代，压缩率更高且完全免费</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="troubleshoot">
+                    <div class="faq-question">
+                        <h3>解压时提示"密码错误"但密码是对的？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>可能的原因和解决方法：</p>
+                        <ul>
+                            <li><strong>输入法问题：</strong>确保使用英文输入法输入密码，中文字符可能导致问题</li>
+                            <li><strong>空格问题：</strong>检查密码前后是否有空格</li>
+                            <li><strong>大小写：</strong>确认密码的大小写是否正确</li>
+                            <li><strong>编码问题：</strong>某些特殊字符在不同编码下可能不同</li>
+                            <li><strong>压缩包损坏：</strong>尝试使用"测试"功能检查压缩包完整性</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="troubleshoot">
+                    <div class="faq-question">
+                        <h3>压缩速度很慢怎么办？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>提高压缩速度的方法：</p>
+                        <ul>
+                            <li><strong>降低压缩级别：</strong>选择"快速"而非"最大"或"极限"</li>
+                            <li><strong>减小字典大小：</strong>在高级选项中减小字典大小</li>
+                            <li><strong>启用多线程：</strong>确保启用了多线程压缩选项</li>
+                            <li><strong>使用ZIP格式：</strong>ZIP格式通常比7Z更快</li>
+                            <li><strong>禁用固实压缩：</strong>固实压缩会降低速度</li>
+                            <li><strong>检查硬盘：</strong>确保硬盘有足够空间且性能良好</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="troubleshoot">
+                    <div class="faq-question">
+                        <h3>文件名显示乱码怎么办？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>文件名乱码通常是由于编码问题导致的：</p>
+                        <ul>
+                            <li><strong>尝试不同编码：</strong>在解压选项中选择正确的字符编码</li>
+                            <li><strong>使用UTF-8：</strong>创建压缩包时使用UTF-8编码</li>
+                            <li><strong>更新软件：</strong>确保使用最新版本的PeaZip</li>
+                            <li><strong>检查原始系统：</strong>了解压缩包是在什么系统上创建的</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="other">
+                    <div class="faq-question">
+                        <h3>PeaZip安全吗？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>是的，PeaZip非常安全：</p>
+                        <ul>
+                            <li><strong>开源软件：</strong>源代码公开，可被任何人审查</li>
+                            <li><strong>无广告：</strong>不含任何广告软件或跟踪代码</li>
+                            <li><strong>官方下载：</strong>从GitHub或SourceForge下载可确保安全</li>
+                            <li><strong>验证哈希：</strong>可验证SHA256哈希值确保文件完整性</li>
+                            <li><strong>长期维护：</strong>自2006年持续开发至今，有良好的声誉</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="other">
+                    <div class="faq-question">
+                        <h3>PeaZip与7-Zip相比有什么优势？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>PeaZip相比7-Zip的优势：</p>
+                        <ul>
+                            <li><strong>支持格式更多：</strong>支持200+种格式，远超7-Zip</li>
+                            <li><strong>跨平台：</strong>在Windows、macOS、Linux上提供一致的体验</li>
+                            <li><strong>双重认证：</strong>唯一支持密码+密钥文件双重认证的免费压缩软件</li>
+                            <li><strong>更多加密算法：</strong>支持AES、Twofish、Serpent等多种算法</li>
+                            <li><strong>更好的界面：</strong>现代化的用户界面，支持深色主题</li>
+                            <li><strong>便携版本：</strong>所有平台都提供便携版本</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="other">
+                    <div class="faq-question">
+                        <h3>如何获取技术支持？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>获取技术支持的途径：</p>
+                        <ul>
+                            <li><strong>官方文档：</strong>访问<a href="https://peazip.github.io/peazip-help-faq.html" target="_blank" rel="noopener">官方帮助文档</a></li>
+                            <li><strong>社区论坛：</strong>参与Reddit等社区的讨论</li>
+                            <li><strong>本站教程：</strong>查看我们的<a href="tutorial.html">使用教程</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-contact">
+                <h2>没有找到您的问题？</h2>
+                <p>如果您的问题没有在上面列出，您可以：</p>
+                <div class="contact-options">
+                    <a href="https://peazip.github.io/peazip-help-faq.html" target="_blank" rel="noopener" class="btn btn-secondary">查看官方文档</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PeaZip</h3>
+                    <p>免费开源的跨平台文件压缩解压工具，为全球用户提供安全、高效的文件处理解决方案。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="features.html">功能特性</a></li>
+                        <li><a href="tutorial.html">使用教程</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="changelog.html">更新日志</a></li>
+                        <li><a href="https://peazip.github.io/peazip-help-faq.html" target="_blank" rel="noopener">帮助文档</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>本站为PeaZip软件中文官网，提供软件下载、使用教程和技术支持。</p>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PeaZip中文官网. 保留所有权利. | PeaZip由Giorgio Tani开发</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ展开/折叠功能
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

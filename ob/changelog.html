@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian 更新日志 - 版本历史与新功能 | 中文资源站</title>
+    <meta name="description" content="Obsidian 官方更新日志中文版，记录每个版本的新功能、改进与问题修复。包含 1.12.7、1.12.6、1.12.5、1.12.4 等最新版本的详细更新内容。">
+    <meta name="keywords" content="Obsidian更新日志,Obsidian版本历史,Obsidian更新,Obsidian新功能,Obsidian 1.12.7,Obsidian changelog,Obsidian版本更新">
+    <link rel="canonical" href="https://wwww.0bsidian.cn/changelog.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Ob</span>
+                <div class="logo-text">
+                    <h1>Obsidian</h1>
+                    <span class="tagline">打造你的第二大脑</span>
+                </div>
+            </a>
+            <button class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="features.html">功能</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="changelog.html" class="active">更新日志</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="changelog-section">
+        <div class="container">
+            <h2 class="section-title">Obsidian 更新日志</h2>
+            <p class="section-subtitle">记录每个版本的新功能、改进与问题修复，了解 Obsidian 的持续进化</p>
+
+            <div class="changelog-container">
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.7</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2026-03-23</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>Obsidian CLI：安装程序现在捆绑了新的 CLI 二进制文件，取代旧的调用 Electron 二进制文件方式，终端交互速度显著提升。</li>
+                            <li>Obsidian CLI：在使用 id= 参数时，为终端界面（TUI）添加了 Obsidian 命令的自动补全。</li>
+                        </ul>
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>Obsidian CLI：修复了在 macOS 上错误检查 Linux 特定目录的问题。</li>
+                            <li>Obsidian CLI：在 macOS 和 Linux 上将 CLI 套接字文件更改为隐藏的点文件。</li>
+                            <li>编辑器：修复了未选中文本时复制、剪切和粘贴的若干问题。复制粘贴一行不再将光标置于错误位置；表格中无选择复制或剪切现在只复制单元格内容。</li>
+                            <li>编辑器：在多光标选中文本时粘贴 URL，现在会将每个选区包装为 Markdown 链接 [选中文本](url)。</li>
+                            <li>编辑器：修复了阅读模式下 Callout 内图片显示多余滚动条的问题。</li>
+                            <li>编辑器：修复了实时预览中双击图片不重置大小的问题。</li>
+                        </ul>
+                        <h4>开发者</h4>
+                        <ul>
+                            <li>安装程序已更新至 Electron v39.8.3。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.7</span>
+                            <span class="changelog-platform">移动端 Mobile</span>
+                        </div>
+                        <span class="changelog-date">2026-03-23</span>
+                    </div>
+                    <div class="changelog-content">
+                        <ul>
+                            <li>包含截至 Obsidian 桌面端 v1.12.7 的所有新功能与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.6</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2026-03-18</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>CLI：修复了在 macOS 上错误检查 Linux 特定目录的问题。</li>
+                            <li>CLI：在 macOS 和 Linux 上将 CLI 套接字文件更改为隐藏的点文件。</li>
+                            <li>编辑器：修复了 1.12.4 引入的若干编辑器回归问题。</li>
+                            <li>编辑器：修复了阅读模式下 Callout 内图片显示多余滚动条的问题。</li>
+                            <li>编辑器：修复了实时预览中双击图片不重置大小的问题。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.5</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2026-03-05</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>Obsidian CLI：在使用 id= 参数时，为终端界面添加了 Obsidian 命令的自动补全。</li>
+                        </ul>
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>修复了未选中文本时复制、剪切和粘贴的若干问题。复制粘贴一行不再将光标置于错误位置；表格中无选择复制或剪切现在只复制单元格内容。</li>
+                            <li>在多光标选中文本时粘贴 URL，现在会将每个选区包装为 Markdown 链接。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.4</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2026-02-27</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li><strong>Obsidian CLI</strong>：本次发布引入了 Obsidian CLI 命令行界面，可从终端控制 Obsidian，用于脚本编写、自动化及与外部工具集成。</li>
+                            <li><strong>图片缩放</strong>：实时预览中的图片现在可以通过拖动角落调整大小，双击角落可重置图片尺寸。</li>
+                            <li><strong>自动清理附件</strong>：删除文件时会询问是否同时删除其附件。"文件与链接"设置中可配置该行为（选择"总是""每次询问"或"从不"）。</li>
+                        </ul>
+                        <h4>改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>Bases：添加了搜索工具栏按钮以筛选查询结果；支持通过拖放将文件导入 Bases；表格视图中右键单击单行现在显示与该文件相关的上下文菜单。</li>
+                            <li>文件浏览器：现在支持使用 Ctrl-C/Ctrl-V（macOS 为 Cmd-C/Cmd-V）进行复制粘贴操作。</li>
+                            <li>编辑器：右键单击编辑器旁空白处新增菜单项——切换行号、切换内联标题。</li>
+                            <li>编辑器：修复了引用块后缺少空格的问题；修复了粗体链接的样式问题。</li>
+                            <li>Canvas 文件现在支持反向链接检测，会显示在反向链接视图中，并计入图谱视图的链接。</li>
+                            <li>"切换库..."已重命名为"管理库"；新增"切换库..."和"打开库..."命令，支持键盘快速切换。</li>
+                            <li>快速切换器支持拖拽结果；右键图片新增"复制图片"菜单项。</li>
+                            <li>从编辑器复制文本现在包含 HTML 格式，便于粘贴到 Google Docs 等应用。</li>
+                            <li>Obsidian Sync 现在会记录因文件过大被跳过的日志。</li>
+                            <li>改进了查询包含空格时的模糊搜索结果。</li>
+                            <li>在外部应用打开文件现在显示确认对话框；打开可执行文件时新增警告。</li>
+                        </ul>
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>密钥链：为部分 Linux 机器上加密不可用的情况添加了处理。</li>
+                            <li>修复了应用关闭时布局未始终保存的问题。</li>
+                            <li>修复了在链接或标签附近选中文本会错误触发链接或标签的问题。</li>
+                            <li>修复了关闭弹出窗口时活动通知会移动到主窗口且永不消失的问题。</li>
+                            <li>修复了输入时大纲视图闪烁的问题；修复了 Bases 表格视图行高更改后滚动位置不更新的问题。</li>
+                            <li>文件浏览器：修复了复制包含"."的文件夹时生成不完整文件夹名的问题。</li>
+                        </ul>
+                        <h4>开发者</h4>
+                        <ul>
+                            <li>安装程序已更新至 Electron v39.7.0。</li>
+                            <li>更新了翻译文件的创建与打包方式。</li>
+                            <li>新增 corner-shape CSS 属性的主题支持，替换 -electron-corner-smoothing（需 Chromium 139 和 Obsidian 1.11+）。</li>
+                            <li>macOS：新增 traffic-lights-offset-x 和 --traffic-lights-offset-y CSS 变量配置窗口红绿灯位置。</li>
+                            <li>vault 和 adapter API 新增 appendBinary 方法。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.4</span>
+                            <span class="changelog-platform">移动端 Mobile</span>
+                        </div>
+                        <span class="changelog-date">2026-02-27</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li>iOS：新增分享扩展，可从其他应用（如 Safari、社交网络）保存内容到库，无需打开 Obsidian。</li>
+                            <li>iOS：新增"书签链接"快捷操作，可将 URL 保存为 Obsidian 书签。</li>
+                        </ul>
+                        <h4>改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>应用现在默认使用系统语言，并在引导过程中提供语言选择器。</li>
+                            <li>新增"唯一笔记"应用操作（长按应用图标时显示的菜单）。</li>
+                            <li>改进了平板上指针设备（如 Magic Trackpad）的支持：子菜单悬停展开，属性编辑器右键显示上下文菜单。</li>
+                        </ul>
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>移除了文件删除提示中的"删除且不再询问"选项。</li>
+                            <li>Obsidian Sync：修复了应用在 Obsidian 保存最新同步状态前关闭时文件被覆盖的问题。</li>
+                            <li>iOS：修复了工具提示有时在与侧边栏项目交互后出现的问题；修复了每日笔记和书签快捷方式不工作的问题；修复了查看笔记小组件不立即刷新的问题。</li>
+                            <li>Slides：修复了移动端状态栏中关闭按钮的位置。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.3</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2026-02-23</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>修复了复制粘贴将链接和 Callout 转换为标准 Markdown 的问题。</li>
+                            <li>文件浏览器：修复了复制包含"."的文件夹时生成不完整文件夹名的问题。</li>
+                            <li>修复了打开文件夹（如代码片段文件夹）时错误出现"可执行文件"警告的问题。</li>
+                            <li>CLI：修复了较长内容时 CLI 挂起的问题。</li>
+                        </ul>
+                        <h4>开发者</h4>
+                        <ul>
+                            <li>vault 和 adapter API 新增 appendBinary 方法。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.2</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2026-02-18</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>CLI：新增 help 命令及 --help 别名；新增 daily:path 命令获取每日笔记路径；新增 rename 重命名命令；将 search 命令拆分为 search 和 search:context。</li>
+                            <li>CLI：命令现在默认静默运行，不再默认期望活动文件。all 参数被 active 替换，silent 参数被 open 替换。CLI 现在忽略以 -- 开头的无法识别的标志。</li>
+                            <li>Bases：支持通过拖放将文件导入 Bases；file.linksTo() 将 Canvas 中嵌入的文件视为链接。</li>
+                            <li>右键图片新增"复制图片"菜单项；从编辑器复制文本现在包含 HTML 格式。</li>
+                            <li>Obsidian Sync 现在会记录因文件过大被跳过的日志。</li>
+                            <li>改进了查询包含空格时的模糊搜索结果；在外部应用打开文件显示确认对话框；打开可执行文件新增警告。</li>
+                        </ul>
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>修复了通知被关闭后停止显示的问题；修复了输入时大纲视图闪烁的问题。</li>
+                            <li>修复了 Bases 表格视图行高更改后滚动位置不更新的问题；修复了搜索输入文本与结果计数重叠的问题。</li>
+                            <li>修复了点击弹出窗口"..."按钮时"更多选项"菜单不关闭的问题；修复了应用重启有时导致退出状态损坏的问题。</li>
+                            <li>修复了未启用 CLI 时 obsidian:// URI 不工作的问题。</li>
+                            <li>CLI：修复了 Unicode 字符、粘贴、命令在工作区加载完成前运行、指定库未找到时错误操作当前库、Windows 上含冒号参数处理等多个问题。</li>
+                            <li>macOS：CLI 调用期间不再显示 Dock 图标。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.1</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2026-02-10</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>修复了设备语言非英语时语言选择器不允许选择"English"的问题。</li>
+                            <li>CLI：如果包含 vault 参数，则必须是第一个参数。</li>
+                            <li>尝试打开应用第二个实例（如从 Windows 任务栏）现在会再次打开库启动器。</li>
+                            <li>实时预览：修复了 SVG 不渲染的问题。</li>
+                            <li>daily:prepend CLI 命令现在在 frontmatter 之后插入内容，而非文件最开头。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.0</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2026-02-10</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li><strong>Obsidian CLI</strong>：新增命令行界面，可从终端控制 Obsidian，用于脚本编写、自动化及与外部工具集成。</li>
+                            <li>Bases 新增搜索工具栏按钮以筛选查询结果。</li>
+                            <li>删除文件时会询问是否同时删除附件，"文件与链接"设置中可配置该行为。</li>
+                            <li>实时预览中的图片现在可以通过拖动角落调整大小，双击角落可重置尺寸。</li>
+                        </ul>
+                        <h4>改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>Bases：表格单元格上下文菜单在选择单个文件时显示文件菜单。</li>
+                            <li>文件浏览器：支持使用 Ctrl-C/Ctrl-V 复制粘贴。</li>
+                            <li>编辑器：右键编辑器旁空白处新增切换行号、切换内联标题菜单项；修复了引用块后缺少空格、粗体链接样式等问题。</li>
+                            <li>Canvas 文件现在支持反向链接检测，计入图谱视图链接。</li>
+                            <li>"切换库..."重命名为"管理库"，新增键盘快速切换库命令。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.12.0</span>
+                            <span class="changelog-platform">移动端 Mobile</span>
+                        </div>
+                        <span class="changelog-date">2026-02-10</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>应用现在默认使用系统语言，并在引导过程中提供语言选择器。</li>
+                            <li>新增"唯一笔记"应用操作（长按应用图标时显示的菜单）。</li>
+                        </ul>
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>移除了文件删除提示中的"删除且不再询问"选项。</li>
+                            <li>Obsidian Sync：修复了应用在保存最新同步状态前关闭时文件被覆盖的问题。</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="disclaimer" style="margin-top: 40px;">
+                <h4>📋 说明</h4>
+                <p>以上更新日志内容整理自 Obsidian 官方发布说明，由本站翻译为中文仅供参考。软件实际功能与界面请以安装后的实际版本为准。如需了解更详细的技术信息，可查阅应用内帮助文档。</p>
+                <p>建议用户保持使用最新版本以获得最佳体验与新功能。可前往<a href="download.html">下载中心</a>获取最新版 Obsidian。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">立即体验最新版本</h2>
+            <p class="cta-subtitle">下载 Obsidian 1.12.7，享受最新功能与优化</p>
+            <a href="download.html" class="btn btn-primary btn-large">前往下载</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Obsidian</h4>
+                    <p>Obsidian（黑曜石）是一款本地优先的免费 Markdown 知识管理笔记软件，通过双向链接与关系图谱构建第二大脑。提供 Obsidian 中文版下载，支持全平台使用。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="changelog.html">更新日志</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于本站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>Obsidian 软件版权归原作者所有</p>
+                    <p>本站为非官方资源分享站</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站分享资源仅供学习交流，请于下载后 24 小时内删除。如需长期使用请支持正版。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

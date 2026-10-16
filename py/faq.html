@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyCharm + Python 常见问题 - FAQ与解答 | 中文下载站</title>
+    <meta name="description" content="PyCharm与Python常见问题解答，包括安装、配置、使用、故障排除等问题的详细解答。帮助您快速解决使用中遇到的问题。">
+    <meta name="keywords" content="PyCharm常见问题, Python FAQ, PyCharm安装, Python配置, PyCharm问题解答, Python帮助">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">PyCharm + Python</a></h1>
+                <span class="tagline">专业Python开发套件</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能特性</a></li>
+                    <li><a href="faq.html" class="active">常见问题</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">常见问题</h1>
+            <p class="page-subtitle">快速找到您需要的答案</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-search">
+                <input type="text" id="faq-search-input" placeholder="搜索问题..." class="search-input">
+            </div>
+
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">全部</button>
+                <button class="faq-category-btn" data-category="install">安装与配置</button>
+                <button class="faq-category-btn" data-category="usage">使用问题</button>
+                <button class="faq-category-btn" data-category="troubleshoot">故障排除</button>
+                <button class="faq-category-btn" data-category="other">其他问题</button>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item" data-category="install" id="install-python">
+                    <div class="faq-question">
+                        <h3>如何安装Python运行环境？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>安装Python的步骤：</p>
+                        <ol>
+                            <li>从本站 <a href="download.html">下载页面</a> 下载适合您系统的Python安装包</li>
+                            <li>运行安装程序</li>
+                            <li><strong>务必勾选 "Add Python to PATH"</strong>（非常重要，方便命令行调用）</li>
+                            <li>选择 "Install Now" 进行安装</li>
+                            <li>安装完成后，在命令行输入 <code>python --version</code> 验证</li>
+                        </ol>
+                        <p>建议先安装Python，再安装PyCharm，便于在IDE中自动识别解释器。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="install" id="install-pycharm">
+                    <div class="faq-question">
+                        <h3>如何安装PyCharm？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>安装PyCharm的步骤：</p>
+                        <ol>
+                            <li>从本站 <a href="download.html">下载页面</a> 下载PyCharm安装包</li>
+                            <li>运行安装程序，按照向导完成安装</li>
+                            <li>首次启动时，选择是否导入旧配置</li>
+                            <li>选择主题（深色/浅色）</li>
+                            <li>新建项目时，选择已安装的Python解释器</li>
+                        </ol>
+                        <p>如果未自动识别Python路径，可手动指定：File → Settings → Project → Python Interpreter。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="install">
+                    <div class="faq-question">
+                        <h3>PyCharm社区版和专业版有什么区别？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>社区版（免费）：</strong></p>
+                        <ul>
+                            <li>智能代码补全、调试、测试等核心功能</li>
+                            <li>适合纯Python开发与学习</li>
+                            <li>采用 Apache 2.0 开源协议</li>
+                            <li>完全免费，无时间限制</li>
+                        </ul>
+                        <p><strong>专业版（付费）：</strong></p>
+                        <ul>
+                            <li>包含社区版全部功能</li>
+                            <li>支持Web开发（Django、Flask等）</li>
+                            <li>数据库工具与SQL支持</li>
+                            <li>科学计算视图与数据科学工具</li>
+                            <li>远程开发（Docker、SSH）</li>
+                            <li>需购买授权，学生与开源项目可免费申请</li>
+                        </ul>
+                        <p>对于初学者和纯Python开发，社区版完全够用。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="install">
+                    <div class="faq-question">
+                        <h3>Windows提示"Windows已保护你的电脑"怎么办？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>这是因为安装包没有商业代码签名证书。解决方法：</p>
+                        <ol>
+                            <li>点击提示框中的 <strong>"更多信息"</strong></li>
+                            <li>然后点击 <strong>"仍要运行"</strong></li>
+                            <li>从本站或官方渠道下载的软件是安全的，可放心使用</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="usage" id="run-project">
+                    <div class="faq-question">
+                        <h3>如何在PyCharm中创建并运行项目？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>创建并运行项目的步骤：</p>
+                        <ol>
+                            <li>启动PyCharm，点击 <strong>"New Project"</strong></li>
+                            <li>选择项目存放位置并命名</li>
+                            <li>选择Python解释器（建议新建虚拟环境）</li>
+                            <li>点击 <strong>"Create"</strong> 创建项目</li>
+                            <li>在项目中右键 → New → Python File 创建.py文件</li>
+                            <li>编写代码后，点击右上角绿色运行按钮或按 <code>Shift+F10</code> 运行</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="usage">
+                    <div class="faq-question">
+                        <h3>如何配置Python解释器？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>配置解释器的步骤：</p>
+                        <ol>
+                            <li>打开 <strong>File → Settings</strong>（Windows/Linux）或 <strong>PyCharm → Preferences</strong>（macOS）</li>
+                            <li>导航到 <strong>Project: 项目名 → Python Interpreter</strong></li>
+                            <li>点击右上角齿轮图标 → <strong>Add</strong></li>
+                            <li>可选择 <strong>Virtualenv</strong>、<strong>Conda</strong> 或 <strong>System Interpreter</strong></li>
+                            <li>选择或新建解释器后点击 <strong>OK</strong></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="usage">
+                    <div class="faq-question">
+                        <h3>如何安装第三方库（pip包）？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>安装第三方库有多种方式：</p>
+                        <p><strong>方式一：命令行（终端）</strong></p>
+                        <div class="code-block">pip install 包名</div>
+                        <p>如安装 requests：<code>pip install requests</code></p>
+                        <p><strong>方式二：PyCharm图形界面</strong></p>
+                        <ol>
+                            <li>File → Settings → Project → Python Interpreter</li>
+                            <li>点击 <strong>+</strong> 号按钮</li>
+                            <li>搜索要安装的包名</li>
+                            <li>点击 <strong>"Install Package"</strong></li>
+                        </ol>
+                        <p><strong>方式三：使用 requirements.txt</strong></p>
+                        <div class="code-block">pip install -r requirements.txt</div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="usage">
+                    <div class="faq-question">
+                        <h3>如何创建虚拟环境？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>创建虚拟环境的方法：</p>
+                        <p><strong>方式一：PyCharm新建项目时自动创建</strong></p>
+                        <p>新建项目时选择 "New environment using Virtualenv"，PyCharm会自动创建。</p>
+                        <p><strong>方式二：命令行手动创建</strong></p>
+                        <div class="code-block">python -m venv myenv</div>
+                        <p>激活虚拟环境：</p>
+                        <ul>
+                            <li><strong>Windows：</strong><code>myenv\Scripts\activate</code></li>
+                            <li><strong>macOS/Linux：</strong><code>source myenv/bin/activate</code></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="troubleshoot">
+                    <div class="faq-question">
+                        <h3>运行代码时报错"ModuleNotFoundError"怎么办？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>这个错误表示找不到对应的模块。可能的原因与解决：</p>
+                        <ul>
+                            <li><strong>未安装该包：</strong>使用 <code>pip install 包名</code> 安装</li>
+                            <li><strong>解释器不匹配：</strong>检查PyCharm使用的解释器是否为安装该包的解释器</li>
+                            <li><strong>虚拟环境问题：</strong>确保在正确的虚拟环境中安装了包</li>
+                            <li><strong>包名错误：</strong>导入名与安装名可能不同，如 <code>pip install Pillow</code> 但 <code>import PIL</code></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="troubleshoot">
+                    <div class="faq-question">
+                        <h3>命令行无法识别python命令怎么办？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>这是因为Python未添加到系统PATH环境变量。解决方法：</p>
+                        <p><strong>方法一：重新运行安装程序</strong></p>
+                        <ol>
+                            <li>重新运行Python安装程序</li>
+                            <li>选择 <strong>Modify</strong></li>
+                            <li>勾选 <strong>"Add Python to environment variables"</strong></li>
+                            <li>完成修改后重启命令行</li>
+                        </ol>
+                        <p><strong>方法二：手动添加PATH</strong></p>
+                        <ol>
+                            <li>右键"此电脑" → 属性 → 高级系统设置 → 环境变量</li>
+                            <li>在Path中添加Python安装目录与Scripts目录</li>
+                            <li>重启命令行使配置生效</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="troubleshoot">
+                    <div class="faq-question">
+                        <h3>pip安装包很慢怎么办？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>可以配置国内镜像源加速下载。通过 <code>-i</code> 参数临时指定镜像源，或使用 <code>pip config set global.index-url 镜像地址</code> 永久配置。</p>
+                        <p>常用的国内镜像源包括清华大学、阿里云、豆瓣等，可在网上搜索"pip 国内镜像源"获取最新可用的镜像地址。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="troubleshoot">
+                    <div class="faq-question">
+                        <h3>PyCharm启动慢或卡顿怎么办？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>提升PyCharm性能的方法：</p>
+                        <ul>
+                            <li><strong>增加内存：</strong>修改 <code>pycharm64.exe.vmoptions</code>，将 <code>-Xmx</code> 改为更大值（如 <code>-Xmx2048m</code>）</li>
+                            <li><strong>禁用不用的插件：</strong>File → Settings → Plugins，禁用不需要的插件</li>
+                            <li><strong>排除目录：</strong>右键文件夹 → Mark Directory as → Excluded，排除不需要索引的目录</li>
+                            <li><strong>关闭不必要的检查：</strong>Settings → Inspections，关闭不需要的代码检查</li>
+                            <li><strong>更新版本：</strong>使用最新版PyCharm以获得性能优化</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="other">
+                    <div class="faq-question">
+                        <h3>PyCharm和Python都是免费的吗？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Python：</strong>完全免费开源，采用 PSF 许可协议，可免费用于个人和商业用途。</p>
+                        <p><strong>PyCharm社区版：</strong>免费开源，采用 Apache 2.0 协议，可免费用于个人和商业用途。</p>
+                        <p><strong>PyCharm专业版：</strong>付费软件，需购买授权。但以下用户可免费申请：</p>
+                        <ul>
+                            <li>在校学生（凭学生邮箱认证）</li>
+                            <li>教师与教育工作者</li>
+                            <li>开源项目维护者</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="other">
+                    <div class="faq-question">
+                        <h3>应该学习Python 2还是Python 3？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>务必学习 Python 3。</strong>Python 2 已于2020年1月1日停止官方维护，不再接收安全更新。</p>
+                        <p>Python 3 是当前的主流版本，几乎所有新项目和第三方库都基于Python 3开发。建议下载最新的 Python 3.x 稳定版本。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="other">
+                    <div class="faq-question">
+                        <h3>本站提供的软件是否安全？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>本站提供的软件均来自官方渠道，但请注意：</p>
+                        <ul>
+                            <li><strong>版权归原作者所有</strong>，本站仅作学习交流用途</li>
+                            <li><strong>不可以用于商业用途</strong>，请在下载后 <strong>24小时内删除</strong></li>
+                            <li>如需长期使用，请前往官方网站下载或购买正版</li>
+                            <li>官方下载地址：PyCharm 与 Python 官网</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="other">
+                    <div class="faq-question">
+                        <h3>如何获取更多技术支持？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>获取技术支持的途径：</p>
+                        <ul>
+                            <li><strong>PyCharm官方文档：</strong>访问 JetBrains 官方帮助中心</li>
+                            <li><strong>Python官方文档：</strong>访问 Python 官方文档站点</li>
+                            <li><strong>JetBrains社区：</strong>参与官方论坛讨论</li>
+                            <li><strong>Stack Overflow：</strong>搜索或提问技术问题</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-contact">
+                <h2>没有找到您的问题？</h2>
+                <p>如果您的问题没有在上面列出，您可以查看官方文档或在网上搜索相关解决方案。</p>
+            </div>
+
+            <div class="disclaimer-box" style="margin-top:40px;">
+                <h2>⚠️ 版权与免责声明</h2>
+                <p><strong>版权归原作者所有。</strong>本站提供的 PyCharm 与 Python 软件及相关资料的版权归原作者所有，本站仅作学习与交流之用，<strong>不可以用于商业用途</strong>。</p>
+                <p>请在下载后 <strong>24小时内删除</strong>。如需长期使用或用于商业项目，请前往官方网站购买正版授权或下载官方免费版本。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PyCharm + Python</h3>
+                    <p>专业的 Python 开发套件下载站，提供 PyCharm 与 Python 的下载、介绍与教程。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="features.html">功能特性</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>官方资源</h4>
+                    <ul>
+                        <li>JetBrains PyCharm 官网</li>
+                        <li>Python 官方下载</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于本站</h4>
+                    <p>本站为学习交流用途，所提供软件版权归原作者所有，请勿用于商业用途，下载后请于24小时内删除。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PyCharm + Python 中文下载站 | 仅供学习交流，版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

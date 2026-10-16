@@ -1,0 +1,1052 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生活休闲笔记 - 记录日常人文生活，收集故事与旅行感悟</title>
+    <meta name="keywords" content="生活休闲笔记,日常人文,日志记录,故事收集,旅行感悟,生活随笔,人文生活,旅行随笔">
+    <meta name="description" content="生活休闲笔记 — 记录日常人文生活的点滴，收集日志中的故事，分享旅行中的所感所想。用文字留住每一个值得铭记的瞬间。">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Serif SC", "Source Han Serif CN", "Songti SC", Georgia, "Times New Roman", serif;
+            background: #faf8f5;
+            color: #3d3229;
+            line-height: 1.9;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 1100px;
+            max-width: 94%;
+            margin: auto;
+        }
+
+        ::selection {
+            background: #c4956a;
+            color: #fff;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f0ebe4;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c4956a;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a87b52;
+        }
+
+        .header {
+            background: rgba(250, 248, 245, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            border-bottom: 1px solid rgba(196, 149, 106, 0.15);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 72px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #5a4633;
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #c4956a 0%, #d4a87a 100%);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            box-shadow: 0 4px 15px rgba(196, 149, 106, 0.35);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            color: #6b5d4f;
+            font-size: 15px;
+            padding: 6px 14px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .nav-links a:hover {
+            color: #c4956a;
+            background: rgba(196, 149, 106, 0.08);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #5a4633;
+        }
+
+        .hero {
+            padding: 100px 0 80px;
+            background: linear-gradient(160deg, #faf8f5 0%, #f5efe7 40%, #faf8f5 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -30%;
+            right: -5%;
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(196, 149, 106, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: -20%;
+            left: -5%;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(168, 123, 82, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-wrap {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(196, 149, 106, 0.12);
+            color: #a87b52;
+            padding: 6px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-bottom: 28px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            letter-spacing: 1px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.3;
+            margin-bottom: 24px;
+            color: #3d3229;
+            letter-spacing: 4px;
+            animation: fadeInUp 0.8s ease 0.15s both;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: #c4956a;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #7a6b5d;
+            margin-bottom: 40px;
+            line-height: 2;
+            animation: fadeInUp 0.8s ease 0.3s both;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.45s both;
+        }
+
+        .hero-tags span {
+            background: #fff;
+            padding: 8px 18px;
+            border-radius: 30px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            font-size: 14px;
+            color: #6b5d4f;
+            transition: all 0.3s ease;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .hero-tags span:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+            color: #c4956a;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            margin-bottom: 8px;
+            color: #3d3229;
+            letter-spacing: 3px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(135deg, #c4956a 0%, #d4a87a 100%);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: #9a8b7a;
+            margin-top: 18px;
+            font-size: 16px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 36px 30px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(196, 149, 106, 0.08);
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(135deg, #c4956a 0%, #d4a87a 100%);
+            transform: scaleX(0);
+            transition: transform 0.35s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 18px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #3d3229;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            color: #7a6b5d;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+
+        .card-tag {
+            display: inline-block;
+            background: rgba(196, 149, 106, 0.1);
+            color: #a87b52;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-top: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .journal-section {
+            background: linear-gradient(160deg, #f5efe7 0%, #faf8f5 100%);
+        }
+
+        .journal-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: all 0.35s ease;
+            border: 1px solid rgba(196, 149, 106, 0.08);
+        }
+
+        .journal-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .journal-cover {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 56px;
+            position: relative;
+        }
+
+        .journal-cover-1 {
+            background: linear-gradient(135deg, #f6e6d4 0%, #ede0d0 100%);
+        }
+
+        .journal-cover-2 {
+            background: linear-gradient(135deg, #d4e6d4 0%, #e0eddf 100%);
+        }
+
+        .journal-cover-3 {
+            background: linear-gradient(135deg, #d4dce6 0%, #dfe8f0 100%);
+        }
+
+        .journal-body {
+            padding: 26px 28px;
+        }
+
+        .journal-date {
+            font-size: 13px;
+            color: #b5a595;
+            margin-bottom: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .journal-body h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+            color: #3d3229;
+            letter-spacing: 1px;
+        }
+
+        .journal-body p {
+            color: #7a6b5d;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .travel-section {
+            position: relative;
+        }
+
+        .travel-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: all 0.35s ease;
+            border: 1px solid rgba(196, 149, 106, 0.08);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .travel-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .travel-img {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+            position: relative;
+        }
+
+        .travel-img-1 {
+            background: linear-gradient(135deg, #e8d5b7 0%, #f0e2cc 100%);
+        }
+
+        .travel-img-2 {
+            background: linear-gradient(135deg, #b7d5e8 0%, #cce2f0 100%);
+        }
+
+        .travel-img-3 {
+            background: linear-gradient(135deg, #d5e8b7 0%, #e2f0cc 100%);
+        }
+
+        .travel-body {
+            padding: 26px 28px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .travel-location {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 13px;
+            color: #c4956a;
+            margin-bottom: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .travel-body h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+            color: #3d3229;
+            letter-spacing: 1px;
+        }
+
+        .travel-body p {
+            color: #7a6b5d;
+            font-size: 14px;
+            line-height: 1.9;
+            flex: 1;
+        }
+
+        .travel-quote {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px dashed rgba(196, 149, 106, 0.25);
+            font-style: italic;
+            color: #a87b52;
+            font-size: 14px;
+        }
+
+        .quote-section {
+            background: linear-gradient(160deg, #f5efe7 0%, #faf8f5 100%);
+            text-align: center;
+        }
+
+        .quote-box {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 50px 40px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(196, 149, 106, 0.1);
+            position: relative;
+        }
+
+        .quote-box::before {
+            content: "\201C";
+            font-size: 80px;
+            color: rgba(196, 149, 106, 0.2);
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .quote-box p {
+            font-size: 20px;
+            line-height: 2;
+            color: #5a4633;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quote-box .quote-author {
+            font-size: 14px;
+            color: #b5a595;
+            font-style: normal;
+        }
+
+        .about-section {
+            padding: 80px 0;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(196, 149, 106, 0.08);
+        }
+
+        .about-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #3d3229;
+            letter-spacing: 2px;
+        }
+
+        .about-content p {
+            color: #6b5d4f;
+            font-size: 16px;
+            margin-bottom: 16px;
+            line-height: 2;
+        }
+
+        .about-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #3d3229 0%, #5a4633 100%);
+            color: #c4b5a5;
+            padding: 50px 0 40px;
+            text-align: center;
+        }
+
+        .footer-site {
+            font-size: 20px;
+            color: #e8ddd0;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .footer-desc {
+            font-size: 14px;
+            color: #9a8b7a;
+            margin-bottom: 24px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #b5a595;
+            font-size: 14px;
+            transition: color 0.3s ease;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .footer-links a:hover {
+            color: #d4a87a;
+        }
+
+        .footer-icp {
+            font-size: 13px;
+            color: #7a6b5d;
+            margin-bottom: 6px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .footer-icp a {
+            color: #9a8b7a;
+            transition: color 0.3s ease;
+        }
+
+        .footer-icp a:hover {
+            color: #d4a87a;
+        }
+
+        .footer-copy {
+            font-size: 13px;
+            color: #7a6b5d;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(135deg, #c4956a 0%, #d4a87a 100%);
+            margin: 0 auto 30px;
+            border-radius: 1px;
+        }
+
+        @media (max-width: 900px) {
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 80px 0 60px;
+                min-height: auto;
+            }
+
+            .hero-wrap {
+                padding: 0 10px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+                letter-spacing: 2px;
+                line-height: 1.4;
+            }
+
+            .hero p {
+                font-size: 15px;
+                line-height: 1.8;
+            }
+
+            .hero-badge {
+                font-size: 13px;
+                padding: 5px 16px;
+                margin-bottom: 20px;
+            }
+
+            .hero-tags {
+                gap: 8px;
+            }
+
+            .hero-tags span {
+                padding: 6px 14px;
+                font-size: 13px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .about-content {
+                padding: 30px;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                padding: 50px 0;
+            }
+
+            .hero {
+                padding: 70px 0 50px;
+                min-height: auto;
+                overflow: visible;
+            }
+
+            .hero::before,
+            .hero::after {
+                display: none;
+            }
+
+            .hero-wrap {
+                padding: 0 16px;
+            }
+
+            .hero-badge {
+                font-size: 12px;
+                padding: 4px 14px;
+                margin-bottom: 16px;
+                animation: none;
+            }
+
+            .hero h1 {
+                font-size: 24px;
+                letter-spacing: 1px;
+                margin-bottom: 14px;
+                line-height: 1.5;
+                animation: none;
+            }
+
+            .hero h1 br {
+                display: block;
+            }
+
+            .hero p {
+                font-size: 14px;
+                margin-bottom: 20px;
+                line-height: 1.8;
+                animation: none;
+            }
+
+            .hero p br {
+                display: block;
+            }
+
+            .hero-tags {
+                gap: 8px;
+                animation: none;
+            }
+
+            .hero-tags span {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .section-title h2 {
+                font-size: 22px;
+                letter-spacing: 1px;
+            }
+
+            .section-title p {
+                font-size: 14px;
+            }
+
+            .card {
+                padding: 22px 18px;
+            }
+
+            .about-content {
+                padding: 24px;
+            }
+
+            .about-content h2 {
+                font-size: 22px;
+            }
+
+            .quote-box {
+                padding: 36px 20px;
+            }
+
+            .quote-box::before {
+                font-size: 50px;
+                left: 16px;
+                top: 8px;
+            }
+
+            .quote-box p {
+                font-size: 16px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .logo-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 18px;
+            }
+
+            .nav {
+                height: 60px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .hero {
+                padding: 60px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 20px;
+            }
+
+            .hero p {
+                font-size: 13px;
+            }
+
+            .hero-tags span {
+                padding: 5px 10px;
+                font-size: 11px;
+            }
+
+            .logo {
+                font-size: 16px;
+            }
+
+            .logo-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <div class="logo">
+                <div class="logo-icon">📖</div>
+                <div>生活休闲笔记</div>
+            </div>
+            <div class="nav-links">
+                <a href="#daily">日常</a>
+                <a href="#journal">日志</a>
+                <a href="#travel">旅行</a>
+                <a href="#quote">语录</a>
+                <a href="#about">关于</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'">☰</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-wrap">
+            <div class="hero-badge">✦ 用文字留住时光 ✦</div>
+            <h1>记录生活的<em>温度</em><br>珍藏岁月的<em>故事</em></h1>
+            <p>在平凡的日子里，发现不平凡的瞬间。<br>用笔尖记录人文的温度，用脚步丈量世界的广度。</p>
+            <div class="hero-tags">
+                <span>📝 日常随笔</span>
+                <span>📚 故事收集</span>
+                <span>🌍 旅行感悟</span>
+                <span>🍵 人文生活</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="daily">
+        <div class="container">
+            <div class="section-title">
+                <h2>日常人文</h2>
+                <p>生活不止眼前的忙碌，还有诗与远方的日常</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🏡</div>
+                    <h3>居家生活</h3>
+                    <p>一盏清茶、一缕阳光、一本好书，平淡日子里藏着最真实的幸福。记录那些被忽略的居家时光。</p>
+                    <span class="card-tag">日常记录</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🍜</div>
+                    <h3>市井烟火</h3>
+                    <p>街巷深处的小店、清晨菜市场的喧闹、邻里间的问候，市井之中自有温暖的人情味道。</p>
+                    <span class="card-tag">人文观察</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌿</div>
+                    <h3>四季风物</h3>
+                    <p>春花秋月、夏雨冬雪，四时更迭间感受自然的韵律，记录季节馈赠给生活的诗意。</p>
+                    <span class="card-tag">自然随笔</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎭</div>
+                    <h3>文化拾遗</h3>
+                    <p>传统手艺、民间习俗、老物件里的故事，那些正在消逝的文化记忆值得被珍藏。</p>
+                    <span class="card-tag">文化记录</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">☕</div>
+                    <h3>闲情偶寄</h3>
+                    <p>一杯咖啡的时间、一段音乐的陪伴、一次偶然的邂逅，生活中处处有值得书写的小确幸。</p>
+                    <span class="card-tag">生活感悟</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📖</div>
+                    <h3>阅读时光</h3>
+                    <p>书页间遇见另一个世界，文字里找到共鸣与启发，分享阅读带来的思考与感动。</p>
+                    <span class="card-tag">读书笔记</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section journal-section" id="journal">
+        <div class="container">
+            <div class="section-title">
+                <h2>日志故事</h2>
+                <p>每一段故事都值得被记录，每一份感动都不应被遗忘</p>
+            </div>
+            <div class="grid-3">
+                <div class="journal-card">
+                    <div class="journal-cover journal-cover-1">🌅</div>
+                    <div class="journal-body">
+                        <div class="journal-date">2026年5月 · 春末</div>
+                        <h3>老街的清晨</h3>
+                        <p>天刚蒙蒙亮，老街便有了声响。早点铺的蒸笼冒着白气，老人们提着菜篮子慢悠悠走过青石板路，这是属于老街独有的晨间叙事。</p>
+                    </div>
+                </div>
+                <div class="journal-card">
+                    <div class="journal-cover journal-cover-2">👨‍👩‍👧</div>
+                    <div class="journal-body">
+                        <div class="journal-date">2026年4月 · 春日</div>
+                        <h3>外婆的菜园</h3>
+                        <p>外婆的菜园不大，却种满了四季。每次回去，她总会摘最新鲜的蔬菜，说城里买不到这个味。那味道里，藏着家的温度。</p>
+                    </div>
+                </div>
+                <div class="journal-card">
+                    <div class="journal-cover journal-cover-3">🏮</div>
+                    <div class="journal-body">
+                        <div class="journal-date">2026年2月 · 冬末</div>
+                        <h3>元宵灯会</h3>
+                        <p>小镇的元宵灯会虽不如大城市繁华，却自有一番热闹。手扎的花灯、街边的汤圆、孩子们的笑声，是最朴实的团圆模样。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section travel-section" id="travel">
+        <div class="container">
+            <div class="section-title">
+                <h2>旅行感悟</h2>
+                <p>脚步丈量世界，心灵感受远方</p>
+            </div>
+            <div class="grid-3">
+                <div class="travel-card">
+                    <div class="travel-img travel-img-1">🏔️</div>
+                    <div class="travel-body">
+                        <div class="travel-location">📍 云南 · 大理</div>
+                        <h3>苍山洱海间</h3>
+                        <p>骑行在洱海边，远处的苍山若隐若现，白族民居错落有致。时间在这里慢了下来，连风都带着花香。</p>
+                        <div class="travel-quote">"风花雪月，不过是大理的日常。"</div>
+                    </div>
+                </div>
+                <div class="travel-card">
+                    <div class="travel-img travel-img-2">🌊</div>
+                    <div class="travel-body">
+                        <div class="travel-location">📍 福建 · 厦门</div>
+                        <h3>鼓浪屿的午后</h3>
+                        <p>穿过幽静的小巷，钢琴声从老别墅里飘出。岛上的猫慵懒地晒着太阳，海风送来咸咸的味道。</p>
+                        <div class="travel-quote">"有些地方，去过便成了心底的旋律。"</div>
+                    </div>
+                </div>
+                <div class="travel-card">
+                    <div class="travel-img travel-img-3">🌾</div>
+                    <div class="travel-body">
+                        <div class="travel-location">📍 江西 · 婺源</div>
+                        <h3>油菜花开时</h3>
+                        <p>漫山遍野的金黄，白墙黛瓦的徽派建筑点缀其间。炊烟升起，恍如走进了一幅水墨画中。</p>
+                        <div class="travel-quote">"最美的风景，总在不经意间出现。"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section quote-section" id="quote">
+        <div class="container">
+            <div class="section-title">
+                <h2>生活语录</h2>
+                <p>那些触动心灵的文字</p>
+            </div>
+            <div class="quote-box">
+                <p>生活不是等待暴风雨过去，而是学会在雨中翩翩起舞。</p>
+                <span class="quote-author">—— 与每一个认真生活的你共勉</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>关于本站</h2>
+                <div class="divider"></div>
+                <p>「生活休闲笔记」是一个记录日常人文生活的个人站点。在这里，我用文字捕捉生活中那些细微而珍贵的瞬间——街巷里的烟火气、旅途中的风物人情、书页间的所思所感。</p>
+                <p>我相信，平凡的日子里也藏着诗意，每一段故事都值得被铭记。这个站点不仅是一本日志，更是一份对生活的热爱与敬意。</p>
+                <p>愿这些文字，也能带给你一丝温暖与共鸣。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-site">生活休闲笔记</div>
+            <div class="footer-desc">记录日常人文生活 · 收集日志故事 · 分享旅行感悟</div>
+            <div class="footer-links">
+                <a href="#daily">日常</a>
+                <a href="#journal">日志</a>
+                <a href="#travel">旅行</a>
+                <a href="#quote">语录</a>
+                <a href="#about">关于</a>
+            </div>
+            <div class="footer-icp">
+                <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">鲁ICP备2021032846号-18</a>
+            </div>
+            <div class="footer-copy">
+                © 2026 生活休闲笔记 · www.bugonghao.com
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
