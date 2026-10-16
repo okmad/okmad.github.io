@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 LibreOffice - 中文网站</title>
+    <meta name="description" content="下载 LibreOffice 最新版本 26.2.4，支持 Windows、macOS、Linux 三大平台。提供 64 位安装包、Apple Silicon 原生版本、Linux deb/rpm 包。">
+    <meta name="keywords" content="LibreOffice下载,LibreOffice安装,免费办公软件下载,LibreOffice Windows,LibreOffice Mac,LibreOffice Linux">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .download-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .version-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .version-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #16a34a;
+            margin-bottom: 10px;
+        }
+        .version-date {
+            color: #6b7280;
+            font-size: 16px;
+        }
+        .download-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .download-table th,
+        .download-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .download-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .download-table tr:hover {
+            background: #f0fdf4;
+        }
+        .download-table tr:last-child td {
+            border-bottom: none;
+        }
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .table-wrapper::-webkit-scrollbar {
+            height: 6px;
+        }
+        .table-wrapper::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        .table-wrapper::-webkit-scrollbar-thumb {
+            background: #16a34a;
+            border-radius: 3px;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 10px 24px;
+            background: #16a34a;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .download-link:hover {
+            background: #15803d;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+        }
+        .file-size {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .platform-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .platform-badge.windows {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .platform-badge.mac {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .platform-badge.linux {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .platform-badge.arm64 {
+            background: #f5f3ff;
+            color: #7c3aed;
+        }
+        .platform-badge.x64 {
+            background: #e0e7ff;
+            color: #4338ca;
+        }
+        .category-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #16a34a;
+        }
+        .info-box {
+            background: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .info-box h4 {
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .info-box p {
+            color: #6b7280;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .version-section {
+            margin-bottom: 60px;
+        }
+        .version-section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+        .version-section-date {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+        .password-note {
+            color: #dc2626;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        @media (max-width: 768px) {
+            .version-number {
+                font-size: 36px;
+            }
+            .category-title {
+                font-size: 20px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 12px 10px;
+                font-size: 13px;
+                white-space: nowrap;
+            }
+            .download-table th:nth-child(3),
+            .download-table td:nth-child(3) {
+                white-space: normal;
+                min-width: 150px;
+            }
+            .download-link {
+                padding: 8px 14px;
+                font-size: 12px;
+            }
+            .platform-badge {
+                padding: 3px 8px;
+                font-size: 11px;
+                margin-right: 4px;
+            }
+            .table-wrapper {
+                margin: 20px -15px;
+                padding: 0 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .version-number {
+                font-size: 28px;
+            }
+            .category-title {
+                font-size: 18px;
+            }
+            .version-section-title {
+                font-size: 22px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 10px 8px;
+                font-size: 12px;
+            }
+            .download-link {
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+            .platform-badge {
+                padding: 2px 6px;
+                font-size: 10px;
+                margin-right: 3px;
+            }
+            .password-note {
+                font-size: 11px;
+            }
+            .file-size {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Li</span>
+                <div class="logo-text">
+                    <h1>LibreOffice</h1>
+                    <span class="tagline">免费开源全能办公套件</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="features.html">功能</a></li>
+                    <li><a href="download.html" class="active">下载</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="download-section">
+        <div class="container">
+            <div class="info-box">
+                <h4>💡 下载提示</h4>
+                <p>Windows：下载 MSI 安装包，双击运行安装程序即可。macOS：下载 DMG 文件，双击挂载后将 LibreOffice 拖入"应用程序"文件夹。Linux：下载 deb/rpm 包，使用包管理器安装。</p>
+            </div>
+
+            <div class="version-section">
+                <div class="version-section-title">LibreOffice 26.2.4</div>
+                <div class="version-section-date">最新稳定版本 - MPL 协议开源 · 完全免费</div>
+
+                <h3 class="category-title">🪟 Windows 版本</h3>
+                <div class="table-wrapper">
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>UC网盘</th>
+                            <th>夸克网盘</th>
+                            <th>迅雷网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.msi</td>
+                            <td><span class="platform-badge windows">64位</span><span class="platform-badge x64">x86-64</span></td>
+                            <td>LibreOffice_26.2.4_Win_x86-64.msi<br><span class="file-size">约 350 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/6932d252a5ed4" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/0e236bc9fd04" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvodu8FjtSIIXdJzKfndiS6A1?pwd=gkfj" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：gkfj</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.msi</td>
+                            <td><span class="platform-badge windows">ARM64</span><span class="platform-badge arm64">aarch64</span></td>
+                            <td>LibreOffice_26.2.4_Win_aarch64.msi<br><span class="file-size">约 340 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/69322faae5e44" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/d8e6d83d54e3" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvodu8GjtSIIXdJzKfndiS7A1?pwd=qtsu" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：qtsu</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <h3 class="category-title" style="margin-top: 60px;">🍎 macOS 版本</h3>
+                <div class="table-wrapper">
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>UC网盘</th>
+                            <th>夸克网盘</th>
+                            <th>迅雷网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.dmg</td>
+                            <td><span class="platform-badge mac">Apple Silicon</span><span class="platform-badge arm64">aarch64</span></td>
+                            <td>LibreOffice_26.2.4_MacOS_aarch64.dmg<br><span class="file-size">约 320 MB（M1/M2/M3/M4）</span></td>
+                            <td><a href="https://drive.uc.cn/s/826dc5993ac94" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/e1d29a3d37b1" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvodu8KcOwPvz8zmlaRmsJnA1?pwd=wmvt" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：wmvt</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.dmg</td>
+                            <td><span class="platform-badge mac">Intel</span><span class="platform-badge x64">x86-64</span></td>
+                            <td>LibreOffice_26.2.4_MacOS_x86-64.dmg<br><span class="file-size">约 330 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/bec9be2d0c224" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/26fbe2694653" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvodu8JprbCNz3lFEjYjtlmA1?pwd=5kx6" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：5kx6</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <h3 class="category-title" style="margin-top: 60px;">🐧 Linux 版本</h3>
+                <div class="table-wrapper">
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>UC网盘</th>
+                            <th>夸克网盘</th>
+                            <th>迅雷网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.tar.gz</td>
+                            <td><span class="platform-badge linux">deb</span><span class="platform-badge x64">x86-64</span></td>
+                            <td>LibreOffice_26.2.4_Linux_x86-64_deb.tar.gz<br><span class="file-size">约 280 MB（Ubuntu/Debian）</span></td>
+                            <td><a href="https://drive.uc.cn/s/04dd7656d38f4" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/47f235fd45f8" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvodu8FzRP2-zOi4SY6g6yAA1?pwd=4ixv" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：4ixv</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.tar.gz</td>
+                            <td><span class="platform-badge linux">rpm</span><span class="platform-badge x64">x86-64</span></td>
+                            <td>LibreOffice_26.2.4_Linux_x86-64_rpm.tar.gz<br><span class="file-size">约 280 MB（Fedora/CentOS）</span></td>
+                            <td><a href="https://drive.uc.cn/s/62be5cf63a374" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/e9deff4b213a" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvodu8FCMyQmogEc8LDiUkrA1?pwd=yn6f" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：yn6f</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.tar.gz</td>
+                            <td><span class="platform-badge linux">deb</span><span class="platform-badge arm64">ARM64</span></td>
+                            <td>LibreOffice_26.2.4_Linux_aarch64_deb.tar.gz<br><span class="file-size">约 270 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/5af9913913144" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/3d1de69732e2" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvodu8Fj7ubzVoLzm_myaA9A1?pwd=saq9" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：saq9</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.tar.gz</td>
+                            <td><span class="platform-badge linux">rpm</span><span class="platform-badge arm64">ARM64</span></td>
+                            <td>LibreOffice_26.2.4_Linux_aarch64_rpm.tar.gz<br><span class="file-size">约 270 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/417359acba034" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/a27576adc1cb" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvodu8H-Fu32CX4LQpaqt2UA1?pwd=arrz" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：arrz</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4>⚙️ 版本说明</h4>
+                <p><strong>Windows 64位</strong>：适用于 Windows 10/11（64位），推荐大多数用户使用。<br>
+                <strong>Windows ARM64</strong>：适用于 Windows on ARM 设备，如搭载骁龙芯片的 Surface 笔记本。<br>
+                <strong>macOS Apple Silicon</strong>：适用于 M1/M2/M3/M4 芯片的 Mac，原生 ARM 架构，性能最佳。<br>
+                <strong>macOS Intel</strong>：适用于 Intel 芯片的 Mac。<br>
+                <strong>Linux deb</strong>：适用于 Ubuntu、Debian、Linux Mint 等 Debian 系发行版。<br>
+                <strong>Linux rpm</strong>：适用于 Fedora、CentOS、openSUSE 等 Red Hat 系发行版。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">系统要求</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Windows</h3>
+                    <p>Windows 10 / 11（64 位）<br>推荐 8 GB 以上内存</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍎</div>
+                    <h3>macOS</h3>
+                    <p>macOS 11 Big Sur 或更高<br>Apple Silicon 或 Intel</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🐧</div>
+                    <h3>Linux</h3>
+                    <p>Ubuntu 20.04+ / Fedora 36+<br>支持 GNOME/KDE/XFCE</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>硬盘空间</h3>
+                    <p>最低 1.5 GB 可用空间<br>推荐 SSD + 3 GB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">安装步骤</h2>
+            <div class="quickstart-grid">
+                <div class="quickstart-card">
+                    <span class="quickstep-number">1</span>
+                    <h3>下载安装包</h3>
+                    <p>点击上方下载按钮，获取对应平台的安装包。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">2</span>
+                    <h3>运行安装程序</h3>
+                    <p>Windows：双击 MSI 安装。macOS：打开 DMG 拖入应用程序。Linux：使用包管理器安装。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">3</span>
+                    <h3>完成安装</h3>
+                    <p>等待安装进度完成，从开始菜单或应用程序文件夹启动 LibreOffice。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">4</span>
+                    <h3>开始使用</h3>
+                    <p>LibreOffice 默认支持简体中文界面，启动后即可开始办公。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background: #fff;">
+        <div class="container">
+            <h2 class="section-title">安全保证</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3>开源软件</h3>
+                    <p>遵循 MPL 协议开源，代码公开透明可审查。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>安全可靠</h3>
+                    <p>建议下载后使用杀毒软件扫描验证，确保软件安全无毒。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>完全免费</h3>
+                    <p>无任何隐藏费用，无广告植入，无捆绑软件，永久免费使用。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>持续更新</h3>
+                    <p>由 The Document Foundation 维护，定期发布新版本。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">需要帮助？</h2>
+            <p class="cta-subtitle">查看功能介绍或常见问题获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="features.html" class="btn btn-large btn-secondary">功能介绍</a>
+                <a href="faq.html" class="btn btn-large btn-secondary">常见问题</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LibreOffice</h4>
+                    <p>免费开源的全能办公套件</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2025 LibreOffice 中文网站</p>
+                    <p>MPL 开源协议</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站为非官方中文资讯站，LibreOffice 软件版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

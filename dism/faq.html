@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见问题 - Dism++ 中文网站</title>
+    <meta name="description" content="Dism++ 常见问题解答：安装下载、使用方法、与其他工具对比、安全性等问题详细解答。">
+    <meta name="keywords" content="Dism++常见问题,Dism++ FAQ,Dism++使用问题,Dism++安全,Dism++ vs DISM">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">D++</span>
+                <div class="logo-text">
+                    <h1>Dism++</h1>
+                    <span class="tagline">Windows 系统优化与管理利器</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="features.html">功能</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="faq.html" class="active">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">常见问题</h2>
+                <p class="hero-subtitle">关于 Dism++ 的常见问题解答，帮助您更好地使用这款强大的 Windows 系统管理工具</p>
+                <div class="hero-buttons">
+                    <a href="download.html" class="btn btn-primary">免费下载</a>
+                    <a href="#faq-list" class="btn btn-secondary">查看问题</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq-list">
+        <div class="container">
+            <h2 class="section-title">安装与下载</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Dism++ 是否完全免费？</div>
+                    <div class="faq-answer">
+                        是的，Dism++ 是完全免费的开源软件，采用 MIT 许可证。您可以免费下载、使用和分发，无任何隐藏费用或限制。软件不包含任何广告、捆绑软件或恶意代码，完全由开发者用爱发电。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Dism++ 支持哪些 Windows 版本？</div>
+                    <div class="faq-answer">
+                        Dism++ 支持从 Windows Vista 到 Windows 11 的所有版本，还支持最新的 ARM 架构。涵盖 x86（32位）、x64（64位）、ARM 等处理器架构。一个工具解决不同系统版本的兼容性问题。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">使用 Dism++ 需要安装吗？</div>
+                    <div class="faq-answer">
+                        不需要安装。Dism++ 是绿色便携软件，下载 ZIP 压缩包后解压到任意文件夹，双击 Dism++x64.exe 或 Dism++x86.exe 即可直接运行，不会在系统中留下注册表项或其他痕迹。32 位版约 3.5 MB，64 位版约 4.2 MB，非常适合放入 U 盘随身携带。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">应该下载 32 位还是 64 位版本？</div>
+                    <div class="faq-answer">
+                        如果您的系统是 64 位 Windows（现在大多数电脑都是），请下载 64 位版本（Dism++x64.exe）。如果您的系统是 32 位 Windows，请下载 32 位版本（Dism++x86.exe）。查看方法：右键"此电脑"→"属性"→"系统类型"。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">为什么需要管理员权限运行？</div>
+                    <div class="faq-answer">
+                        Dism++ 需要执行系统级操作，如清理系统文件、管理驱动、修复系统映像等，这些操作需要管理员权限才能完成。请右键点击程序，选择"以管理员身份运行"。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">wsusscn3.cab 是什么？如何使用？</div>
+                    <div class="faq-answer">
+                        wsusscn3.cab 是 Windows 更新扫描所需的数据包。下载后将其放在 Dism++ 的 Config 目录中，更新扫描功能即可正常使用。从 v10.1.1002.1 版本开始，Dism++ 支持基于 GitHub 服务自动更新 wsusscan3.cab，无需手动下载。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top:60px;">使用与功能</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Dism++ 与原生 DISM 有什么区别？</div>
+                    <div class="faq-answer">
+                        Dism++ 提供图形化界面，功能更丰富，操作更简单。基于 CBS 底层 API 开发，兼容性更好，还提供了微软隐藏的高级功能。主要区别：<br><br>
+                        1. <strong>图形化界面</strong>：Dism++ 提供完全的图形化操作界面，无需记忆复杂命令。<br>
+                        2. <strong>不依赖 DISM.exe</strong>：直接调用 CBS 核心 API，兼容性更好。<br>
+                        3. <strong>更多功能</strong>：提供系统优化、启动项管理、Appx 管理等 DISM 不支持的功能。<br>
+                        4. <strong>解锁隐藏功能</strong>：如 ESD 捕获、ESD 转 WIM 等微软隐藏的高级功能。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何清理 C 盘空间？</div>
+                    <div class="faq-answer">
+                        使用 Dism++ 的"空间回收"功能可以深度清理 C 盘：<br><br>
+                        1. 打开 Dism++，选择左侧的"空间回收"。<br>
+                        2. 勾选需要清理的项目（建议勾选 Windows 更新清理、WinSxS 组件清理、系统临时文件等）。<br>
+                        3. 点击"清理"按钮开始扫描并清理。<br><br>
+                        实测可释放 3-30GB 空间，比系统自带的磁盘清理工具更彻底。如果空间仍然不足，可以考虑开启 CompactOS 压缩功能。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">CompactOS 是什么？应该开启吗？</div>
+                    <div class="faq-answer">
+                        CompactOS 是 Windows 10/11 提供的系统压缩功能，通过压缩系统文件来节省硬盘空间，通常可节省 2-6GB 空间。<br><br>
+                        <strong>建议开启的情况</strong>：硬盘空间紧张（如 128GB SSD），CPU 性能较强。<br>
+                        <strong>不建议开启的情况</strong>：SSD 空间充足，CPU 性能较弱，因为压缩会增加 CPU 负担，可能影响系统响应速度。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何卸载 Windows 预装应用？</div>
+                    <div class="faq-answer">
+                        使用 Dism++ 的"Appx 管理"功能：<br><br>
+                        1. 打开 Dism++，选择左侧的"Appx 管理"。<br>
+                        2. 在右侧列表中会显示所有已安装的 UWP 应用。<br>
+                        3. 勾选要卸载的应用（如"获取帮助"、"Mixed Reality"等无法通过系统设置卸载的应用）。<br>
+                        4. 点击"删除"按钮即可强制移除。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何备份和还原驱动？</div>
+                    <div class="faq-answer">
+                        使用 Dism++ 的"驱动管理"功能：<br><br>
+                        <strong>备份驱动</strong>：选择"驱动管理"→勾选要备份的驱动→点击"导出"选择保存路径。<br>
+                        <strong>还原驱动</strong>：重装系统后，选择"驱动管理"→点击"添加"→选择之前备份的驱动文件夹→安装即可。<br><br>
+                        建议在系统正常时备份所有驱动，以便重装系统后快速恢复。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何创建系统备份？</div>
+                    <div class="faq-answer">
+                        使用 Dism++ 工具箱中的"系统备份"功能：<br><br>
+                        1. 打开 Dism++，进入"工具箱"。<br>
+                        2. 选择"系统备份"。<br>
+                        3. 选择保存路径和备份格式（推荐 ESD 格式，压缩率更高）。<br>
+                        4. 点击"开始"即可在系统运行时完成热备份，无需进入 PE。<br><br>
+                        建议定期备份系统，以便出现问题时快速恢复。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">什么是"春哥附体"模式？</div>
+                    <div class="faq-answer">
+                        "春哥附体"（God Mode）是 Dism++ 提供的一种特殊的崩溃保护模式。即使在系统资源极度匮乏、其他程序无法运行的情况下，也能强行运行 Dism++ 进行系统修复。<br><br>
+                        当系统出现严重问题、常规方式无法启动 Dism++ 时，可以尝试使用此模式进行应急修复。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何在 PE 环境下使用 Dism++？</div>
+                    <div class="faq-answer">
+                        Dism++ 可以在 PE 环境下运行，用于离线系统维护：<br><br>
+                        1. 将 Dism++ 程序文件加入 PE 启动盘（如微 PE、优启通等）。<br>
+                        2. 从 PE 启动盘启动电脑。<br>
+                        3. 运行 Dism++，即可对离线系统进行清理、修复、驱动管理等操作。<br><br>
+                        这在系统无法正常启动时非常有用，可以修复系统文件、清理垃圾、管理驱动等。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top:60px;">安全性与对比</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">使用 Dism++ 是否安全？</div>
+                    <div class="faq-answer">
+                        完全安全。Dism++ 是开源软件，代码公开透明，已通过主流杀毒软件检测，不包含任何恶意代码或广告。软件拥有正规数字签名认证，确保来源可信、完整未被篡改。<br><br>
+                        此外，Dism++ 调用系统原生 CBS API，不修改系统核心文件，清理逻辑经过多年发展非常成熟，误删系统文件的风险极低。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Dism++ 会损坏系统吗？</div>
+                    <div class="faq-answer">
+                        正常使用情况下不会损坏系统。Dism++ 的清理规则经过多年发展和优化，只清理确认安全的垃圾文件。但建议：<br><br>
+                        1. 清理前查看清理项目，确认无误后再执行。<br>
+                        2. 重要数据定期备份。<br>
+                        3. 不熟悉的选项保持默认，不要随意勾选。<br>
+                        4. 系统优化功能中不熟悉的设置不要随意修改。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Dism++ 与 CCleaner、火绒等清理工具相比如何？</div>
+                    <div class="faq-answer">
+                        Dism++ 与这些工具定位不同，各有优势：<br><br>
+                        <strong>Dism++ 优势</strong>：深度清理 WinSxS 和 Windows 更新缓存（这是其他工具难以清理的），系统级底层操作，映像管理功能，完全免费开源无广告。<br><br>
+                        <strong>CCleaner 优势</strong>：应用软件缓存清理更全面，支持更多第三方软件。<br><br>
+                        <strong>火绒优势</strong>：集成安全防护功能，实时监控。<br><br>
+                        建议搭配使用：Dism++ 负责深度系统清理，其他工具负责日常维护。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Dism++ 与 WinDirStat、SpaceSniffer 等磁盘分析工具相比？</div>
+                    <div class="faq-answer">
+                        这两类工具功能不同：<br><br>
+                        <strong>Dism++</strong>：专注于系统清理和优化，清理 WinSxS、更新缓存等系统级垃圾。<br>
+                        <strong>WinDirStat/SpaceSniffer</strong>：磁盘空间可视化分析工具，帮助您找出哪些文件占用空间大。<br><br>
+                        建议先用 WinDirStat 分析磁盘占用，再用 Dism++ 清理系统垃圾，两者配合效果最佳。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top:60px;">其他问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Dism++ 是微软官方出品的吗？</div>
+                    <div class="faq-answer">
+                        不是。Dism++ 是由国内个人开发者（初雨团队 Chuyu-Team）打造的免费、轻量、绿色、强大的 Windows 系统优化和垃圾清理工具。它并非微软官方出品，但其核心功能基于微软官方的 DISM（Deployment Image Servicing and Management）API 构建，并提供了远超系统自带 DISM 命令工具的图形化界面和更丰富的功能。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何获取技术支持？</div>
+                    <div class="faq-answer">
+                        您可以通过以下方式获取技术支持：<br><br>
+                        1. <strong>GitHub Issues</strong>：访问 GitHub 项目页面提交 Issue，开发者会回复。<br>
+                        2. <strong>Telegram 频道</strong>：加入 https://t.me/dismplus 了解相关信息。<br>
+                        3. <strong>QQ 群</strong>：Dism++ B 群，群号为 469732645。<br>
+                        4. <strong>查看文档</strong>：本网站的功能介绍和常见问题页面。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Dism++ 还会继续更新吗？</div>
+                    <div class="faq-answer">
+                        Dism++ 仍在持续维护中。项目自 2011 年发布至今已有 10 年以上的活跃开发历史。由于开发者一直在沉迷 UI 库开发，Dism++ 暂时不会有重量级更新，但相关新功能及 Bug 修复未来计划解决。清理规则和语言包会持续更新以适配新版 Windows。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何参与 Dism++ 的开发？</div>
+                    <div class="faq-answer">
+                        Dism++ 是开源项目，欢迎社区参与：<br><br>
+                        1. <strong>提交 Issue</strong>：报告 Bug 或提出功能建议。<br>
+                        2. <strong>提交 Pull Request</strong>：修复 Bug 或添加新功能。<br>
+                        3. <strong>翻译语言包</strong>：帮助翻译成更多语言。<br>
+                        4. <strong>完善清理规则</strong>：提交新的清理规则建议。<br><br>
+                        访问 GitHub 项目页面 https://github.com/Chuyu-Team/Dism-Multi-language 参与开发。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">为什么 chuyu.me 网站无法访问？</div>
+                    <div class="faq-answer">
+                        由于不可抗力因素，chuyu.me 网站的备案掉了，因此无法访问。目前可以通过 GitHub Releases 页面下载最新版本，或通过本中文网站提供的下载链接获取。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Dism++ 支持多语言吗？</div>
+                    <div class="faq-answer">
+                        是的，Dism++ 支持多语言，包括简体中文、繁体中文、英语、德语、法语、日语等。支持运行时动态切换语言，语言包由社区持续翻译更新。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">还有其他问题？</h2>
+            <p class="cta-subtitle">访问 GitHub 项目页面获取更多帮助，或立即下载体验 Dism++</p>
+            <a href="download.html" class="btn btn-primary btn-large">免费下载</a>
+            <a href="https://github.com/Chuyu-Team/Dism-Multi-language/issues" target="_blank" rel="noopener" class="btn btn-secondary btn-large" style="margin-left:15px;">提交问题</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dism++</h4>
+                    <p>由初雨团队开发维护的开源免费 Windows 系统优化工具，基于 CBS 底层 API，提供专业级系统管理功能。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>资源</h4>
+                    <ul>
+                        <li><a href="https://github.com/Chuyu-Team/Dism-Multi-language" target="_blank" rel="noopener">GitHub 项目</a></li>
+                        <li><a href="https://github.com/Chuyu-Team/Dism-Multi-language/releases" target="_blank" rel="noopener">版本发布</a></li>
+                        <li><a href="https://t.me/dismplus" target="_blank" rel="noopener">Telegram 频道</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li>MIT 开源协议</li>
+                        <li>完全免费无广告</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Dism++ 中文网站 · 本站为非官方中文资源站 · Dism++ 由初雨团队开发，遵循 MIT 协议开源</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                q.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

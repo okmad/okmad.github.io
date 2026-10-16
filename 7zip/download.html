@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 7-Zip 26.02 - 免费压缩软件</title>
+    <meta name="description" content="免费下载 7-Zip 压缩软件，支持 Windows 系统，高压缩比、完全免费、安全可靠。">
+    <meta name="keywords" content="7-Zip 下载, 压缩软件下载, 免费压缩软件, 7z 下载">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .download-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .version-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .version-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #059669;
+            margin-bottom: 10px;
+        }
+        .version-date {
+            color: #6b7280;
+            font-size: 16px;
+        }
+        .download-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .download-table th,
+        .download-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .download-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .download-table tr:hover {
+            background: #f0fdf4;
+        }
+        .download-table tr:last-child td {
+            border-bottom: none;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 10px 24px;
+            background: #059669;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .download-link:hover {
+            background: #047857;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+        }
+        .file-size {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .platform-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .platform-badge.x64 {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .platform-badge.x86 {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .platform-badge.arm64 {
+            background: #e0e7ff;
+            color: #4338ca;
+        }
+        .category-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #059669;
+        }
+        .info-box {
+            background: #f0fdf4;
+            border-left: 4px solid #059669;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .info-box h4 {
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .info-box p {
+            color: #6b7280;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .version-section {
+            margin-bottom: 60px;
+        }
+        .version-section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+        .version-section-date {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+            .version-number {
+                font-size: 36px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 12px 8px;
+                font-size: 13px;
+            }
+            .download-link {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .version-number {
+                font-size: 28px;
+            }
+            .download-table {
+                font-size: 11px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 10px 6px;
+            }
+            .download-link {
+                padding: 6px 12px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>7-Zip 下载中心</h1>
+                <span class="tagline">高压缩比压缩软件</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="download.html" class="active">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="download-section">
+        <div class="container">
+            <div class="info-box">
+                <h4>💡 下载提示</h4>
+                <p>我们更建议使用 exe 版本的安装包而不是 msi 安装包。64位系统用户请下载 x64 版本，32位系统用户请下载 x86 版本。</p>
+            </div>
+
+            <div class="version-section">
+                <div class="version-section-title">7-Zip 26.02</div>
+                <div class="version-section-date">发布日期：2026年6月25日</div>
+
+                <div class="info-box" style="margin-bottom:30px;">
+                    <h4>📝 更新日志</h4>
+                    <p>修复了一些错误和漏洞。</p>
+                </div>
+
+                <h3 class="category-title">Windows 版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x64">64位 x64</span></td>
+                            <td>7-Zip Windows 64位</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUlXIl5SqhkTz0m9-dIA1?pwd=7ra9" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/12j5Xn5DmMBl78xCFKOGE_w?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/cc695c890b23" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x86">32位 x86</span></td>
+                            <td>7-Zip Windows 32位</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUneDiFcufabY-NSkloA1?pwd=zzjd" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1heWEUWMljBD1WaK3pr0apQ?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/556dbb087ce2" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge arm64">64位 arm64</span></td>
+                            <td>7-Zip Windows ARM64</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUkJ2uMNq3YBjmDEaevA1?pwd=3xmz" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1DrJ3i2LMu0j_m27nODndIw?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/8d9c44797509" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.msi</td>
+                            <td><span class="platform-badge x64">64位 x64</span></td>
+                            <td>7-Zip Windows 64位 MSI 安装包</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUl_lg9HqXfbWKD8FsCA1?pwd=nzam" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1BmTbMZ9qxurPfqZAWvVJHw?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/714e253e7579" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.msi</td>
+                            <td><span class="platform-badge x86">32位 x86</span></td>
+                            <td>7-Zip Windows 32位 MSI 安装包</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLSu_2wdW-IYI0AyYJiJcxA1?pwd=jehb" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1GLfP4Yk0lVz-19C7q9Typg?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/91a65e10c3b9" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">附加包</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.7z</td>
+                            <td><span class="platform-badge x64">x86 / x64</span></td>
+                            <td>7-Zip 附加包：7z 独立命令行版本、7z DLL、Far 管理器插件</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUlHI1PwTs3lACZtsCdA1?pwd=7dcx" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1gCAO6xqXFsEXm2XgfdlnxA?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/e229850166d1" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x86">x86</span></td>
+                            <td>7zr.exe（x86）：7-Zip 命令行可执行文件</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUjn3vt-BwpFwDxcljXA1?pwd=s29x" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1keQ-f7ZGZsjz5ZNPjIbb5A?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/39627bccb91f" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">Linux 版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge x64">64-bit Linux x86-64</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFV11XFNQKlwvhV3EFCvA1?pwd=smp2" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1O7TSbS5RSG5xRvQVFAzvYQ?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/3687d8b11576" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge x86">32位 Linux x86</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUlaxBE0S2-KSZgQ2tRA1?pwd=cnwt" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1Nrmu-iABlyNf1gakt9L4yA?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/a88519092de1" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge arm64">64位 Linux arm64</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUk5s_2KeMKFd2GGlbDA1?pwd=8b4a" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1QcDrNUGQLfvzi2ub-NTqYA?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/a3e3926ef4d2" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge x86">32位 Linux arm</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLTkMgjOKJOLVV47RIVuVHA1?pwd=m254" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1pC64LRMJf5mv9d4LF8hFvQ?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/9fc1467db62e" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">macOS 版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge arm64">arm64 / x86-64</span></td>
+                            <td>7-Zip macOS：命令行版本</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUzWKyKMwgmpI6I5jSuA1?pwd=g3kc" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1WgoKjcyPYCG0QdlDOEEwRA?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/7c0973e42347" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">源代码与 SDK</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.7z</td>
+                            <td>任意 / Windows</td>
+                            <td>7-Zip 源代码</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUjZaiuPw_7faUDsVR3A1?pwd=rrxs" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1Jik7W8t_0-O39nVrI9tt2Q?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/a7e46a2edfa7" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td>任意 / Windows</td>
+                            <td>7-Zip 源代码</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFVEw8doWHRs32fKuriDA1?pwd=2pr2" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1TKEN03bKPkO-lcWYki6SqQ?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/08faf03bcb5d" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.7z</td>
+                            <td>任意 / Windows</td>
+                            <td>LZMA SDK（C、C++、C#、Java）</td>
+                            <td><a href="https://pan.xunlei.com/s/VOwLQFUjgAscuRalY5xr61O1A1?pwd=xh9e" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/12bmyjPYt1pOljLE-3gDy1A?pwd=bqve" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/c0bee4390cd0" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="version-section">
+                <div class="version-section-title">7-Zip 26.01</div>
+                <div class="version-section-date">发布日期：2026年4月27日</div>
+
+                <h3 class="category-title">Windows 版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x64">64位 x64</span></td>
+                            <td>7-Zip Windows</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWs37_nGRqC4TCPPZf4A1?pwd=68i8" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/165ZxWMk7Xxbf8t2mG94HAw?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/e792065e61dd?pwd=yKxE" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x86">32位 x86</span></td>
+                            <td>7-Zip Windows</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWv6p4ox4mhEaA3eEtzA1?pwd=yjgz" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/11ZOrzIGB6UyemAaqe4fgpA?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/8aad6cb44e82?pwd=H9AE" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge arm64">64位 arm64</span></td>
+                            <td>7-Zip Windows</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWsKTmLa0DLJPso9aZPA1?pwd=k346" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1D0yjpHYVjB5ct0qvi8Ic4Q?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/0d454166a6d1?pwd=bqWu" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.msi</td>
+                            <td><span class="platform-badge x64">64位 x64</span></td>
+                            <td>7-Zip Windows 64 位（Intel 64 或 AMD64）MSI 安装包</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWyjpDzXPg7tOtJ3YU5A1?pwd=n7n5" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1gxz21iyN-CNUESNdTq1avw?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/438538bd2717?pwd=jHDP" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.msi</td>
+                            <td><span class="platform-badge x86">32位 x86</span></td>
+                            <td>7-Zip Windows 32 位 MSI 安装包</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWvRJ3Rp_7ck-ZMyoNaA1?pwd=ffdr" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1Zyf7oVKBH8QbA4Qbjd4YTA?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/896aea62a16f?pwd=S6q1" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">附加包</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.7z</td>
+                            <td><span class="platform-badge x64">x86 / x64</span></td>
+                            <td>7-Zip 附加包：7z 独立命令行版本、7z DLL、Far 管理器插件</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWvpohXFZ49I1KOWLJaA1?pwd=n7c4" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1ABN1szWI7FBp5rnIp8JTBQ?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/b9e184d61652?pwd=z7fu" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x86">x86</span></td>
+                            <td>7zr.exe（x86）：7-Zip 命令行可执行文件</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWtkUbh7IuOxzZDpeVIA1?pwd=ex23" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1qKowniUzgXfiqD018bFOAQ?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/0392ca0ced72?pwd=crBS" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">Linux 版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge x64">64-bit Linux x86-64</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWxzJBtApvhATmtE6mxA1?pwd=3bbs" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1ZABoWUgEFoalTq9wqu-5JA?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/39fa0bad58b0?pwd=ZYtf" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge x86">32位 Linux x86</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWt1X-xL3DaEe-q0ullA1?pwd=4avt" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1BVtqQWCY6gUmqXhBsOWhFQ?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/01285673dc29?pwd=dDec" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge arm64">64位 Linux arm64</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWs-BHSNbxkW42lVCRRA1?pwd=ubub" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1_J5LRzcJLNJGiq-UN80TKg?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/0541ca85d2d9?pwd=DGLh" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge x86">32位 Linux arm</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWwf4ZjB6NEcFly1_bYA1?pwd=nvtv" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1JuEKENOs2Cjpu3vM1Pl-3A?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/06d4dce9e2cf?pwd=kj7d" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">macOS 版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge arm64">arm64 / x86-64</span></td>
+                            <td>7-Zip macOS：命令行版本</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWtReJuCXpMw9He7foHA1?pwd=7h2g" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1ibKaEOHqOo71rfD7-f2l3w?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/283010d2ed6e?pwd=fkWX" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">源代码与 SDK</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.7z</td>
+                            <td>任意 / Windows</td>
+                            <td>7-Zip 源代码</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWxr2M2S7a-g34wye3eA1?pwd=cmms" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1fIs9_u4Ztc0boCTjW9T9nQ?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/410c7fed66be?pwd=jjRM" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td>任意 / Windows</td>
+                            <td>7-Zip 源代码</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWxrTxbGeEDsTIfgOTvA1?pwd=hgee" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1V0uHBh2sjK6GkKi-3if1lA?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/37e1089586cc?pwd=wZ36" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.7z</td>
+                            <td>任意 / Windows</td>
+                            <td>LZMA SDK（C、C++、C#、Java）</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvOWzOM7CynyI6POSiAmRA1?pwd=fimq" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1L5LUsjzE46I4Y-qZ6jq9MA?pwd=8u4y" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/bcff41b583da?pwd=2NNZ" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="version-section">
+                <div class="version-section-title">7-Zip 25.01</div>
+                <div class="version-section-date">发布日期：2025年8月3日</div>
+                
+                <h3 class="category-title">Windows 版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x64">64位 x64</span></td>
+                            <td>7-Zip Windows</td>
+                            <td><a href="https://pan.baidu.com/s/1g1VL1fiL3Sr1n6bEY-aEow?pwd=tef1" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/aa00907a1ba8" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x86">32位 x86</span></td>
+                            <td>7-Zip Windows</td>
+                            <td><a href="https://pan.baidu.com/s/1iL_7kod55dtvnRRtNDN50A?pwd=nb28" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/4418b495ea22" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge arm64">64位 arm64</span></td>
+                            <td>7-Zip Windows</td>
+                            <td><a href="https://pan.baidu.com/s/14uIMGnN-ZKRdND8mpuRPRg?pwd=r08u" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/c426ac88539c" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.msi</td>
+                            <td><span class="platform-badge x64">64位 x64</span></td>
+                            <td>7-Zip Windows 64 位（Intel 64 或 AMD64）MSI 安装包</td>
+                            <td><a href="https://pan.baidu.com/s/1jyUO9oxIA7DXlEli1XwOdQ?pwd=cws1" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/9f688854fb65" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.msi</td>
+                            <td><span class="platform-badge x86">32位 x86</span></td>
+                            <td>7-Zip Windows 32 位 MSI 安装包</td>
+                            <td><a href="https://pan.baidu.com/s/1ymyyWUzJkmGeqtYoyXIx6Q?pwd=it9n" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/d9d28355d226" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">附加包</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.7z</td>
+                            <td><span class="platform-badge x64">x86 / x64</span></td>
+                            <td>7-Zip 附加包：7z 独立命令行版本、7z DLL、Far 管理器插件</td>
+                            <td><a href="https://pan.baidu.com/s/1rNMq79ch6jtIe5LgWw2aTg?pwd=9f75" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/caff8223e837" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x86">x86</span></td>
+                            <td>7zr.exe（x86）：7-Zip 命令行可执行文件</td>
+                            <td><a href="https://pan.baidu.com/s/1Mz7zqpn6nO6ympDESbIlHg?pwd=81r4" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/53dcdb5f0bf2" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">Linux 版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge x64">64-bit Linux x86-64</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.baidu.com/s/1kqFYkbMJKPysbc8-z8P_sg?pwd=0wtu" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/d1234dd90dd9" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge x86">32位 Linux x86</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.baidu.com/s/19d85u5eJJtWiWMK-q_zmBg?pwd=9mv6" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/ae87b3b73875" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge arm64">64位 Linux arm64</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.baidu.com/s/1bGG1GYSGRjURP1MC0Ji0aA?pwd=bthq" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/b185854a99aa" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge x86">32位 Linux arm</span></td>
+                            <td>7-Zip Linux：命令行版本</td>
+                            <td><a href="https://pan.baidu.com/s/1maPmnMGOMtJwjswXnBulpA?pwd=rhk4" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/030d339662e3" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">macOS 版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td><span class="platform-badge arm64">arm64 / x86-64</span></td>
+                            <td>7-Zip macOS：命令行版本</td>
+                            <td><a href="https://pan.baidu.com/s/11DHyM_pgqJ23kTlmUVF0UA?pwd=wf2w" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/422765ddf1fb" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="category-title">源代码与 SDK</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.7z</td>
+                            <td>任意 / Windows</td>
+                            <td>7-Zip 源代码</td>
+                            <td><a href="https://pan.baidu.com/s/1GdaLMLlaaTg_QsQn43ZpEg?pwd=yujl" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/87201e3f3073" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.tar.xz</td>
+                            <td>任意 / Windows</td>
+                            <td>7-Zip 源代码</td>
+                            <td><a href="https://pan.baidu.com/s/1Vgviw8eKxfEmSYemVef4nw?pwd=dngi" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/75bbf33dc15a" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>.7z</td>
+                            <td>任意 / Windows</td>
+                            <td>LZMA SDK（C、C++、C#、Java）</td>
+                            <td><a href="https://pan.baidu.com/s/11NXBAokcjGpLUxR_kQj7jg?pwd=nwz3" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/5090304852f1" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="info-box" style="background: #fef3c7; border-left-color: #f59e0b;">
+                <h4>⚠️ 系统要求</h4>
+                <p>Windows 10 / 8.1 / 8 / 7 / Vista / XP (32位或64位) | Windows Server 2019 / 2016 / 2012 / 2008 / 2003</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>7-Zip</h4>
+                    <p>高压缩比压缩软件</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="faq.html">帮助中心</a></li>
+                        <li><a href="about.html">联系我们</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2025 7-zip.net.cn</p>
+                    <p>保留所有权利</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

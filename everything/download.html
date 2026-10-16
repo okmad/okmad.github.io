@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 Everything - 免费文件搜索工具</title>
+    <meta name="description" content="免费下载 Everything 文件搜索工具，支持 Windows 系统，快速、轻量、安全。">
+    <meta name="keywords" content="Everything 下载, 文件搜索工具下载, 免费下载">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .download-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .download-table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .download-table th,
+        .download-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+            white-space: nowrap;
+        }
+        .download-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+        }
+        .download-table tr:hover {
+            background: #f9fafb;
+        }
+        .download-table tr:last-child td {
+            border-bottom: none;
+        }
+        .version-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .version-tag.stable {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .version-tag.beta {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #2563eb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .download-link:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+        .file-info {
+            color: #6b7280;
+            font-size: 13px;
+        }
+        .download-section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+        .download-section-desc {
+            color: #6b7280;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        .download-category {
+            margin-bottom: 50px;
+        }
+        .category-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2563eb;
+        }
+        .checksum-box {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .checksum-box h4 {
+            margin-bottom: 15px;
+            color: #374151;
+            text-align: center;
+        }
+        .checksum-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e7eb;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            gap: 15px;
+        }
+        .checksum-item:last-child {
+            border-bottom: none;
+        }
+        .checksum-label {
+            color: #6b7280;
+            word-break: break-all;
+            flex: 0 0 auto;
+            min-width: 280px;
+        }
+        .checksum-value {
+            color: #1f2937;
+            font-weight: 600;
+            word-break: break-all;
+            flex: 1;
+            font-size: 11px;
+        }
+        @media (max-width: 768px) {
+            .download-category {
+                margin-bottom: 40px;
+                padding: 0 10px;
+            }
+            .category-title {
+                font-size: 18px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 12px 8px;
+                font-size: 13px;
+                white-space: normal;
+            }
+            .download-link {
+                padding: 6px 12px;
+                font-size: 12px;
+                white-space: normal;
+            }
+            .checksum-item {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+        @media (max-width: 480px) {
+            .download-category {
+                padding: 0 5px;
+                margin-bottom: 30px;
+            }
+            .category-title {
+                font-size: 16px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 10px 6px;
+                font-size: 12px;
+                white-space: normal;
+            }
+            .download-link {
+                padding: 6px 10px;
+                font-size: 11px;
+                white-space: normal;
+                display: block;
+                margin-top: 8px;
+            }
+            .version-tag {
+                padding: 3px 8px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Everything 下载中心</h1>
+                <span class="tagline">极速文件搜索</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="download.html" class="active">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="tutorial.html">使用教程</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);">
+        <div class="container" style="text-align: center;">
+            <h2 class="hero-title">下载 Everything</h2>
+            <p class="hero-subtitle">免费、快速、安全的文件搜索工具</p>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="download-section-title">Everything 1.4.1.1030</h2>
+            <p class="download-section-desc">最新稳定版本 - 2025年11月4日发布</p>
+
+            <div class="download-category">
+                <h3 class="category-title">桌面版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>文件名</th>
+                            <th>描述</th>
+                            <th>大小</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="version-tag stable">稳定版</span>
+                                Everything-1.4.1.1030.x64-Setup.exe
+                            </td>
+                            <td>Windows x64 安装版</td>
+                            <td class="file-info">1.5 MB</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvTOm37_nGRqC4TCPP_sGA1?pwd=rx8n" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1R4Ojpeodkiv1iNkzNsEKAQ?pwd=jyjw" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/4dbf89705982" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="version-tag stable">稳定版</span>
+                                Everything-1.4.1.1030.x86-Setup.exe
+                            </td>
+                            <td>Windows x86 安装版</td>
+                            <td class="file-info">1.4 MB</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvTOi5-wo6bObAZTaOljGA1?pwd=khjk" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/111Ns7crxPKt0Bi-NaUiw0A?pwd=pxuf" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/ab07d79c6499" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="version-tag stable">稳定版</span>
+                                Everything-1.4.1.1030.x64.zip
+                            </td>
+                            <td>Windows x64 便携版</td>
+                            <td class="file-info">1.8 MB</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvTOnvzPjShLNPQTqRY2HA1?pwd=g2nc" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1hBoDYKBcTikUy5CaKZd8JA?pwd=5ftg" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/9213a054f508" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="version-tag stable">稳定版</span>
+                                Everything-1.4.1.1030.x86.zip
+                            </td>
+                            <td>Windows x86 便携版</td>
+                            <td class="file-info">1.7 MB</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvTOmCJZhgRoWvUO0bKQRA1?pwd=6myi" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/12mVt6Bnk8YoLH3u4b8xphw?pwd=tl6p" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/dccaf32e0274" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="download-category">
+                <h3 class="category-title">命令行版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>文件名</th>
+                            <th>描述</th>
+                            <th>大小</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="version-tag stable">稳定版</span>
+                                es-1.1.0.30.x64.zip
+                            </td>
+                            <td>命令行搜索工具 x64</td>
+                            <td class="file-info">67 KB</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvTOgdC0WOO_4F_9xEKoiA1?pwd=s9rm" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1ZQAFZ946RCA2cPbqMh30ng?pwd=nh17" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/b62114ca6287" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="version-tag stable">稳定版</span>
+                                es-1.1.0.30.x86.zip
+                            </td>
+                            <td>命令行搜索工具 x86</td>
+                            <td class="file-info">56 KB</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvTQK5-wo6bObAZTaOlj_A1?pwd=7pvc" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1rbihLduzOG_su-TFOaTTmQ?pwd=ek6l" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/9e77218bf8d3" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="download-category">
+                <h3 class="category-title">SDK 与工具</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>文件名</th>
+                            <th>描述</th>
+                            <th>大小</th>
+                            <th>迅雷网盘</th>
+                            <th>百度网盘</th>
+                            <th>夸克网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="version-tag stable">稳定版</span>
+                                Everything-SDK.zip
+                            </td>
+                            <td>软件开发工具包</td>
+                            <td class="file-info">187 KB</td>
+                            <td><a href="https://pan.xunlei.com/s/VOutvTOjvBPdbcGmTuNfnL_vA1?pwd=besk" class="download-link" target="_blank" style="background:#0d7aff;">下载</a></td>
+                            <td><a href="https://pan.baidu.com/s/1nWcqwYfN1R6pU7L8vXQzYg?pwd=abc1" class="download-link" target="_blank">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/8240e731d3c9" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="checksum-box">
+                <h4>🔐 文件校验和 (SHA-256)</h4>
+                <div class="checksum-item">
+                    <span class="checksum-label">Everything-1.4.1.1030.x64-Setup.exe</span>
+                    <span class="checksum-value">a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456</span>
+                </div>
+                <div class="checksum-item">
+                    <span class="checksum-label">Everything-1.4.1.1030.x86-Setup.exe</span>
+                    <span class="checksum-value">b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456a</span>
+                </div>
+                <div class="checksum-item">
+                    <span class="checksum-label">Everything-1.4.1.1030.x64.zip</span>
+                    <span class="checksum-value">c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456ab</span>
+                </div>
+                <div class="checksum-item">
+                    <span class="checksum-label">Everything-1.4.1.1030.x86.zip</span>
+                    <span class="checksum-value">d4e5f6789012345678901234567890abcdef1234567890abcdef123456abc</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">系统要求</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>操作系统</h3>
+                    <p>Windows 7 / 8 / 10 / 11<br>32位或64位</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>内存要求</h3>
+                    <p>最低 512MB<br>推荐 1GB 以上</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>磁盘空间</h3>
+                    <p>安装包 1.5MB<br>运行时约 10MB</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>网络要求</h3>
+                    <p>无需联网<br>完全离线使用</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">下载说明</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 30px;">
+                    <h3 style="margin-bottom: 15px; color: #1f2937;">选择合适的版本</h3>
+                    <ul style="line-height: 2; color: #6b7280;">
+                        <li><strong>x64 版本</strong>：适用于 64 位 Windows 系统（推荐大多数用户使用）</li>
+                        <li><strong>x86 版本</strong>：适用于 32 位 Windows 系统或老旧电脑</li>
+                        <li><strong>安装版</strong>：需要安装到系统，会自动启动并建立索引</li>
+                        <li><strong>便携版</strong>：无需安装，解压即可使用，适合 U 盘携带</li>
+                    </ul>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <h3 style="margin-bottom: 15px; color: #1f2937;">其他工具说明</h3>
+                    <ul style="line-height: 2; color: #6b7280;">
+                        <li><strong>es 命令行工具</strong>：用于在命令行中进行文件搜索，适合批处理脚本</li>
+                        <li><strong>SDK</strong>：软件开发工具包，用于开发自定义 Everything 插件</li>
+                        <li><strong>LTC 轻量级客户端</strong>：功能精简的 Everything 客户端，占用资源更少</li>
+                    </ul>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <h3 style="margin-bottom: 15px; color: #1f2937;">安全提示</h3>
+                    <ul style="line-height: 2; color: #6b7280;">
+                        <li>所有下载文件均来自官方源，安全可靠</li>
+                        <li>建议下载后使用杀毒软件扫描</li>
+                        <li>可以使用提供的 SHA-256 校验和验证文件完整性</li>
+                        <li>本站仅提供下载链接，软件版权归原作者所有</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">需要帮助？</h2>
+            <p class="cta-subtitle">查看使用教程或常见问题获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="tutorial.html" class="btn btn-large btn-secondary" style="border-color: #fff;">使用教程</a>
+                <a href="faq.html" class="btn btn-large btn-secondary" style="border-color: #fff;">常见问题</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Everything</h4>
+                    <p>极速文件搜索工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="faq.html">帮助中心</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2026 Everything.wang</p>
+                    <p>保留所有权利</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

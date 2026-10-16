@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用教程 - Everything 文件搜索工具</title>
+    <meta name="description" content="Everything 使用教程，从安装到高级搜索技巧的完整指南。">
+    <meta name="keywords" content="Everything 教程, Everything 使用指南, 文件搜索教程">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Everything 下载中心</h1>
+                <span class="tagline">极速文件搜索</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="tutorial.html" class="active">使用教程</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container" style="text-align: center;">
+            <h2 class="hero-title">使用教程</h2>
+            <p class="hero-subtitle">从安装到高级使用，全面掌握 Everything</p>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">快速入门</h2>
+            
+            <div class="feature-item">
+                <h3>第一步：下载与安装</h3>
+                <p>访问下载页面，选择适合您的版本（安装版或便携版）。双击安装包，按照向导提示完成安装。安装过程非常简单，通常只需要几秒钟。</p>
+                <div style="margin-top: 15px; padding: 15px; background: #f0f9ff; border-left: 4px solid #0ea5e9; border-radius: 4px;">
+                    <strong>💡 提示：</strong>首次安装时，Everything 会自动建立文件索引。索引完成后即可开始搜索。
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <h3>第二步：基本搜索</h3>
+                <p>启动 Everything 后，在搜索框中输入关键词即可开始搜索。搜索结果会实时显示，无需按回车键。例如：</p>
+                <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                    <li style="margin-bottom: 10px;">输入 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">document</code> 搜索包含"document"的文件</li>
+                    <li style="margin-bottom: 10px;">输入 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">*.pdf</code> 搜索所有 PDF 文件</li>
+                    <li style="margin-bottom: 10px;">输入 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">photo.jpg</code> 搜索名为"photo.jpg"的文件</li>
+                </ul>
+            </div>
+
+            <div class="feature-item">
+                <h3>第三步：打开文件</h3>
+                <p>在搜索结果中双击文件即可打开。右键点击文件可以查看更多选项，如打开所在文件夹、复制路径等。</p>
+                <div style="margin-top: 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                    <div style="background: #f9fafb; padding: 15px; border-radius: 8px;">
+                        <strong>双击</strong>
+                        <p style="font-size: 13px; margin-top: 5px;">直接打开文件</p>
+                    </div>
+                    <div style="background: #f9fafb; padding: 15px; border-radius: 8px;">
+                        <strong>右键 > 打开路径</strong>
+                        <p style="font-size: 13px; margin-top: 5px;">在资源管理器中打开</p>
+                    </div>
+                    <div style="background: #f9fafb; padding: 15px; border-radius: 8px;">
+                        <strong>Ctrl + Enter</strong>
+                        <p style="font-size: 13px; margin-top: 5px;">打开文件所在位置</p>
+                    </div>
+                    <div style="background: #f9fafb; padding: 15px; border-radius: 8px;">
+                        <strong>Ctrl + C</strong>
+                        <p style="font-size: 13px; margin-top: 5px;">复制文件路径</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">通配符搜索</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">*</div>
+                    <h3>星号通配符</h3>
+                    <p>匹配任意数量的字符<br><br><code>*.docx</code><br>搜索所有 Word 文档</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">?</div>
+                    <h3>问号通配符</h3>
+                    <p>匹配单个字符<br><br><code>photo?.jpg</code><br>搜索 photo1.jpg, photo2.jpg</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>文件夹搜索</h3>
+                    <p>搜索特定文件夹<br><br><code>project*</code><br>搜索所有 project 开头的文件夹</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>文件类型</h3>
+                    <p>按扩展名搜索<br><br><code>*.mp3</code><br>搜索所有音频文件</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">高级搜索技巧</h2>
+            
+            <div class="feature-item">
+                <h3>多关键词搜索</h3>
+                <p>使用空格分隔多个关键词，搜索同时包含这些词的文件。</p>
+                <div style="background: #f3f4f6; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                    <code style="font-size: 16px;">report 2024 pdf</code>
+                    <p style="font-size: 14px; color: #666; margin-top: 5px;">搜索同时包含"report"、"2024"和"pdf"的文件</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <h3>排除搜索</h3>
+                <p>使用感叹号 ! 排除特定关键词。</p>
+                <div style="background: #f3f4f6; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                    <code style="font-size: 16px;">document !temp</code>
+                    <p style="font-size: 14px; color: #666; margin-top: 5px;">搜索包含"document"但不包含"temp"的文件</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <h3>精确搜索</h3>
+                <p>使用引号搜索精确短语。</p>
+                <div style="background: #f3f4f6; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                    <code style="font-size: 16px;">"final report"</code>
+                    <p style="font-size: 14px; color: #666; margin-top: 5px;">搜索精确包含"final report"这个短语的文件</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <h3>逻辑运算符</h3>
+                <p>使用 AND、OR、NOT 进行复杂搜索。</p>
+                <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                    <li style="margin-bottom: 10px;"><code>file AND (doc OR pdf)</code> - 搜索包含"file"且是 doc 或 pdf 格式的文件</li>
+                    <li style="margin-bottom: 10px;"><code>image NOT (jpg OR png)</code> - 搜索包含"image"但不是 jpg 或 png 的文件</li>
+                    <li style="margin-bottom: 10px;"><code>(project OR work) AND 2024</code> - 搜索包含"project"或"work"，且包含"2024"的文件</li>
+                </ul>
+            </div>
+
+            <div class="feature-item">
+                <h3>文件属性搜索</h3>
+                <p>根据文件大小、日期等属性进行搜索。</p>
+                <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                    <li style="margin-bottom: 10px;"><code>size:>10mb</code> - 搜索大于 10MB 的文件</li>
+                    <li style="margin-bottom: 10px;"><code>size:<1mb</code> - 搜索小于 1MB 的文件</li>
+                    <li style="margin-bottom: 10px;"><code>datemodified:today</code> - 搜索今天修改的文件</li>
+                    <li style="margin-bottom: 10px;"><code>datecreated:lastweek</code> - 搜索上周创建的文件</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">常用快捷键</h2>
+            <div style="max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 12px; font-weight: 600;">Ctrl + F</td>
+                        <td style="padding: 12px; color: #666;">聚焦搜索框</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 12px; font-weight: 600;">Ctrl + L</td>
+                        <td style="padding: 12px; color: #666;">清空搜索框</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 12px; font-weight: 600;">Ctrl + Enter</td>
+                        <td style="padding: 12px; color: #666;">打开文件所在位置</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 12px; font-weight: 600;">Ctrl + C</td>
+                        <td style="padding: 12px; color: #666;">复制文件路径</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 12px; font-weight: 600;">Ctrl + A</td>
+                        <td style="padding: 12px; color: #666;">全选搜索结果</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 12px; font-weight: 600;">F3</td>
+                        <td style="padding: 12px; color: #666;">高级搜索</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 12px; font-weight: 600;">Esc</td>
+                        <td style="padding: 12px; color: #666;">清空搜索框</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; font-weight: 600;">Ctrl + P</td>
+                        <td style="padding: 12px; color: #666;">打开选项设置</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">设置与优化</h2>
+            
+            <div class="feature-item">
+                <h3>开机自动启动</h3>
+                <p>在"工具" > "选项" > "常规"中，勾选"启动时运行 Everything"，这样每次开机时 Everything 会自动启动并建立索引。</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>排除文件夹</h3>
+                <p>在"工具" > "选项" > "索引" > "排除"中，添加不想索引的文件夹路径，如临时文件夹、系统文件夹等。</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>更换语言</h3>
+                <p>下载并安装中文语言包后，在"工具" > "选项" > "常规"中，从"语言"下拉菜单选择"中文（简体）"。</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>自定义界面</h3>
+                <p>在"工具" > "选项" > "界面"中，可以调整字体大小、颜色主题、列显示等，打造个性化的搜索体验。</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>重建索引</h3>
+                <p>如果搜索不到某些文件，可以尝试重建索引。在"工具"菜单中选择"重建索引"，Everything 会重新扫描所有文件。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">还有问题？</h2>
+            <p class="cta-subtitle">查看常见问题或关于页面获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="faq.html" class="btn btn-large btn-secondary" style="border-color: #fff;">查看常见问题</a>
+                <a href="about.html" class="btn btn-large btn-secondary" style="border-color: #fff;">关于</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Everything</h4>
+                    <p>极速文件搜索工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="tutorial.html">使用教程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="faq.html">帮助中心</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2026 Everything.wang</p>
+                    <p>保留所有权利</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything - 极速文件搜索工具 | 免费下载 - 中文官网</title>
+    <meta name="description" content="Everything 是 Windows 上文件名搜索引擎，Windows 系统下的文件搜索神器，最大的特点就是快，是一款快速、轻量级的文件搜索工具，能够瞬间搜索电脑中的所有文件。免费下载，支持中文界面。">
+    <meta name="keywords" content="Everything, 文件搜索, Windows急速搜索, 便携版, 搜索工具, 免费下载, 快速搜索">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .quickstart-section {
+            background: #f8fafc;
+            padding: 80px 0;
+        }
+        .quickstart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .quickstart-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            border: 1px solid #e5e7eb;
+        }
+        .quickstart-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        .quickstep-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #fff;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .quickstart-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 12px;
+        }
+        .quickstart-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        .quickstart-card .quick-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .quickstart-card .quick-link:hover {
+            text-decoration: underline;
+        }
+        
+        .changelog-section {
+            padding: 80px 0;
+        }
+        .changelog-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .changelog-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #2563eb;
+        }
+        .changelog-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .changelog-version {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1f2937;
+        }
+        .changelog-date {
+            color: #6b7280;
+            font-size: 14px;
+            background: #f3f4f6;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+        .changelog-content {
+            color: #4b5563;
+            line-height: 1.8;
+        }
+        .changelog-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .changelog-content li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .changelog-content li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+        .changelog-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        .changelog-badge.new {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .changelog-badge.fix {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .changelog-badge.improve {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .changelog-more {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .changelog-more a {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #fff;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .changelog-more a:hover {
+            background: #2563eb;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Everything 下载中心</h1>
+                <span class="tagline">极速文件搜索</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="tutorial.html">使用教程</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">瞬间找到您的文件</h2>
+                <p class="hero-subtitle">Everything 是一款超快速的文件搜索工具，让您在几秒钟内找到电脑中的任何文件</p>
+                <div class="hero-buttons">
+                    <a href="download.html" class="btn btn-primary">免费下载</a>
+                    <a href="features.html" class="btn btn-secondary">了解更多</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1000万+</span>
+                        <span class="stat-label">用户下载</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9/5</span>
+                        <span class="stat-label">用户评分</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1.5MB</span>
+                        <span class="stat-label">软件大小</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="search-demo">
+                    <div class="search-box">
+                        <input type="text" placeholder="搜索文件..." disabled>
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    <div class="search-results">
+                        <div class="result-item">
+                            <span class="result-icon">📄</span>
+                            <span class="result-name">document.pdf</span>
+                            <span class="result-path">C:\Documents\document.pdf</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-icon">📁</span>
+                            <span class="result-name">Projects</span>
+                            <span class="result-path">D:\Work\Projects</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-icon">🖼️</span>
+                            <span class="result-name">photo.jpg</span>
+                            <span class="result-path">E:\Photos\photo.jpg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">为什么选择 Everything？</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>超快速度</h3>
+                    <p>基于文件系统索引，搜索速度极快，几乎瞬间显示结果</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>轻量级</h3>
+                    <p>软件仅 1.5MB，占用资源极少，不影响系统性能</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>智能搜索</h3>
+                    <p>支持通配符、正则表达式等多种搜索方式</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>多语言</h3>
+                    <p>支持中文在内的多种语言界面</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🆓</div>
+                    <h3>完全免费</h3>
+                    <p>永久免费使用，无任何广告和收费功能</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>安全可靠</h3>
+                    <p>无病毒、无恶意软件，安全可靠</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quickstart-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">快速入门</h2>
+            <p style="text-align: center; color: #6b7280; max-width: 600px; margin: 0 auto;">只需简单几步，即可开始使用 Everything 进行高效文件搜索</p>
+            
+            <div class="quickstart-grid">
+                <div class="quickstart-card">
+                    <span class="quickstep-number">1</span>
+                    <h3>下载安装</h3>
+                    <p>从官网下载 Everything 安装包，双击运行安装程序，按照提示完成安装。安装完成后，Everything 会自动启动并建立索引。</p>
+                    <a href="download.html" class="quick-link">前往下载页面 →</a>
+                </div>
+                
+                <div class="quickstart-card">
+                    <span class="quickstep-number">2</span>
+                    <h3>开始搜索</h3>
+                    <p>在搜索框中输入文件名或关键词，Everything 会立即显示匹配结果。支持拼音、英文、数字等多种搜索方式。</p>
+                    <a href="tutorial.html#search" class="quick-link">学习搜索技巧 →</a>
+                </div>
+                
+                <div class="quickstart-card">
+                    <span class="quickstep-number">3</span>
+                    <h3>打开文件</h3>
+                    <p>双击搜索结果即可打开文件或文件夹。右键点击可查看更多操作选项，如打开所在位置、复制路径等。</p>
+                    <a href="tutorial.html#operations" class="quick-link">了解文件操作 →</a>
+                </div>
+                
+                <div class="quickstart-card">
+                    <span class="quickstep-number">4</span>
+                    <h3>高级设置</h3>
+                    <p>通过"工具 > 选项"菜单自定义 Everything 的行为，如设置开机启动、排除文件夹、配置快捷键等。</p>
+                    <a href="tutorial.html#settings" class="quick-link">查看设置指南 →</a>
+                </div>
+                
+                <div class="quickstart-card">
+                    <span class="quickstep-number">5</span>
+                    <h3>使用过滤器</h3>
+                    <p>利用过滤器快速筛选文件类型，如输入 "pdf:" 只搜索 PDF 文件，或使用通配符 "*.jpg" 搜索图片。</p>
+                    <a href="tutorial.html#filters" class="quick-link">掌握过滤器 →</a>
+                </div>
+                
+                <div class="quickstart-card">
+                    <span class="quickstep-number">6</span>
+                    <h3>更多功能</h3>
+                    <p>探索 Everything 的更多高级功能，如正则表达式搜索、网络共享、HTTP 服务器等，提升工作效率。</p>
+                    <a href="features.html" class="quick-link">探索所有功能 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="changelog-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">更新日志</h2>
+            <p style="text-align: center; color: #6b7280; margin-bottom: 40px;">了解 Everything 的最新更新和改进</p>
+            
+            <div class="changelog-container">
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <span class="changelog-version">1.4.1.1030</span>
+                        <span class="changelog-date">2025-11-04</span>
+                    </div>
+                    <div class="changelog-content">
+                        <ul>
+                            <li><span class="changelog-badge fix">修复</span> 修复了 Everything 服务的安全问题</li>
+                            <li><span class="changelog-badge new">新增</span> 为 Everything 服务管道添加了 DACL</li>
+                            <li><span class="changelog-badge new">新增</span> 添加了服务连接验证，只有 voidtools 代码签名的 Everything.exe 才能连接到服务</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <span class="changelog-version">1.4.1.1024</span>
+                        <span class="changelog-date">2024-01-15</span>
+                    </div>
+                    <div class="changelog-content">
+                        <ul>
+                            <li><span class="changelog-badge new">新增</span> 改进了文件索引性能，大容量磁盘索引速度提升 30%</li>
+                            <li><span class="changelog-badge fix">修复</span> 修复了在某些情况下搜索结果重复显示的问题</li>
+                            <li><span class="changelog-badge fix">修复</span> 修复了网络共享路径搜索时的崩溃问题</li>
+                            <li><span class="changelog-badge improve">优化</span> 优化了内存占用，运行时内存使用降低 15%</li>
+                            <li><span class="changelog-badge improve">优化</span> 改进了用户界面响应速度</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <span class="changelog-version">1.4.1.1023</span>
+                        <span class="changelog-date">2024-01-08</span>
+                    </div>
+                    <div class="changelog-content">
+                        <ul>
+                            <li><span class="changelog-badge new">新增</span> 添加了对 Windows 11 最新版本的支持</li>
+                            <li><span class="changelog-badge fix">修复</span> 修复了 4 字节 UTF-8 字符比较问题</li>
+                            <li><span class="changelog-badge fix">修复</span> 修复了 ETP 客户端跳过文件名中空格前缀的问题</li>
+                            <li><span class="changelog-badge improve">优化</span> 改进了搜索结果的排序算法</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <span class="changelog-version">1.4.1.1022</span>
+                        <span class="changelog-date">2023-12-20</span>
+                    </div>
+                    <div class="changelog-content">
+                        <ul>
+                            <li><span class="changelog-badge new">新增</span> 新增了文件预览功能，支持更多文件格式</li>
+                            <li><span class="changelog-badge fix">修复</span> 修复了在 LVM_GETCOLUMN 中使用错误列索引的问题</li>
+                            <li><span class="changelog-badge fix">修复</span> 修复了 es: url 协议的问题</li>
+                            <li><span class="changelog-badge improve">优化</span> 改进了命令行工具 es 的性能</li>
+                            <li><span class="changelog-badge improve">优化</span> 更新了多语言翻译文件</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">立即体验极速搜索</h2>
+            <p class="cta-subtitle">数百万用户的选择，您还在等什么？</p>
+            <a href="download.html" class="btn btn-large btn-primary">查看所有版本下载</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Everything</h4>
+                    <p>极速文件搜索工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="faq.html">帮助中心</a></li>
+                        <li><a href="about.html">联系我们</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2026 Everything.wang</p>
+                    <p>保留所有权利</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

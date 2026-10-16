@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dism++ - Windows 系统优化与管理利器 | 中文网站</title>
+    <meta name="description" content="Dism++ 是一款由初雨团队开发的开源免费 Windows 系统优化工具，基于 CBS 底层 API，提供深度清理、启动管理、系统修复、驱动管理、镜像处理等功能。绿色免安装，支持 Windows Vista/7/8/10/11。">
+    <meta name="keywords" content="Dism++,Dism,Windows系统优化,系统清理,WinSxS清理,系统修复,驱动管理,WIM,ESD,镜像处理,系统备份,启动管理">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">D++</span>
+                <div class="logo-text">
+                    <h1>Dism++</h1>
+                    <span class="tagline">Windows 系统优化与管理利器</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="features.html">功能</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Windows 系统优化与管理利器</h2>
+                <p class="hero-subtitle">Dism++ 是由初雨团队采用微软内部 API 编写的开源免费实用工具，基于 CBS（Component Based Servicing）底层实现，不依赖 DISM.exe，提供完全的图形化操作界面，几乎支持 DISM 的所有功能以及大量 DISM 原本不支持的特性。</p>
+                <div class="hero-buttons">
+                    <a href="download.html" class="btn btn-primary">免费下载</a>
+                    <a href="features.html" class="btn btn-secondary">了解功能</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100万+</span>
+                        <span class="stat-label">全球用户</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+年</span>
+                        <span class="stat-label">持续更新</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Vista-11</span>
+                        <span class="stat-label">Windows 支持</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3.5MB</span>
+                        <span class="stat-label">绿色便携体积</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="dism-demo">
+                    <div class="dism-titlebar">
+                        <span class="app-dot red"></span>
+                        <span class="app-dot yellow"></span>
+                        <span class="app-dot green"></span>
+                        <span class="dism-name">Dism++ x64</span>
+                    </div>
+                    <div class="dism-body">
+                        <div class="dism-sidebar">
+                            <div class="dism-nav-item active">
+                                <span class="dism-nav-icon">🧹</span>
+                                <span>空间回收</span>
+                            </div>
+                            <div class="dism-nav-item">
+                                <span class="dism-nav-icon">🚀</span>
+                                <span>启动项管理</span>
+                            </div>
+                            <div class="dism-nav-item">
+                                <span class="dism-nav-icon">📦</span>
+                                <span>Appx 管理</span>
+                            </div>
+                            <div class="dism-nav-item">
+                                <span class="dism-nav-icon">🔧</span>
+                                <span>驱动管理</span>
+                            </div>
+                            <div class="dism-nav-item">
+                                <span class="dism-nav-icon">⚙️</span>
+                                <span>系统优化</span>
+                            </div>
+                            <div class="dism-nav-item">
+                                <span class="dism-nav-icon">🔄</span>
+                                <span>更新管理</span>
+                            </div>
+                            <div class="dism-nav-item">
+                                <span class="dism-nav-icon">🛠️</span>
+                                <span>工具箱</span>
+                            </div>
+                        </div>
+                        <div class="dism-main">
+                            <div class="dism-section-title">🧹 空间回收</div>
+                            <div class="dism-clean-list">
+                                <div class="dism-clean-item">
+                                    <span><span class="check">✓</span> Windows 更新清理</span>
+                                    <span class="size">2.8 GB</span>
+                                </div>
+                                <div class="dism-clean-item">
+                                    <span><span class="check">✓</span> WinSxS 组件清理</span>
+                                    <span class="size">1.5 GB</span>
+                                </div>
+                                <div class="dism-clean-item">
+                                    <span><span class="check">✓</span> 系统临时文件</span>
+                                    <span class="size">680 MB</span>
+                                </div>
+                                <div class="dism-clean-item">
+                                    <span><span class="check">✓</span> DirectX 着色器缓存</span>
+                                    <span class="size">320 MB</span>
+                                </div>
+                                <div class="dism-clean-item">
+                                    <span><span class="check">✓</span> Defender 缓存</span>
+                                    <span class="size">156 MB</span>
+                                </div>
+                                <div class="dism-clean-item">
+                                    <span><span class="check">✓</span> 程序缓存</span>
+                                    <span class="size">412 MB</span>
+                                </div>
+                            </div>
+                            <div class="dism-action-bar">
+                                <span class="dism-total">可释放空间：<strong>5.87 GB</strong></span>
+                                <span class="dism-scan-btn">清理</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">六大核心优势</h2>
+            <p class="section-subtitle">从清理到修复，从优化到备份，Dism++ 提供一站式系统维护方案</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧹</div>
+                    <h3>空间回收</h3>
+                    <p>深度清理 WinSxS、更新缓存、临时文件，释放数 GB 空间。支持 CompactOS 压缩技术，实测可释放 10-30GB。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>启动管理</h3>
+                    <p>管理开机自启项与服务，大幅提升系统启动速度。支持原生启动项、计划任务、服务和 Explorer 扩展。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>系统修复</h3>
+                    <p>调用底层 CBS 服务执行 /RestoreHealth 命令修复损坏的系统文件，支持离线修复（PE 环境）。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>热备份还原</h3>
+                    <p>无需进入 PE，系统运行时即可完成备份与还原。使用 ESD 格式（压缩率高）对系统进行完整备份。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>驱动管理</h3>
+                    <p>一键备份、导出或清理驱动程序，告别驱动冗余。有效解决 NVIDIA 驱动历史版本占用数十 GB 空间问题。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💿</div>
+                    <h3>镜像处理</h3>
+                    <p>支持 WIM/ESD 互转、ISO 生成、镜像编辑与挂载。内置 ISO 生成器、Imagex 工具、引导修复。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">什么是 Dism++？</h2>
+            <p class="section-subtitle">Dism++ 是一款由初雨团队采用微软内部 API 编写的开源免费实用工具，最初名为"Windows 更新清理工具"。它基于 CBS（Component Based Servicing）底层实现，不依赖 DISM.exe，提供完全的图形化操作界面，几乎支持 DISM 的所有功能以及大量 DISM 原本不支持的特性。</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>🟢 完全免费开源</h3>
+                    <p>遵循 MIT 协议，代码公开透明，无任何隐藏费用或广告插件。代码托管在 GitHub，由初雨团队与社区共同维护，规则库与语言包持续更新。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🟢 绿色便携</h3>
+                    <p>单文件设计，解压即用，不写入注册表，U 盘随身携带。32 位版约 3.5 MB，64 位版约 4.2 MB。不依赖 .NET 或其他运行库。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🟢 功能全面</h3>
+                    <p>集清理、优化、备份、驱动管理、镜像处理于一体。整合了系统清理、更新管理、驱动管理、Appx 应用管理、系统备份还原等众多功能。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🟢 安全可靠</h3>
+                    <p>调用系统原生 API，通过主流杀软检测，拥有正规数字签名。无广告、无捆绑、无全家桶，全程绿色不流氓。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🟢 持续更新</h3>
+                    <p>初雨团队长期维护，不断适配新版 Windows 及扩充清理规则。项目自 2011 年发布至今持续更新，已有 10 年以上的活跃开发历史。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🟢 API 级别底层</h3>
+                    <p>直接基于 CBS 核心，不依赖 DISM.exe，实现更底层的系统操作与更快的响应速度。解锁微软隐藏的系统功能，如 ESD 捕获、ESD 转 WIM 等。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">核心技术优势</h2>
+            <p class="section-subtitle">基于 CBS 底层 API 开发，提供比原生 DISM 更强大的功能和更好的兼容性</p>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <span class="tech-number">01</span>
+                    <h3>底层 API 直接调用</h3>
+                    <p>直接使用 CBS（Component Based Servicing）核心 API，无需依赖原生 DISM 组件，具有更好的兼容性和稳定性。实现更底层的系统操作与更快的响应速度。</p>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-number">02</span>
+                    <h3>广泛系统兼容</h3>
+                    <p>支持从 Windows Vista 到 Windows 11 的所有版本，涵盖 x86、x64、ARM 等架构。一个工具解决不同系统版本的兼容性问题。</p>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-number">03</span>
+                    <h3>隐藏功能开放</h3>
+                    <p>解锁微软隐藏的系统功能，如 ESD 捕获、ESD 转 WIM 等高级功能，提供更多操作可能。支持官方 DISM 不开放的高级特性。</p>
+                </div>
+                <div class="tech-card">
+                    <span class="tech-number">04</span>
+                    <h3>性能优化突出</h3>
+                    <p>相比传统工具，Dism++ 在处理大型映像和复杂操作时表现更出色，效率更高。调用底层 CBS 服务执行命令，响应迅速。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quickstart-section">
+        <div class="container">
+            <h2 class="section-title">快速上手</h2>
+            <p class="section-subtitle">简单几步，掌握 Dism++ 的使用方法</p>
+            <div class="quickstart-grid">
+                <div class="quickstart-card">
+                    <span class="quickstep-number">1</span>
+                    <h3>下载并解压</h3>
+                    <p>从本网站下载最新版本的 Dism++，解压到任意文件夹，以管理员身份运行 Dism++x64.exe 或 Dism++x86.exe。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">2</span>
+                    <h3>系统清理</h3>
+                    <p>打开"空间回收"选项，勾选需要清理的项目，点击"清理"按钮开始扫描并清理系统垃圾文件，释放大量磁盘空间。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">3</span>
+                    <h3>管理系统功能</h3>
+                    <p>在"启动项管理"、"驱动管理"和"Appx 管理"选项中，可以管理开机自启、驱动程序和预装应用。</p>
+                </div>
+                <div class="quickstart-card">
+                    <span class="quickstep-number">4</span>
+                    <h3>映像操作</h3>
+                    <p>使用"系统备份"功能可以创建系统映像，"工具箱"中提供 WIM/ESD 互转、ISO 生成等高级系统部署操作。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">实用场景应用</h2>
+            <p class="section-subtitle">Dism++ 在各种系统管理场景中的实际应用</p>
+            <div class="features-grid">
+                <div class="scenario-card">
+                    <h3>🧹 系统深度清理</h3>
+                    <p>清理 Windows 更新缓存、临时文件、系统日志，释放大量磁盘空间。比传统清理工具更彻底，可释放数 GB 存储空间，提升系统运行速度。</p>
+                    <span class="scenario-badge">平均释放 3-10GB 磁盘空间</span>
+                </div>
+                <div class="scenario-card">
+                    <h3>🏢 企业系统部署</h3>
+                    <p>IT 管理员可使用 WIM 映像管理功能，创建标准化系统映像，批量部署企业环境，大幅提升工作效率和系统一致性。</p>
+                    <span class="scenario-badge">提升 90% 系统部署效率</span>
+                </div>
+                <div class="scenario-card">
+                    <h3>🛠️ 系统故障修复</h3>
+                    <p>当系统出现文件损坏、启动问题时，使用系统修复功能检查文件完整性，自动修复损坏的系统文件，恢复系统正常运行。</p>
+                    <span class="scenario-badge">95% 系统问题可自动修复</span>
+                </div>
+                <div class="scenario-card">
+                    <h3>📦 驱动程序管理</h3>
+                    <p>集中管理系统驱动程序，支持驱动备份、批量安装、问题驱动卸载等操作，确保硬件设备正常运行和系统稳定性。</p>
+                    <span class="scenario-badge">解决 99% 驱动相关问题</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">用户评价</h2>
+            <p class="section-subtitle">来自全球用户的真实反馈</p>
+            <div class="features-grid">
+                <div class="testimonial">
+                    <p class="testimonial-quote">"作为 IT 管理员，Dism++ 是我日常工作中不可缺少的工具。系统清理功能非常强大，映像管理功能更是大大提升了我们系统部署的效率。"</p>
+                    <p class="testimonial-author">李华 · IT 系统管理员</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-quote">"相比其他系统优化工具，Dism++ 更加专业和可靠。绿色免安装的特性让我可以随时随地使用，清理效果也比 Windows 自带工具好太多。"</p>
+                    <p class="testimonial-author">张红 · 软件开发工程师</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-quote">"开源免费，功能强大，界面简洁。用 Dism++ 清理系统后，电脑运行速度明显提升，非常推荐给需要优化系统的朋友。"</p>
+                    <p class="testimonial-author">王前程 · 数字媒体设计师</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">准备好优化您的系统了吗？</h2>
+            <p class="cta-subtitle">免费下载 Dism++，立即体验专业级系统管理</p>
+            <a href="download.html" class="btn btn-primary btn-large">立即免费下载</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dism++</h4>
+                    <p>由初雨团队开发维护的开源免费 Windows 系统优化工具，基于 CBS 底层 API，提供专业级系统管理功能。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>资源</h4>
+                    <ul>
+                        <li><a href="https://github.com/Chuyu-Team/Dism-Multi-language" target="_blank" rel="noopener">GitHub 项目</a></li>
+                        <li><a href="https://github.com/Chuyu-Team/Dism-Multi-language/releases" target="_blank" rel="noopener">版本发布</a></li>
+                        <li><a href="https://t.me/dismplus" target="_blank" rel="noopener">Telegram 频道</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li>MIT 开源协议</li>
+                        <li>完全免费无广告</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Dism++ 中文网站 · 本站为非官方中文资源站 · Dism++ 由初雨团队开发，遵循 MIT 协议开源</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                q.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
