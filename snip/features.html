@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snipaste 功能介绍 - 截图、贴图、取色、标注 | 中文资源站</title>
+    <meta name="description" content="详细介绍 Snipaste 的核心功能：截图(F1)、贴图(F3)、取色器、图片标注、多屏支持、HiDPI、UI元素识别、GIF贴图、自定义快捷键等，提升工作效率的截图贴图神器。">
+    <meta name="keywords" content="Snipaste功能,Snipaste截图,Snipaste贴图,Snipaste取色,Snipaste标注,F1截图,F3贴图,像素级截图,UI元素识别,多屏截图,HiDPI截图,GIF贴图,图片标注,Snipaste快捷键">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Sn</span>
+                <div class="logo-text">
+                    <h1>Snipaste</h1>
+                    <span class="tagline">截图 · 贴图 · 取色</span>
+                </div>
+            </a>
+            <button class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="features.html" class="active">功能</a></li>
+                    <li><a href="tutorial.html">教程</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="changelog.html">更新日志</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">强大的功能体系</h2>
+                <p class="hero-subtitle">从截图到贴图，从取色到标注，Snipaste 提供完整的功能矩阵，帮助你高效完成屏幕捕捉与信息对照。</p>
+                <div class="hero-buttons">
+                    <a href="download.html" class="btn btn-primary">免费下载</a>
+                    <a href="index.html" class="btn btn-secondary">返回首页</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="snipaste-demo">
+                    <div class="snipaste-titlebar">
+                        <span class="app-dot red"></span>
+                        <span class="app-dot yellow"></span>
+                        <span class="app-dot green"></span>
+                        <span class="snipaste-name">功能矩阵</span>
+                    </div>
+                    <div class="snipaste-body">
+                        <div class="snipaste-toolbar">
+                            <span class="tool-btn active">F1</span>
+                            <span class="tool-btn">F3</span>
+                            <span class="tool-btn">Alt</span>
+                            <span class="tool-btn">Space</span>
+                        </div>
+                        <div class="snipaste-canvas">
+                            <span class="sel-info">截图 · 贴图 · 取色 · 标注</span>
+                            <div class="pin-window">📌 功能全景<br>多屏 · HiDPI · GIF</div>
+                            <span class="color-pick">核心功能矩阵</span>
+                        </div>
+                        <div style="margin-top:14px; color:#94a3b8; font-size:12px;">
+                            截图贴图工作流 · 像素级精度 · 跨平台
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">截图功能</h2>
+            <p class="section-subtitle">智能精准的截图能力，从区域选择到细节控制都恰到好处</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>🎯 UI 元素自动识别</h3>
+                    <p>截图时鼠标移动会自动识别窗口控件与界面元素，一键精准选中按钮、输入框、菜单、图片等区域，无需手动拖拽框选。智能算法支持 Qt、Electron 等多种框架应用，大幅提升截图效率。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔍 像素级精确控制</h3>
+                    <p>内置放大镜辅助定位，可像素级别精确调整截图边缘。配合键盘 W/A/S/D 微调光标位置，实现极致精准的区域选择。支持 Shift+方向键以 1px 步进调整选区，满足像素级截图需求。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⏱️ 历史回放</h3>
+                    <p>截图过程中支持历史回放功能，使用逗号（,）和句号（.）键可回放查看截图操作的每一步。方便复盘截图过程，确认选区是否准确，特别适合需要精确截图的专业场景。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🖥️ 多屏与 HiDPI 支持</h3>
+                    <p>完美支持多显示器环境，可在任意屏幕上截图与贴图，跨屏操作流畅自然。完美适配 HiDPI（Retina）高分屏，高分屏下截图清晰锐利，混搭 DPI 多屏环境也无偏差。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📏 多种截图模式</h3>
+                    <p>支持区域截图、窗口截图、全屏截图、多屏截图等多种模式。可通过命令行参数指定截图尺寸、活动屏幕等，支持预设截图区域与命名规则，满足自动化截图需求。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💾 多格式保存</h3>
+                    <p>截图支持保存为 PNG、JPG、BMP、TIFF 等多种图片格式，2.8.6 版本起还支持 WebP 格式。可自定义保存路径、文件命名规则，支持快速保存与复制到剪贴板。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">贴图功能</h2>
+            <p class="section-subtitle">Snipaste 独创的核心特色，将截图钉在屏幕上随时对照</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📌</div>
+                    <h3>浮动窗口贴图</h3>
+                    <p>按 F3 即可将截图作为浮动窗口钉在屏幕最前。贴图窗口始终置顶，对照参考无需切换窗口，代码对照、设计稿比对、资料摘抄效率倍增。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>缩放与缩略图</h3>
+                    <p>贴图窗口支持鼠标滚轮或 +/- 缩放，可任意放大查看细节。Shift+双击进入缩略图模式快速缩小预览，双击隐藏贴图窗口，操作便捷流畅。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>旋转与翻转</h3>
+                    <p>使用 1/2 键可旋转贴图窗口，3/4 键可水平/垂直翻转。方便从不同角度查看截图内容，满足特殊对照需求。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌫️</div>
+                    <h3>透明度调节</h3>
+                    <p>Ctrl+鼠标滚轮可调节贴图窗口透明度，实现半透明叠加比对。将设计稿半透明叠加在实现效果上，精准对比差异，设计师的得力助手。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖱️</div>
+                    <h3>鼠标点击穿透</h3>
+                    <p>贴图窗口支持鼠标点击穿透，让点击操作穿透贴图到达下方窗口。既能显示参考内容，又不影响下方窗口操作，工作流丝滑顺畅。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3>GIF 动图支持</h3>
+                    <p>贴图窗口支持 GIF 动图，可逐帧播放、调整播放速度。1/2 键跳转帧，滚轮调节速度，动图贴图也能精细控制，完美呈现动态内容。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">取色与标注</h2>
+            <p class="section-subtitle">专业级取色器与丰富的标注工具，满足设计与标注需求</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>🎨 像素级取色器</h3>
+                    <p>在截图模式或贴图窗口中按 Alt 即可拾取屏幕任意位置的颜色。取色结果自动复制到剪贴板，支持 RGB、HEX、HSV 等多种颜色格式。取色后可按 F3 将颜色贴图为色卡窗口，方便对照使用。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>✏️ 丰富的标注工具</h3>
+                    <p>贴图窗口按空格进入标注模式，提供矩形、椭圆、线条、箭头、画笔、马克笔、文字等多种标注工具。每种工具都支持自定义颜色、粗细、样式，满足专业标注需求。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🧩 高级标注工具</h3>
+                    <p>除基础标注外，还提供马赛克、高斯模糊、橡皮擦等高级标注工具。可对敏感信息进行模糊处理，橡皮擦可擦除标注内容，撤销重做操作自如。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔢 编号标注</h3>
+                    <p>支持在标注中添加自动编号，方便按顺序标注多个要点。适合制作操作步骤图、标注说明图，让截图说明更加清晰有序（PRO 功能）。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📝 文字标注</h3>
+                    <p>文字标注工具支持自定义字体、大小、颜色、背景。可在截图任意位置添加说明文字，配合其他标注工具制作专业的图文说明。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>↩️ 撤销重做</h3>
+                    <p>标注过程支持完整的撤销（Ctrl+Z）与重做（Ctrl+Y）操作，可随时回退或恢复标注步骤。配合 Tab 键可在矩形/椭圆、线条/箭头间快速切换工具。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">剪贴板与转换</h2>
+            <p class="section-subtitle">智能转换剪贴板内容，让贴图功能更加强大</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>图片贴图</h3>
+                    <p>剪贴板中的图片可直接按 F3 贴图为浮动窗口。支持从浏览器、图片编辑器、其他截图工具复制的图片，无缝衔接工作流。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>文本转图片</h3>
+                    <p>剪贴板中的纯文本或 HTML 文本可自动转换为浮动图片窗口。复制一段文字即可贴图为便签，方便对照参考。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>颜色信息转图片</h3>
+                    <p>剪贴板中的颜色信息文本（如 #06B6D4）可自动转换为颜色色卡窗口。复制颜色代码即可贴图为色块，直观查看颜色效果。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖼️</div>
+                    <h3>多格式图片文件</h3>
+                    <p>支持粘贴 PNG、JPG、BMP、TGA、ICO、TIFF 以及 GIF 动图文件。拖拽图片文件到贴图窗口也能直接显示，灵活便捷。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗂️</div>
+                    <h3>贴图分组</h3>
+                    <p>支持将多张贴图分组管理，可批量显示/隐藏一组贴图。方便按项目或场景组织贴图，工作区整洁有序（PRO 功能）。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>自动备份恢复</h3>
+                    <p>贴图窗口支持自动备份与恢复，软件异常退出后重启可恢复之前的贴图布局。重要对照内容不会因意外而丢失，工作连续性有保障。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">自定义与配置</h2>
+            <p class="section-subtitle">高度可定制，打造专属的截图贴图工作流</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>⌨️ 全局快捷键</h3>
+                    <p>所有核心操作均支持全局快捷键：F1 截图、F3 贴图、Alt 取色等。可在首选项中自定义快捷键组合，满足个人习惯与工作流需求。PRO 版本还支持自定义应用内快捷键。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🎨 主题与外观</h3>
+                    <p>支持自定义主题颜色、界面字体、托盘图标等外观元素。可跟随系统主题色，深色浅色自由切换，打造专属视觉体验。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⚙️ 详细的配置选项</h3>
+                    <p>首选项提供丰富的功能配置选项：截图行为、输出设置、贴图窗口、标注默认值、快捷键等。几乎每一个细节都可调整，满足个性化需求。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💻 命令行支持</h3>
+                    <p>提供完整的命令行参数，支持自动化截图：指定截图区域、尺寸、输出路径、活动屏幕等。可集成到脚本与工作流中，实现自动化截图任务。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🚀 开机自启</h3>
+                    <p>支持设置开机自启动，开机后 Snipaste 自动驻留系统托盘，随时待命。低内存占用，不会拖慢系统启动速度。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🌐 多语言支持</h3>
+                    <p>Snipaste 支持包括中文在内的多种界面语言，社区贡献的翻译覆盖全球主要语言。界面语言可随时切换，无障碍使用。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">PRO 高级功能</h2>
+            <p class="section-subtitle">商业版解锁更多高级能力，提升专业工作流</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>OCR 文字识别</h3>
+                    <p>PRO 版本内置 OCR 文字识别功能，支持从截图中提取文字。集成腾讯 OCR 与 OCR.space API，识别准确高效。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔢</div>
+                    <h3>条形码/二维码解码</h3>
+                    <p>PRO 版本支持从截图中识别条形码与二维码内容，快速提取编码信息，方便数据录入与处理。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⌨️</div>
+                    <h3>自定义应用内快捷键</h3>
+                    <p>PRO 版本可自定义应用内的各种快捷键，灵活适配个人操作习惯，打造专属高效工作流。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖥️</div>
+                    <h3>虚拟桌面支持</h3>
+                    <p>PRO 版本支持 Windows 11 虚拟桌面，贴图窗口可在不同虚拟桌面间灵活显示，多任务工作更有序。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">立即体验完整功能</h2>
+            <p class="cta-subtitle">免费下载 Snipaste，开启高效截图贴图之旅</p>
+            <a href="download.html" class="btn btn-primary btn-large">立即下载</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Snipaste</h4>
+                    <p>免费强大的截图贴图工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="tutorial.html">基础操作</a></li>
+                        <li><a href="changelog.html">更新日志</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于本站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>Snipaste 软件版权归原作者所有</p>
+                    <p>本站为非官方资源分享站</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站分享资源仅供学习交流，请于下载后 24 小时内删除。如需长期使用请支持正版。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

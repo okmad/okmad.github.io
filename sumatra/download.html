@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 SumatraPDF - 免费轻量级 PDF 阅读器</title>
+    <meta name="description" content="免费下载 SumatraPDF 轻量级 PDF 阅读器，支持 Windows 系统，提供 64 位安装版、便携版、32 位版本和 ARM64 版本。">
+    <meta name="keywords" content="SumatraPDF 下载, PDF阅读器下载, 便携版下载, 免费下载">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .download-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .version-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .version-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #f97316;
+            margin-bottom: 10px;
+        }
+        .version-date {
+            color: #6b7280;
+            font-size: 16px;
+        }
+        .download-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .download-table th,
+        .download-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .download-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .download-table tr:hover {
+            background: #fff7ed;
+        }
+        .download-table tr:last-child td {
+            border-bottom: none;
+        }
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .table-wrapper::-webkit-scrollbar {
+            height: 6px;
+        }
+        .table-wrapper::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        .table-wrapper::-webkit-scrollbar-thumb {
+            background: #f97316;
+            border-radius: 3px;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 10px 24px;
+            background: #f97316;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .download-link:hover {
+            background: #ea580c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+        }
+        .file-size {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .platform-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .platform-badge.x64 {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .platform-badge.x86 {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .platform-badge.arm64 {
+            background: #e0e7ff;
+            color: #4338ca;
+        }
+        .platform-badge.install {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .platform-badge.portable {
+            background: #fce7f3;
+            color: #9f1239;
+        }
+        .category-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f97316;
+        }
+        .info-box {
+            background: #fff7ed;
+            border-left: 4px solid #f97316;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .info-box h4 {
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .info-box p {
+            color: #6b7280;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .version-section {
+            margin-bottom: 60px;
+        }
+        .version-section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+        .version-section-date {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+        .password-note {
+            color: #dc2626;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        @media (max-width: 768px) {
+            .version-number {
+                font-size: 36px;
+            }
+            .category-title {
+                font-size: 20px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 12px 10px;
+                font-size: 13px;
+                white-space: nowrap;
+            }
+            .download-table th:nth-child(3),
+            .download-table td:nth-child(3) {
+                white-space: normal;
+                min-width: 150px;
+            }
+            .download-link {
+                padding: 8px 14px;
+                font-size: 12px;
+            }
+            .platform-badge {
+                padding: 3px 8px;
+                font-size: 11px;
+                margin-right: 4px;
+            }
+            .table-wrapper {
+                margin: 20px -15px;
+                padding: 0 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .version-number {
+                font-size: 28px;
+            }
+            .category-title {
+                font-size: 18px;
+            }
+            .version-section-title {
+                font-size: 22px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 10px 8px;
+                font-size: 12px;
+            }
+            .download-link {
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+            .platform-badge {
+                padding: 2px 6px;
+                font-size: 10px;
+                margin-right: 3px;
+            }
+            .password-note {
+                font-size: 11px;
+            }
+            .file-size {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-mark">S</span>
+                <div class="logo-text">
+                    <h1>SumatraPDF</h1>
+                    <span class="tagline">轻量 · 快速 · 多格式</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">返回主站</a></li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="download.html" class="active">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="download-section">
+        <div class="container">
+            <div class="info-box">
+                <h4>💡 下载提示</h4>
+                <p>安装版需要安装到系统，会自动注册 PDF 文件关联，适合日常使用。便携版无需安装，解压即可使用，适合 U 盘携带或在多台电脑间切换使用。</p>
+            </div>
+
+            <div class="version-section">
+                <div class="version-section-title">SumatraPDF 3.6.1</div>
+                <div class="version-section-date">最新稳定版本 - 2025年10月20日发布</div>
+
+                <h3 class="category-title">Windows 版本</h3>
+                <div class="table-wrapper">
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>UC网盘</th>
+                            <th>夸克网盘</th>
+                            <th>迅雷网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x64">64位</span><span class="platform-badge install">安装版</span></td>
+                            <td>SumatraPDF-3.6.1-64-install.exe<br><span class="file-size">约 3.9 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/a6fefa1ff2ee4" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/bfb8504ee1c8" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvnYsxzLydDiD-XFDZRAAJbA1?pwd=5x4f" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：5x4f</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.zip</td>
+                            <td><span class="platform-badge x64">64位</span><span class="platform-badge portable">便携版</span></td>
+                            <td>SumatraPDF-3.6.1-64.zip<br><span class="file-size">约 3.8 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/a9b44669d65f4" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/356f27f304f6" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvnYsxzpH6enuJp4l-k4dt5A1?pwd=jzrx" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：jzrx</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge x86">32位</span><span class="platform-badge install">安装版</span></td>
+                            <td>SumatraPDF-3.6.1-install.exe<br><span class="file-size">约 3.5 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/b5868ac063314" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/cb9c48fb6cae" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvnYsy-LydDiD-XFDZRAAJcA1?pwd=rdhr" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：rdhr</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.zip</td>
+                            <td><span class="platform-badge x86">32位</span><span class="platform-badge portable">便携版</span></td>
+                            <td>SumatraPDF-3.6.1.zip<br><span class="file-size">约 3.4 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/f4d2c35657ba4" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/8cfb2ac2e298" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvnYsy-q2-n7XvXusEalAFZA1?pwd=5pe7" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：5pe7</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge arm64">ARM64</span><span class="platform-badge install">安装版</span></td>
+                            <td>SumatraPDF-3.6.1-arm64-install.exe<br><span class="file-size">约 4.0 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/1fe3c312bbfe4" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/67bacc0281f1" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvnYsy-Q1xJJrj-9vQf_gx6A1?pwd=8xgj" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：8xgj</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.zip</td>
+                            <td><span class="platform-badge arm64">ARM64</span><span class="platform-badge portable">便携版</span></td>
+                            <td>SumatraPDF-3.6.1-arm64.zip<br><span class="file-size">约 3.9 MB</span></td>
+                            <td><a href="https://drive.uc.cn/s/fabb5a52d12a4" class="download-link" target="_blank" style="background:#ff6b00;">下载</a></td>
+                            <td><a href="https://pan.quark.cn/s/f040501a8123" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvnYsy-2aUQH3gCesYiMm70A1?pwd=vt33" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                <div class="password-note">提取码：vt33</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4>⚙️ 版本说明</h4>
+                <p><strong>64位版本</strong>：推荐大多数现代 Windows 用户使用，性能更好。<br>
+                <strong>32位版本</strong>：适用于老旧 32 位 Windows 系统。<br>
+                <strong>ARM64版本</strong>：适用于 ARM 架构 Windows 设备，如 Surface Pro X。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">系统要求</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>操作系统</h3>
+                    <p>Windows 7 / 8 / 10 / 11<br>32位、64位、ARM64</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>内存要求</h3>
+                    <p>最低 256MB<br>推荐 512MB 以上</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>磁盘空间</h3>
+                    <p>安装包 3.9MB<br>运行时约 30MB</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>无需依赖</h3>
+                    <p>无需 .NET 框架<br>无需额外运行库</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">下载说明</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 30px;">
+                    <h3 style="margin-bottom: 15px; color: #1f2937;">选择合适的版本</h3>
+                    <ul style="line-height: 2; color: #6b7280;">
+                        <li><strong>安装版</strong>：需要安装到系统，会自动注册 PDF 文件关联，适合日常使用</li>
+                        <li><strong>便携版</strong>：无需安装，解压即可使用，适合 U 盘携带或受限环境</li>
+                        <li><strong>64位版本</strong>：推荐大多数现代 Windows 用户使用</li>
+                        <li><strong>32位版本</strong>：适用于老旧 32 位 Windows 系统</li>
+                        <li><strong>ARM64版本</strong>：适用于 ARM 架构 Windows 设备，如 Surface Pro X</li>
+                    </ul>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <h3 style="margin-bottom: 15px; color: #1f2937;">安装与使用</h3>
+                    <ul style="line-height: 2; color: #6b7280;">
+                        <li><strong>安装版</strong>：双击运行安装程序，按向导完成安装即可</li>
+                        <li><strong>便携版</strong>：解压 ZIP 文件到任意目录，直接运行 SumatraPDF.exe</li>
+                        <li>安装后建议将 PDF 默认打开方式设置为 SumatraPDF</li>
+                        <li>便携版不会写入注册表，卸载只需删除文件夹</li>
+                    </ul>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <h3 style="margin-bottom: 15px; color: #1f2937;">安全提示</h3>
+                    <ul style="line-height: 2; color: #6b7280;">
+                        <li>建议下载后使用杀毒软件扫描验证</li>
+                        <li>本站仅提供下载指引，软件版权归原作者所有</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">需要帮助？</h2>
+            <p class="cta-subtitle">查看功能介绍或常见问题获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="features.html" class="btn btn-large btn-secondary">功能介绍</a>
+                <a href="faq.html" class="btn btn-large btn-secondary">常见问题</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SumatraPDF</h4>
+                    <p>轻量级免费 PDF 阅读器</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2025 SumatraPDF 中文网站</p>
+                    <p>基于 GPLv3 协议开源</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站为非官方中文资讯站，SumatraPDF 软件版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

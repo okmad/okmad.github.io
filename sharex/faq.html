@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见问题 - ShareX 截图录屏工具</title>
+    <meta name="description" content="ShareX 常见问题解答，包括安装、使用、配置、录屏、OCR、上传等方面的帮助。">
+    <meta name="keywords" content="ShareX 常见问题, ShareX 使用教程, ShareX 帮助, ShareX FAQ">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-mark">S</span>
+                <div class="logo-text">
+                    <h1>ShareX</h1>
+                    <span class="tagline">截图 · 录屏 · 分享</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="tutorial.html">使用教程</a></li>
+                    <li><a href="faq.html" class="active">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container" style="text-align: center;">
+            <h2 class="hero-title">常见问题</h2>
+            <p class="hero-subtitle">这里有您可能遇到的问题和解答</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">安装与下载</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">ShareX 完全免费吗？</div>
+                    <div class="faq-answer">
+                        是的！ShareX 是完全免费的开源软件，基于 GPL-3.0 协议。无广告、无内购、无付费版本，所有功能均可免费使用。代码托管在 GitHub，已获得超过 30,000 颗 Star。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">安装版和便携版有什么区别？</div>
+                    <div class="faq-answer">
+                        安装版会注册到系统，支持开机自启动和全局快捷键，配置保存在用户目录。便携版无需安装，解压即用，配置保存在程序目录，适合 U 盘携带或在多台电脑间切换使用。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">ShareX 支持哪些操作系统？</div>
+                    <div class="faq-answer">
+                        ShareX 仅支持 Windows 平台，包括 Windows 7 SP1、8、10、11（32位和64位）。不支持 macOS 和 Linux。Mac/Linux 用户可考虑 Flameshot、Ksnik 等替代工具。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何通过命令行安装？</div>
+                    <div class="faq-answer">
+                        可以使用 Windows 包管理器 winget 安装：<code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">winget install ShareX.ShareX</code>。也可通过 Microsoft Store 或 Steam 安装。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">截图功能</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">如何使用滚动截图？</div>
+                    <div class="faq-answer">
+                        按下滚动截图快捷键（默认 Ctrl+Shift+Print Screen），将鼠标移动到可滚动区域，ShareX 会自动滚动并拼接长页面，生成完整的长截图。按 Esc 键可手动停止。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何设置截图后自动上传？</div>
+                    <div class="faq-answer">
+                        打开"任务设置" → "图像"选项卡，勾选"上传图像到主机"。然后在"目的地"设置中选择上传服务，如 Imgur、FTP 等。上传后链接会自动复制到剪贴板。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">截图快捷键不生效怎么办？</div>
+                    <div class="faq-answer">
+                        可能是被其他软件占用了快捷键。打开"快捷键设置"，将冲突的快捷键改为其他组合。常见冲突软件包括 OneDrive、QQ、微信等，可在这些软件中关闭截图功能。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何截取鼠标光标？</div>
+                    <div class="faq-answer">
+                        默认截图不包含鼠标光标。在"截图设置"中勾选"捕获鼠标光标"选项即可。区域截图模式下，可在工具栏中切换是否显示光标。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何延迟截图？</div>
+                    <div class="faq-answer">
+                        在截图菜单中选择"延迟截图"，设置延迟时间（如 3 秒或 5 秒）。也可在快捷键设置中为延迟截图分配独立快捷键。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">录屏与 GIF</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">录屏功能需要额外安装什么？</div>
+                    <div class="faq-answer">
+                        录屏和 GIF 制作需要 FFmpeg。首次使用时会自动提示下载，也可手动从 GitHub 获取 FFmpeg 构建包，放置到 ShareX 目录或系统 PATH 中。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">录制的 GIF 文件太大怎么办？</div>
+                    <div class="faq-answer">
+                        可以通过以下方式减小 GIF 体积：1) 降低帧率（如 15fps）；2) 减少录制时长；3) 缩小录制区域；4) 在录制设置中启用调色板优化；5) 录制完成后使用"视频转换"工具压缩。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何录制系统音频？</div>
+                    <div class="faq-answer">
+                        在录屏设置中，将"音频源"选择为"系统音频输出"（需安装虚拟音频设备如 VB-Cable）。也可同时录制麦克风输入。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">上传与分享</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">如何自定义上传服务？</div>
+                    <div class="faq-answer">
+                        打开"目的地设置"，可添加自定义 FTP 服务器、S3 存储桶等。也支持自定义上传器，通过配置 API 接口对接各种图床与云存储服务。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">支持哪些上传服务？</div>
+                    <div class="faq-answer">
+                        ShareX 支持 80+ 上传服务，包括 Imgur、FTP、Dropbox、Google Drive、OneDrive、Amazon S3、GitHub、Pastebin、OwnCloud、Nextcloud、WebDAV、Azure、Backblaze B2 等。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">上传后链接会自动复制吗？</div>
+                    <div class="faq-answer">
+                        是的，默认情况下上传完成后链接会自动复制到剪贴板。可在"任务设置 → 上传后"中配置其他操作，如缩短 URL、打开浏览器、显示二维码等。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何使用短链接？</div>
+                    <div class="faq-answer">
+                        在"目的地 → URL 缩短服务"中配置短链接服务（如 bit.ly、is.gd 等）。上传后可自动生成短链接并复制到剪贴板。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">OCR 与工具</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">OCR 识别准确率不高怎么办？</div>
+                    <div class="faq-answer">
+                        提高准确率的方法：1) 确保截图清晰，文字对比度高；2) 下载并使用正确的语言包；3) 对于小字体，可先放大图片再识别；4) 尝试不同的 OCR 引擎设置。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何使用屏幕贴图功能？</div>
+                    <div class="faq-answer">
+                        截图后在工具栏选择"固定到屏幕"，或使用快捷键 Ctrl+Shift+P。贴图会显示在屏幕顶层，可拖动、缩放、调整透明度，适合对照参考。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">拾色器如何使用？</div>
+                    <div class="faq-answer">
+                        按下拾色器快捷键（默认 Ctrl+Shift+C），鼠标会变为十字光标，移动到目标位置点击即可获取颜色值。支持 RGB、HEX、HSL 等多种格式，自动复制到剪贴板。
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">其他问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">ShareX 会收集用户数据吗？</div>
+                    <div class="faq-answer">
+                        不会。ShareX 是完全开源的软件，不收集、不上传任何用户数据。所有操作都在本地完成，上传仅在你主动配置并触发时才会发生，保护你的隐私。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何备份配置？</div>
+                    <div class="faq-answer">
+                        在"应用设置 → 常规"中点击"导出设置"可将配置保存为文件。恢复时点击"导入设置"即可。便携版的配置保存在程序目录，直接复制整个文件夹即可备份。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何参与 ShareX 开发或反馈问题？</div>
+                    <div class="faq-answer">
+                        ShareX 是开源项目，欢迎在 GitHub 上提交 Issue 反馈问题或建议，也欢迎提交 Pull Request 贡献代码。访问 github.com/ShareX/ShareX 参与开发。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">ShareX 有手机版吗？</div>
+                    <div class="faq-answer">
+                        目前 ShareX 只有 Windows 版本，没有手机版。手机用户可使用系统自带的截图功能，或寻找其他移动端截图工具。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">还有其他问题？</h2>
+            <p class="cta-subtitle">联系我们或访问 GitHub 获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="about.html" class="btn btn-large btn-secondary">联系我们</a>
+                <a href="https://github.com/ShareX/ShareX" target="_blank" rel="noopener" class="btn btn-large btn-secondary">GitHub 仓库</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ShareX</h4>
+                    <p>免费开源的截图录屏工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="tutorial.html">使用教程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="faq.html">帮助中心</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="https://github.com/ShareX/ShareX" target="_blank" rel="noopener">GitHub 源码</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2026 ShareX 中文网站</p>
+                    <p>基于 GPL-3.0 协议开源</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站为非官方中文资讯站，ShareX 软件版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

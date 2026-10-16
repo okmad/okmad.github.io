@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>404</title>
+<style>
+	body{
+		background-color:#444;
+		font-size:14px;
+	}
+	h3{
+		font-size:60px;
+		color:#eee;
+		text-align:center;
+		padding-top:30px;
+		font-weight:normal;
+	}
+</style>
+</head>
+
+<body>
+<h3>404网页丢了？3秒后返回首页...</h3>
+
+        <script>
+        // 如果浏览器不支持meta标签的刷新功能，可以使用以下JavaScript代码
+        setTimeout(function(){
+            window.location.href = '/';
+        }, 3000);
+        </script>
+
+
+</body>
+</html>

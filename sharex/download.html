@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 ShareX - 免费开源截图录屏工具</title>
+    <meta name="description" content="免费下载 ShareX 截图录屏工具，支持 Windows 系统，安装版与便携版可选，完全免费开源。">
+    <meta name="keywords" content="ShareX 下载, 截图工具下载, 录屏软件下载, 免费下载, 便携版">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .download-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .version-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .version-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #4f46e5;
+            margin-bottom: 10px;
+        }
+        .version-date {
+            color: #6b7280;
+            font-size: 16px;
+        }
+        .download-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .download-table th,
+        .download-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .download-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .download-table tr:hover {
+            background: #f5f3ff;
+        }
+        .download-table tr:last-child td {
+            border-bottom: none;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 10px 24px;
+            background: #4f46e5;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .download-link:hover {
+            background: #4338ca;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+        .file-size {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .platform-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .platform-badge.x64 {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .platform-badge.portable {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .platform-badge.install {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .category-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4f46e5;
+        }
+        .info-box {
+            background: #f5f3ff;
+            border-left: 4px solid #4f46e5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .info-box h4 {
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .info-box p {
+            color: #6b7280;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .version-section {
+            margin-bottom: 60px;
+        }
+        .version-section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+        .version-section-date {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+        .password-note {
+            color: #dc2626;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        @media (max-width: 768px) {
+            .version-number {
+                font-size: 36px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 12px 8px;
+                font-size: 13px;
+            }
+            .download-link {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .version-number {
+                font-size: 28px;
+            }
+            .download-table {
+                font-size: 11px;
+            }
+            .download-table th,
+            .download-table td {
+                padding: 10px 6px;
+            }
+            .download-link {
+                padding: 6px 12px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-mark">S</span>
+                <div class="logo-text">
+                    <h1>ShareX</h1>
+                    <span class="tagline">截图 · 录屏 · 分享</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="download.html" class="active">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="tutorial.html">使用教程</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="download-section">
+        <div class="container">
+            <div class="info-box">
+                <h4>💡 下载提示</h4>
+                <p>安装版需要安装到系统，会自动注册快捷键与开机启动，适合日常使用。便携版无需安装，解压即可使用，配置保存在程序目录，适合 U 盘携带。</p>
+            </div>
+
+            <div class="version-section">
+                <div class="version-section-title">ShareX 20.2.0</div>
+                <div class="version-section-date">最新稳定版本 - 64位系统</div>
+
+                <h3 class="category-title">Windows 版本</h3>
+                <table class="download-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>系统</th>
+                            <th>描述</th>
+                            <th>UC网盘</th>
+                            <th>夸克网盘</th>
+                            <th>迅雷网盘</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.exe</td>
+                            <td><span class="platform-badge install">安装版</span></td>
+                            <td>ShareX-20.2.0-setup-x64.exe<br><span class="file-size">约 6.6 MB</span></td>
+                            <td>
+                                <a href="https://drive.uc.cn/s/2784843bed0f4" class="download-link" target="_blank" style="background:#ff6b00;">下载</a>
+                                
+                            </td>
+                            <td><a href="https://pan.quark.cn/s/a04ff453b310" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvnGh-yEZpA1e71qftHlf-_A1#?pwd=n3jh" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.zip</td>
+                            <td><span class="platform-badge portable">便携版</span></td>
+                            <td>ShareX-20.2.0-portable-x64.zip<br><span class="file-size">约 6.5 MB</span></td>
+                            <td>
+                                <a href="https://drive.uc.cn/s/21edfb6a0ea64" class="download-link" target="_blank" style="background:#ff6b00;">下载</a>
+                                
+                            </td>
+                            <td><a href="https://pan.quark.cn/s/16bad0454a4c" class="download-link" target="_blank" style="background:#00a1d6;">下载</a></td>
+                            <td>
+                                <a href="https://pan.xunlei.com/s/VOvnGh01pH6enuJp4l-jwW_fA1#?pwd=phyy" class="download-link" target="_blank" style="background:#0d7aff;">下载</a>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <h4>⚙️ 可选组件说明</h4>
+                <p><strong>FFmpeg</strong>：屏幕录制与 GIF 制作必需，首次使用时会自动提示下载。<br>
+                <strong>.NET Framework 4.8</strong>：运行环境依赖，Windows 10/11 通常已内置。<br>
+                <strong>Tesseract OCR</strong>：文字识别功能需要，可从程序内下载安装。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">系统要求</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>操作系统</h3>
+                    <p>Windows 7 SP1 / 8 / 10 / 11<br>32位或64位</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>内存要求</h3>
+                    <p>最低 512MB<br>推荐 1GB 以上</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>磁盘空间</h3>
+                    <p>安装包 6.6MB<br>运行时约 50MB</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>可选依赖</h3>
+                    <p>FFmpeg（录屏/GIF）<br>.NET Framework 4.8+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">下载说明</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 30px;">
+                    <h3 style="margin-bottom: 15px; color: #1f2937;">选择合适的版本</h3>
+                    <ul style="line-height: 2; color: #6b7280;">
+                        <li><strong>安装版</strong>：需要安装到系统，会自动注册快捷键与开机启动，适合日常使用</li>
+                        <li><strong>便携版</strong>：无需安装，解压即可使用，配置保存在程序目录，适合 U 盘携带</li>
+                    </ul>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <h3 style="margin-bottom: 15px; color: #1f2937;">安全提示</h3>
+                    <ul style="line-height: 2; color: #6b7280;">
+                        <li>建议下载后使用杀毒软件扫描验证</li>
+                        <li>本站仅提供下载指引，软件版权归原作者所有</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">需要帮助？</h2>
+            <p class="cta-subtitle">查看使用教程或常见问题获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="tutorial.html" class="btn btn-large btn-secondary">使用教程</a>
+                <a href="faq.html" class="btn btn-large btn-secondary">常见问题</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ShareX</h4>
+                    <p>免费开源的截图录屏工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="tutorial.html">使用教程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="tutorial.html">使用教程</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>返回主站</h4>
+                    <ul>
+                        <li><a href="../index.html">好汉下载首页</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShareX 中文网站. 本站仅提供软件介绍与下载指引，软件版权归原作者所有。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

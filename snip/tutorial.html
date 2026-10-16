@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snipaste 基础操作教程 - 截屏、标注、贴图使用指南 | 中文资源站</title>
+    <meta name="description" content="Snipaste 基础操作教程：详解截屏(F1)、标注、贴图(F3)的全部操作技巧，包括快捷键、像素级控制、取色、旋转翻转、透明度、鼠标穿透等，助你高效使用 Snipaste。">
+    <meta name="keywords" content="Snipaste教程,Snipaste基础操作,Snipaste快捷键,Snipaste截屏,Snipaste标注,Snipaste贴图,F1截图,F3贴图,Snipaste取色,Snipaste使用方法,Snipaste操作指南">
+    <link rel="canonical" href="https://www.hhxiazai.com/hhxiazai/snip/tutorial.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Snipaste 基础操作教程",
+      "description": "Snipaste 截屏、标注、贴图的完整操作指南，包含快捷键与使用技巧。",
+      "author": {"@type": "Organization", "name": "Snipaste 中文资源站"},
+      "publisher": {"@type": "Organization", "name": "Snipaste 中文资源站"},
+      "about": {"@type": "SoftwareApplication", "name": "Snipaste"},
+      "mainEntityOfPage": "https://www.hhxiazai.com/hhxiazai/snip/tutorial.html"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "如何使用 Snipaste 截图贴图",
+      "description": "Snipaste 基础操作完整教程，涵盖截屏、标注、贴图三大核心功能。",
+      "step": [
+        {"@type": "HowToStep", "name": "截屏", "text": "按 F1 开始截图，框选区域后双击或 Ctrl+C 保存到剪贴板，Ctrl+S 保存到文件，Ctrl+T 保存为贴图。"},
+        {"@type": "HowToStep", "name": "标注", "text": "在截图或贴图窗口按空格进入标注模式，使用矩形、椭圆、箭头、画笔、文字等工具标注，鼠标滚轮调整画笔宽度。"},
+        {"@type": "HowToStep", "name": "贴图", "text": "按 F3 将剪贴板内容贴为浮动窗口，滚轮缩放，Ctrl+滚轮调透明度，1/2 旋转，3/4 翻转，双击关闭。"}
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Sn</span>
+                <div class="logo-text">
+                    <h1>Snipaste</h1>
+                    <span class="tagline">截图 · 贴图 · 取色</span>
+                </div>
+            </a>
+            <button class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="features.html">功能</a></li>
+                    <li><a href="tutorial.html" class="active">教程</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="changelog.html">更新日志</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="tutorial-hero">
+        <div class="container">
+            <h2>Snipaste 基础操作教程</h2>
+            <p>Snipaste 是一个简单但强大的贴图工具，同时也可以执行截屏、标注等功能。本教程详解截屏、标注、贴图三大核心功能的全部操作技巧。</p>
+        </div>
+    </section>
+
+    <section class="tutorial-section">
+        <div class="container">
+            <div class="tutorial-container">
+
+                <!-- 目录 -->
+                <div class="toc-box">
+                    <h3>📑 目录</h3>
+                    <ol>
+                        <li><a href="#snip">截屏</a></li>
+                        <li><a href="#annotate">标注</a></li>
+                        <li><a href="#paste">贴图</a></li>
+                    </ol>
+                </div>
+
+                <!-- 截屏 -->
+                <div class="tutorial-group" id="snip">
+                    <div class="tutorial-group-title">📸 截屏</div>
+
+                    <div class="tutorial-sub">开始截图</div>
+                    <ul class="tutorial-list">
+                        <li>快捷键（默认为 <span class="tutorial-kbd">F1</span>）</li>
+                        <li>鼠标左键单击托盘图标</li>
+                    </ul>
+
+                    <div class="tutorial-sub">何谓一次「成功的截图」</div>
+                    <ul class="tutorial-list">
+                        <li>保存到剪贴板（<span class="tutorial-kbd">Ctrl</span>+<span class="tutorial-kbd">C</span> / <span class="tutorial-kbd">Enter</span> / 鼠标左键双击截屏区域）</li>
+                        <li>保存到文件（<span class="tutorial-kbd">Ctrl</span>+<span class="tutorial-kbd">S</span>）</li>
+                        <li>保存到贴图（<span class="tutorial-kbd">Ctrl</span>+<span class="tutorial-kbd">T</span> / 鼠标中键单击截屏区域）</li>
+                        <li>快捷保存（<span class="tutorial-kbd">Shift</span>+<span class="tutorial-kbd">Ctrl</span>+<span class="tutorial-kbd">S</span>）</li>
+                    </ul>
+
+                    <div class="tutorial-sub">取消当前截图</div>
+                    <ul class="tutorial-list">
+                        <li>任何时刻按 <span class="tutorial-kbd">Esc</span></li>
+                        <li>任何时刻点击工具条上的关闭按钮</li>
+                        <li>非编辑状态下，按下鼠标右键</li>
+                        <li>任何时刻有其他程序的窗口被激活
+                            <ul>
+                                <li>可在选项窗口关闭此行为</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="tutorial-sub">回放截图记录</div>
+                    <ul class="tutorial-list">
+                        <li>进入截图后，按 <span class="tutorial-kbd">,</span> 或 <span class="tutorial-kbd">.</span></li>
+                        <li>只有「成功的截图」才会出现在截图记录中</li>
+                        <li>截图记录的最大数量，可在选项窗口中设置</li>
+                    </ul>
+
+                    <div class="tutorial-sub">逐像素控制光标移动</div>
+                    <ul class="tutorial-list">
+                        <li><span class="tutorial-kbd">W</span> <span class="tutorial-kbd">A</span> <span class="tutorial-kbd">S</span> <span class="tutorial-kbd">D</span></li>
+                    </ul>
+
+                    <div class="tutorial-sub">像素级控制截取区域</div>
+                    <ul class="tutorial-list">
+                        <li>按住鼠标左键 + <span class="tutorial-kbd">W</span> <span class="tutorial-kbd">A</span> <span class="tutorial-kbd">S</span> <span class="tutorial-kbd">D</span>（<strong>推荐</strong>，可实现移动、扩大、缩小区域）</li>
+                        <li>移动区域：<span class="tutorial-kbd">↑</span> <span class="tutorial-kbd">←</span> <span class="tutorial-kbd">↓</span> <span class="tutorial-kbd">→</span></li>
+                        <li>扩大区域：<span class="tutorial-kbd">Ctrl</span> + <span class="tutorial-kbd">↑</span> <span class="tutorial-kbd">←</span> <span class="tutorial-kbd">↓</span> <span class="tutorial-kbd">→</span></li>
+                        <li>缩小区域：<span class="tutorial-kbd">Shift</span> + <span class="tutorial-kbd">↑</span> <span class="tutorial-kbd">←</span> <span class="tutorial-kbd">↓</span> <span class="tutorial-kbd">→</span></li>
+                    </ul>
+
+                    <div class="tutorial-sub">放大镜</div>
+                    <ul class="tutorial-list">
+                        <li>放大镜会在合理的时机自动出现和隐藏，如果你需要它的时候它没在，请按 <span class="tutorial-kbd">Alt</span> 召唤它</li>
+                    </ul>
+
+                    <div class="tutorial-sub">取色</div>
+                    <ul class="tutorial-list">
+                        <li>当放大镜可见的时候，按下 <span class="tutorial-kbd">C</span> 可复制该像素点的颜色值（RGB/Hex）。之后可以 <span class="tutorial-kbd">F3</span> 将它贴出，或者 <span class="tutorial-kbd">Ctrl</span>+<span class="tutorial-kbd">V</span> 贴到其他程序里</li>
+                        <li>可按下 <span class="tutorial-kbd">Shift</span> 来切换颜色格式</li>
+                    </ul>
+                </div>
+
+                <!-- 标注 -->
+                <div class="tutorial-group" id="annotate">
+                    <div class="tutorial-group-title">✏️ 标注</div>
+
+                    <div class="tutorial-sub">手动结束当前图案</div>
+                    <ul class="tutorial-list">
+                        <li>单击鼠标右键</li>
+                    </ul>
+
+                    <div class="tutorial-sub">如何重新编辑已经结束的图案</div>
+                    <ul class="tutorial-list">
+                        <li>按撤销<strong>直到你需要编辑的图案已经消失</strong>，再按重做</li>
+                        <li>将来会支持直接的二次编辑</li>
+                    </ul>
+
+                    <div class="tutorial-sub">画板里没有我想要的颜色</div>
+                    <ul class="tutorial-list">
+                        <li>请点击那个大的颜色按钮</li>
+                    </ul>
+
+                    <div class="tutorial-sub">调整画笔宽度</div>
+                    <ul class="tutorial-list">
+                        <li>鼠标滚轮</li>
+                        <li><span class="tutorial-kbd">1</span> <span class="tutorial-kbd">2</span></li>
+                    </ul>
+
+                    <div class="tutorial-sub">切换直线/箭头</div>
+                    <ul class="tutorial-list">
+                        <li><span class="tutorial-kbd">Tab</span></li>
+                    </ul>
+
+                    <div class="tutorial-sub">画直线/折线</div>
+                    <ul class="tutorial-list">
+                        <li>选中折线工具后，在可标注区域内，拖拽鼠标左键是画单条直线，多次点按鼠标左键是画折线</li>
+                    </ul>
+
+                    <div class="tutorial-sub">调整文字大小</div>
+                    <ul class="tutorial-list">
+                        <li>拖动文字框四角</li>
+                    </ul>
+
+                    <div class="tutorial-sub">旋转文字</div>
+                    <ul class="tutorial-list">
+                        <li>拖动文字框上方的小圆点</li>
+                    </ul>
+
+                    <div class="tutorial-sub">将旋转过的文字重新变为水平的</div>
+                    <ul class="tutorial-list">
+                        <li>按住 <span class="tutorial-kbd">Shift</span> 再拖动文字框四角</li>
+                    </ul>
+                </div>
+
+                <!-- 贴图 -->
+                <div class="tutorial-group" id="paste">
+                    <div class="tutorial-group-title">📌 贴图</div>
+
+                    <div class="tutorial-note">
+                        所谓<strong>贴图</strong>，是指将系统剪贴板中的内容转化成图片，然后作为窗口置顶显示。所以，能否贴出来、贴出来的是什么，取决于系统剪贴板中的内容。
+                    </div>
+
+                    <div class="tutorial-sub">如何贴图</div>
+                    <ul class="tutorial-list">
+                        <li>快捷键（默认 <span class="tutorial-kbd">F3</span>）</li>
+                        <li>鼠标中键单击托盘图标</li>
+                        <li>截图时选择「贴到屏幕」</li>
+                    </ul>
+
+                    <div class="tutorial-sub">什么时候可以贴图</div>
+                    <ul class="tutorial-list">
+                        <li>剪贴板中复制有图像</li>
+                        <li>剪贴板中复制有颜色信息
+                            <ul>
+                                <li>RGB：3 个 0~255 的整数或 3 个 0~1 的小数</li>
+                                <li>HEX：以 # 开头的合理色值</li>
+                            </ul>
+                        </li>
+                        <li>剪贴板中有文字
+                            <ul>
+                                <li>纯文本</li>
+                                <li>HTML 文本</li>
+                            </ul>
+                        </li>
+                        <li>剪贴板中有文件路径（指复制了文件）
+                            <ul>
+                                <li>文件是图片，会把图像贴出</li>
+                                <li>图像贴出后再贴，会把文件路径当做文本贴出</li>
+                                <li>文件不是图片，会把文件路径当做文本贴出</li>
+                                <li>在选项对话框中可以选择不要将文件路径转化成图片</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="tutorial-sub">旋转贴图</div>
+                    <ul class="tutorial-list">
+                        <li><span class="tutorial-kbd">1</span> <span class="tutorial-kbd">2</span></li>
+                    </ul>
+
+                    <div class="tutorial-sub">水平/垂直翻转</div>
+                    <ul class="tutorial-list">
+                        <li><span class="tutorial-kbd">3</span> <span class="tutorial-kbd">4</span></li>
+                    </ul>
+
+                    <div class="tutorial-sub">缩放贴图</div>
+                    <ul class="tutorial-list">
+                        <li>滑动滚轮</li>
+                        <li><span class="tutorial-kbd">+</span> <span class="tutorial-kbd">-</span></li>
+                        <li>拖动贴图窗口的边缘</li>
+                    </ul>
+
+                    <div class="tutorial-sub">设置贴图透明度</div>
+                    <ul class="tutorial-list">
+                        <li><span class="tutorial-kbd">Ctrl</span> + 滑动滚轮</li>
+                        <li><span class="tutorial-kbd">Ctrl</span> + <span class="tutorial-kbd">+</span> <span class="tutorial-kbd">-</span></li>
+                    </ul>
+
+                    <div class="tutorial-sub">使贴图鼠标穿透</div>
+                    <ul class="tutorial-list">
+                        <li>前往「首选项」-「控制」-「全局快捷键」-「鼠标穿透开关」为其设置快捷键</li>
+                        <li>按键触发后，会切换光标所在位置的贴图的鼠标穿透状态
+                            <ul>
+                                <li>如果没有贴图位于光标之下，则取消所有贴图的鼠标穿透状态</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="tutorial-sub">重置贴图为 100% 大小及 100% 不透明</div>
+                    <ul class="tutorial-list">
+                        <li>中键单击（可自定义）</li>
+                    </ul>
+
+                    <div class="tutorial-sub">缩略图模式</div>
+                    <ul class="tutorial-list">
+                        <li><span class="tutorial-kbd">Shift</span> + 左键双击（可自定义）</li>
+                    </ul>
+
+                    <div class="tutorial-sub">关闭单张贴图</div>
+                    <ul class="tutorial-list">
+                        <li><span class="tutorial-kbd">Esc</span> / 左键双击（可自定义）</li>
+                        <li><span class="tutorial-kbd">Ctrl</span>+<span class="tutorial-kbd">W</span></li>
+                        <li>被关闭的贴图，可再次被贴出，除非超过「可被恢复的已关闭贴图数」
+                            <ul>
+                                <li>如何恢复：按下贴图键一次或多次</li>
+                            </ul>
+                        </li>
+                        <li>「可被恢复的已关闭贴图数」可在选项对话框设置（默认设置/建议是 <strong>1</strong>）</li>
+                    </ul>
+
+                    <div class="tutorial-note">
+                        当你觉得自己可能不需要这张贴图了，<strong>关闭</strong>贴图操作是你的首选，因为它同时提供了一种后悔药，防止你刚把贴图关闭就后悔了，想找回来。<br><br>
+                        <strong>如果你并不希望这张贴图消失，而只是想暂时隐藏它，那么你不应该关闭它</strong>，而是使用「隐藏所有贴图」，或者把它移动到另一个贴图分组。
+                    </div>
+
+                    <div class="tutorial-sub">隐藏所有贴图</div>
+                    <ul class="tutorial-list">
+                        <li>快捷键（默认为 <span class="tutorial-kbd">Shift</span>+<span class="tutorial-kbd">F3</span>）</li>
+                        <li>再次按下快捷键将显示所有贴图</li>
+                    </ul>
+
+                    <div class="tutorial-note">
+                        注意，隐藏所有贴图与上面提到的关闭单张贴图<strong>是完全不同的行为</strong>，也就是说，隐藏所有贴图不会影响对已关闭贴图的计数。被隐藏的贴图不会被自动销毁，即使关闭 Snipaste 时它们都是隐藏状态。
+                    </div>
+
+                    <div class="tutorial-sub">销毁贴图</div>
+                    <ul class="tutorial-list">
+                        <li><span class="tutorial-kbd">Shift</span>+<span class="tutorial-kbd">Esc</span> / 在贴图窗口的右键菜单中选「销毁」</li>
+                        <li>当你确认自己不可能再需要这张贴图，并且不希望这张贴图留下任何痕迹，才建议使用<strong>销毁</strong></li>
+                        <li>被销毁的贴图，不会再通过贴图键被恢复出来
+                            <ul>
+                                <li>可是再按贴图键，还是贴出来了？这是因为它还在你剪贴板里，Snipaste 是把它当做新的内容贴了出来</li>
+                            </ul>
+                        </li>
+                        <li>如果希望销毁当前分组的所有贴图，关闭该贴图分组即可</li>
+                    </ul>
+
+                    <div class="tutorial-sub">放大镜</div>
+                    <ul class="tutorial-list">
+                        <li>和截图时一样，按住 <span class="tutorial-kbd">Alt</span> 可唤出放大镜</li>
+                    </ul>
+
+                    <div class="tutorial-sub">取色</div>
+                    <ul class="tutorial-list">
+                        <li>和截图时一样，放大镜可见时按 <span class="tutorial-kbd">C</span> 可复制当前像素点的颜色值</li>
+                    </ul>
+                </div>
+
+                <div class="disclaimer" style="margin-top: 40px;">
+                    <h4>📋 说明</h4>
+                    <p>以上基础操作内容整理自 Snipaste 官方 Wiki（<a href="https://github.com/Snipaste/feedback/wiki/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C" target="_blank" rel="noopener">GitHub/Snipaste/feedback</a>），由本站整理发布。软件实际功能与界面请以安装后的实际版本为准，部分快捷键可在「首选项」中自定义。</p>
+                    <p>如需了解更多功能详情，可查看本站<a href="features.html">功能介绍</a>；如遇使用问题，可查阅<a href="faq.html">常见问题</a>。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">立即上手操作</h2>
+            <p class="cta-subtitle">下载 Snipaste，按 F1 截图、F3 贴图，开启高效工作流</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="download.html" class="btn btn-primary btn-large">立即下载</a>
+                <a href="features.html" class="btn btn-large btn-secondary">查看功能</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Snipaste</h4>
+                    <p>免费强大的截图贴图工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="tutorial.html">基础操作</a></li>
+                        <li><a href="changelog.html">更新日志</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于本站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>Snipaste 软件版权归原作者所有</p>
+                    <p>本站为非官方资源分享站</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站分享资源仅供学习交流，请于下载后 24 小时内删除。如需长期使用请支持正版。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

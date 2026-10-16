@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snipaste 更新日志 - 版本历史与新功能 | 中文资源站</title>
+    <meta name="description" content="Snipaste 官方更新日志中文版，记录每个版本的新功能、改进与问题修复。包含 2.11.3、2.11.2、2.11.1、2.11、2.10.8 等最新版本的详细更新内容。">
+    <meta name="keywords" content="Snipaste更新日志,Snipaste版本历史,Snipaste更新,Snipaste新功能,Snipaste 2.11.3,Snipaste changelog,Snipaste版本更新,Snipaste下载">
+    <link rel="canonical" href="https://www.snipastes.net.cn/changelog.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Sn</span>
+                <div class="logo-text">
+                    <h1>Snipaste</h1>
+                    <span class="tagline">截图 · 贴图 · 取色</span>
+                </div>
+            </a>
+            <button class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="features.html">功能</a></li>
+                    <li><a href="tutorial.html">教程</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="changelog.html" class="active">更新日志</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="changelog-section">
+        <div class="container">
+            <h2 class="section-title">Snipaste 更新日志</h2>
+            <p class="section-subtitle">记录每个版本的新功能、改进与问题修复，了解 Snipaste 的持续进化</p>
+
+            <div class="changelog-container">
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.11.3</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2026-01-18</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能与改进 <span class="changelog-badge pro">PRO</span></h4>
+                        <ul>
+                            <li>[PRO] 支持自定义部分应用内快捷键（首选项 - 控制 - 应用内快捷键）。</li>
+                            <li>[PRO] 文字提取：支持腾讯 OCR 与 OCR.space API。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.11.2</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2025-12-15</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>小幅改进。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.11.1</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2025-12-13</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>修复若干已知问题。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.11</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2025-12-08</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li>[PRO] 支持文字提取（OCR）功能。</li>
+                            <li>[PRO] 新增命令行选项 --hold，在使用指定输出截图时启用标注后再保存。</li>
+                            <li>[PRO] 新增命令行选项 --block [SECONDS]，命令执行可等待截图完成。</li>
+                            <li>[PRO] 可配置选区缩略图快捷键。</li>
+                            <li>[PRO] 截图时支持较大圆角半径。</li>
+                            <li>支持 Windows on ARM64 平台。</li>
+                            <li>支持 HDR 颜色校正。</li>
+                            <li>更可靠的显示器连接/断开事件处理。</li>
+                            <li>改进 Windows 11 的 UI 元素检测。</li>
+                            <li>关闭或销毁多个图片窗口前添加确认提示。</li>
+                            <li>支持 Shift + 鼠标滚轮缩放选中的矩形/椭圆标注。</li>
+                            <li>修复特定场景下放大镜不刷新的问题。</li>
+                            <li>[Mac/Linux] 修复右键非活动图片窗口时上下文菜单显示问题。</li>
+                            <li>[Linux] 解决 KDE Plasma 6.5 剪贴板兼容性问题。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.10.8</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2025-06-03</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>修复不正确的气泡通知问题。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.10.7</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2025-05-31</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能与改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>新增命令行选项：snip --active-screen。</li>
+                            <li>关闭多个图片窗口时显示确认对话框。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.10.6</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2025-03-19</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能与改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>[Mac] 新增选项：取色器使用的色彩空间，默认 sRGB。</li>
+                            <li>[Mac] 修复 PNG/WebP 格式保存文件时的颜色差异问题。</li>
+                            <li>[PRO] 改进深色背景下二维码识别。</li>
+                            <li>升级 OpenSSL 至 3.4.1。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.10.5</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2025-01-24</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>修复"忽略其他程序模拟的复制命令"选项并默认启用。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.10.4</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2025-01-17</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li>[PRO] 取色器现可显示 HSV 及其他颜色值。</li>
+                            <li>[PRO] 支持将键盘快捷键绑定到自定义输出命令。</li>
+                            <li>新增选项：永不显示辅助线。</li>
+                            <li>白板模式界面更简洁。</li>
+                            <li>为 iCloud 分类写入截图相关元数据。</li>
+                            <li>屏幕设置变化导致部分贴图不可见时：不再自动将屏幕外贴图移回视图，以保留屏幕设置恢复时的布局；托盘菜单新增"恢复屏幕外图片"选项手动恢复。</li>
+                            <li>修复部分 Linux 环境截图时屏幕闪烁问题。</li>
+                            <li>修复特定情况下放大镜不刷新问题。</li>
+                            <li>修复特定情况下工具栏不显示问题。</li>
+                            <li>改进与词典应用的兼容性。</li>
+                            <li>升级 OpenSSL 至 3.4.0。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.10.3</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2024-11-28</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能与改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>桌面版新增 Pro 许可证离线激活支持。</li>
+                            <li>[PRO] 新增高级配置：Interface/hide_output_options。</li>
+                            <li>[Win] 修复分享面板窗口不置顶问题。</li>
+                            <li>[Mac] 修复超级截图相关多项问题。</li>
+                            <li>[Linux] 修复 Wayland 会话下配置文件不持久的问题。</li>
+                            <li>[Linux] 支持暗色模式。</li>
+                            <li>[Linux] 支持 qt6ct。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.10.2</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2024-09-23</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>[Mac] 修复超级截图相关问题。</li>
+                            <li>[Linux] 支持超级截图。</li>
+                            <li>[PRO] 新增高级配置：Snip/animated_region_transition。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.10.1</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2024-09-13</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>问题修复 <span class="changelog-badge fix">修复</span></h4>
+                        <ul>
+                            <li>修复 Windows 7 下无法启动的问题。</li>
+                            <li>修复一个崩溃问题。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.10</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2024-09-10</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li><strong>桌面端稳定版正式发布！</strong>（Windows/Mac/Linux）Pro 功能解锁。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.9.2</span>
+                            <span class="changelog-platform">Beta</span>
+                        </div>
+                        <span class="changelog-date">2024-07-02</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>[PRO] 记住上次截图锁定的宽高比。</li>
+                            <li>[Linux] 修复部分桌面环境托盘菜单问题。</li>
+                            <li>[Linux] Wayland 下非 KDE/Gnome 桌面使用 freedesktop 截图。</li>
+                            <li>[Linux] 增强竖屏显示器的截图功能。</li>
+                            <li>改进远程桌面/虚拟机兼容性。</li>
+                            <li>改进 MyDockFinder 兼容性。</li>
+                            <li>修复全屏窗口检测问题。</li>
+                            <li>升级 OpenSSL 至 3.3.0。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.9.1</span>
+                            <span class="changelog-platform">Beta</span>
+                        </div>
+                        <span class="changelog-date">2024-05-08</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能与改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>[PRO] 支持 Windows 11 23H2 虚拟桌面。</li>
+                            <li>[PRO] 新增命令行选项 -o silent，将截图保存到指定路径且不弹出通知。</li>
+                            <li>修复某些条件下复制全屏截图导致卡顿的问题。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.9</span>
+                            <span class="changelog-platform">Beta</span>
+                        </div>
+                        <span class="changelog-date">2024-04-24</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li>[Linux] 支持 Wayland 下截图。</li>
+                            <li>[Linux] 截图支持光标捕获。</li>
+                            <li>[Mac] 修复保存为 WebP 的问题。</li>
+                            <li>显示切换鼠标点击穿透的工具提示。</li>
+                            <li>新增立陶宛语翻译。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.8.9</span>
+                            <span class="changelog-platform">Linux Beta</span>
+                        </div>
+                        <span class="changelog-date">2024-01-08</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li>可在任意工作区截图。</li>
+                            <li>修复部分多显示器设置下截图错位问题。</li>
+                            <li>支持开机自启选项。</li>
+                            <li>图片窗口可移出屏幕。</li>
+                            <li>其他问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.8.8</span>
+                            <span class="changelog-platform">Linux</span>
+                        </div>
+                        <span class="changelog-date">2023-12-28</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li>Linux 版本首次发布。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.8.6</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2023-09-20</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li>[PRO] 支持圆角截图。</li>
+                            <li>[PRO] 支持编号标注分组。</li>
+                            <li>[PRO] snip --size 命令新增 --keep_aspect_ratio 参数。</li>
+                            <li>[PRO] 支持 Windows 11 22H2 及以上虚拟桌面。</li>
+                            <li>[PRO] 新增高级配置：Misc/software_metadata。</li>
+                            <li>支持保存为 WebP 格式。</li>
+                            <li>支持 Qt 5.11+ 应用界面元素检测。</li>
+                            <li>箭头标注新增切换箭头按钮。</li>
+                            <li>修复 WebP 格式安全漏洞（CVE-2023-4863）。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.8.5</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2023-05-08</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能与改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>[PRO] 支持 Ctrl+Alt+C 触发"复制为文件"。</li>
+                            <li>[PRO] 优化长自定义命令显示。</li>
+                            <li>[PRO] 支持全局快捷键启用/禁用热角。</li>
+                            <li>[PRO] 新增命令行选项：barcode-decode FILE。</li>
+                            <li>支持预设截图区域与命名。</li>
+                            <li>改进命令行调用响应速度。</li>
+                            <li>切换辅助线显示改为单击 Alt 而非长按。</li>
+                            <li>修复高对比度系统主题下托盘图标颜色错误。</li>
+                            <li>其他问题修复与改进。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.8.3</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2022-12-18</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li>[PRO] 新增命令行选项：barcode-scan（条形码扫描）。</li>
+                            <li>改进特定情况下绘图工具栏定位。</li>
+                            <li>其他问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.8</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2022-11-15</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li>[PRO] 支持条形码与二维码解码。</li>
+                            <li>[PRO] 长按"刷新截图"持续刷新。</li>
+                            <li>[PRO] 改进超级截图稳定性。</li>
+                            <li>[PRO] 可从图片窗口上下文菜单切换标注。</li>
+                            <li>[PRO] 新增选项：自由选择标注。</li>
+                            <li>[PRO] 图片窗口支持 Windows 11 虚拟桌面。</li>
+                            <li>[PRO] "复制为文件"使用用户指定的文件名格式。</li>
+                            <li>[PRO] 新增多个命令行选项（白板、截图输出、清空图片组、打开组管理器等）。</li>
+                            <li>[Mac] 支持多屏截图。</li>
+                            <li>[Mac] 兼容 macOS Ventura 登录项。</li>
+                            <li>[Mac] 修复图片窗口显示文件图标而非图片内容的问题。</li>
+                            <li>升级至 Qt 6.2.4。</li>
+                            <li>适配 Windows 11 上下文菜单样式。</li>
+                            <li>新增选项：记住上次使用的图片扩展名。</li>
+                            <li>新增高级配置：General/gpu_acceleration。</li>
+                            <li>改进多屏不同 DPI 界面适配。</li>
+                            <li>过多图片贴图时提示用户确认。</li>
+                            <li>修复屏幕断开（如系统睡眠）时崩溃问题。</li>
+                            <li>修复远程桌面无法输入 'C' 的问题。</li>
+                            <li>其他改进与问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.7.2</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2022-01-26</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能与改进 <span class="changelog-badge improve">改进</span></h4>
+                        <ul>
+                            <li>[PRO] 新功能：刷新截图（保留现有标注）。</li>
+                            <li>[PRO] --shadow 或 --no-shadow 启动截图不再影响后续截图。</li>
+                            <li>修复前台窗口标题含非法字符导致快速保存失败。</li>
+                            <li>修复数字小键盘按键异常问题。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">2.6</span>
+                            <span class="changelog-platform">桌面端 Desktop</span>
+                        </div>
+                        <span class="changelog-date">2021-07-28</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>新功能 <span class="changelog-badge new">新功能</span></h4>
+                        <ul>
+                            <li>[PRO] 新增放大镜标注。</li>
+                            <li>[PRO] 高亮/马赛克/模糊/橡皮擦支持椭圆形状。</li>
+                            <li>[PRO] 橡皮擦可旋转。</li>
+                            <li>[PRO] 箭头标注新增更多样式。</li>
+                            <li>[PRO] 自定义截图尺寸新增"添加到预设"。</li>
+                            <li>[PRO] 按住 Ctrl 以中心调整矩形/椭圆标注大小。</li>
+                            <li>[PRO] 新增显示原生 Windows 10 分享按钮选项。</li>
+                            <li>[PRO] 新增跟随系统主题色选项。</li>
+                            <li>新增选项：最大图片窗口尺寸。</li>
+                            <li>箭头工具合并到线条工具。</li>
+                            <li>标注新快捷键：T 文字，B 画笔。</li>
+                            <li>支持法语键盘布局 W/A/S/D 光标移动。</li>
+                            <li>修复越南语输入法支持。</li>
+                            <li>[Win] 按住 Shift 显示高级托盘菜单。</li>
+                            <li>[Mac] 支持截图光标捕获。</li>
+                            <li>重构界面元素检测，更流畅智能。</li>
+                            <li>改进马赛克/模糊/文字标注效率。</li>
+                            <li>其他问题修复。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <div>
+                            <span class="changelog-version">1.16.2</span>
+                            <span class="changelog-platform">经典稳定版</span>
+                        </div>
+                        <span class="changelog-date">2018-01-22</span>
+                    </div>
+                    <div class="changelog-content">
+                        <h4>说明</h4>
+                        <ul>
+                            <li>Snipaste 1.x 经典稳定版，个人与商业使用均<strong>永久免费</strong>。</li>
+                            <li>支持 Windows 64 位、32 位及 Windows XP。</li>
+                            <li>包含截图、贴图、取色等核心功能，适合仅需基础功能或老系统用户。</li>
+                            <li>体积小巧（约 15 MB），免安装便携版。</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="disclaimer" style="margin-top: 40px;">
+                <h4>📋 说明</h4>
+                <p>以上更新日志内容整理自 Snipaste 官方发布说明，由本站翻译为中文仅供参考。软件实际功能与界面请以安装后的实际版本为准。如需了解更详细的技术信息，可查阅应用内帮助文档或官方文档。</p>
+                <p>建议用户保持使用最新版本以获得最佳体验与新功能。可前往<a href="download.html">下载中心</a>获取最新版 Snipaste。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">立即体验最新版本</h2>
+            <p class="cta-subtitle">下载 Snipaste 2.11.3，享受最新功能与优化</p>
+            <a href="download.html" class="btn btn-primary btn-large">前往下载</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Snipaste</h4>
+                    <p>Snipaste 是一款免费强大的截图贴图工具，支持截图(F1)、贴图(F3)、取色、标注、多屏、HiDPI。提供 Snipaste 中文版下载，支持全平台使用。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">返回主站</a></li>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="tutorial.html">基础操作</a></li>
+                        <li><a href="changelog.html">更新日志</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="about.html">关于本站</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>Snipaste 软件版权归原作者所有</p>
+                    <p>本站为非官方资源分享站</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站分享资源仅供学习交流，请于下载后 24 小时内删除。如需长期使用请支持正版。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

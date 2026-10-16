@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用教程 - ShareX 截图录屏工具</title>
+    <meta name="description" content="ShareX 使用教程，从安装到高级工作流配置的完整指南，包含截图、录屏、OCR、上传等操作详解。">
+    <meta name="keywords" content="ShareX 教程, ShareX 使用指南, 截图教程, 录屏教程, 工作流配置">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-mark">S</span>
+                <div class="logo-text">
+                    <h1>ShareX</h1>
+                    <span class="tagline">截图 · 录屏 · 分享</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="download.html">下载</a></li>
+                    <li><a href="features.html">功能介绍</a></li>
+                    <li><a href="tutorial.html" class="active">使用教程</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="../index.html">返回主站</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container" style="text-align: center;">
+            <h2 class="hero-title">使用教程</h2>
+            <p class="hero-subtitle">从安装到高级使用，全面掌握 ShareX</p>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">快速入门</h2>
+            
+            <div class="feature-item">
+                <h3>第一步：下载与安装</h3>
+                <p>访问下载页面，选择适合您的版本（安装版或便携版）。双击安装包，按照向导提示完成安装。安装过程非常简单，通常只需要几秒钟。</p>
+                <div style="margin-top: 15px; padding: 15px; background: #f5f3ff; border-left: 4px solid #4f46e5; border-radius: 4px;">
+                    <strong>💡 提示：</strong>首次启动 ShareX 时，会自动注册全局快捷键。如果被其他软件占用，可在"快捷键设置"中修改。
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <h3>第二步：配置截图快捷键</h3>
+                <p>ShareX 默认使用 Print Screen 键作为截图快捷键。您可以在"快捷键设置"中自定义所有快捷键，包括截图、录屏、上传等。</p>
+                <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                    <li style="margin-bottom: 10px;">打开 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">主菜单 → 快捷键设置</code></li>
+                    <li style="margin-bottom: 10px;">为每种截图方式分配快捷键</li>
+                    <li style="margin-bottom: 10px;">建议保留 Print Screen 作为主截图键</li>
+                </ul>
+            </div>
+
+            <div class="feature-item">
+                <h3>第三步：开始截图</h3>
+                <p>按下快捷键即可开始截图。例如按 Print Screen 截取全屏，按 Ctrl + Print Screen 选择区域截图。截图完成后会自动执行配置好的后处理任务。</p>
+                <div style="margin-top: 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                    <div style="background: #f9fafb; padding: 15px; border-radius: 8px;">
+                        <strong>Print Screen</strong>
+                        <p style="font-size: 13px; margin-top: 5px;">全屏截图</p>
+                    </div>
+                    <div style="background: #f9fafb; padding: 15px; border-radius: 8px;">
+                        <strong>Ctrl + Print Screen</strong>
+                        <p style="font-size: 13px; margin-top: 5px;">区域截图</p>
+                    </div>
+                    <div style="background: #f9fafb; padding: 15px; border-radius: 8px;">
+                        <strong>Shift + Print Screen</strong>
+                        <p style="font-size: 13px; margin-top: 5px;">屏幕录制</p>
+                    </div>
+                    <div style="background: #f9fafb; padding: 15px; border-radius: 8px;">
+                        <strong>Alt + Print Screen</strong>
+                        <p style="font-size: 13px; margin-top: 5px;">活动窗口</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview" id="hotkeys">
+        <div class="container">
+            <h2 class="section-title">常用快捷键</h2>
+            <p class="section-subtitle">熟练使用快捷键，大幅提升工作效率</p>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <table class="shortcut-table">
+                    <thead>
+                        <tr>
+                            <th>快捷键</th>
+                            <th>功能</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="kbd">Print Screen</span></td>
+                            <td>全屏截图</td>
+                            <td>截取整个屏幕</td>
+                        </tr>
+                        <tr>
+                            <td><span class="kbd">Ctrl</span>+<span class="kbd">Print Screen</span></td>
+                            <td>区域截图</td>
+                            <td>自由选择截图区域</td>
+                        </tr>
+                        <tr>
+                            <td><span class="kbd">Alt</span>+<span class="kbd">Print Screen</span></td>
+                            <td>活动窗口</td>
+                            <td>截取当前活动窗口</td>
+                        </tr>
+                        <tr>
+                            <td><span class="kbd">Shift</span>+<span class="kbd">Print Screen</span></td>
+                            <td>屏幕录制</td>
+                            <td>开始/停止录屏</td>
+                        </tr>
+                        <tr>
+                            <td><span class="kbd">Ctrl</span>+<span class="kbd">Shift</span>+<span class="kbd">Print Screen</span></td>
+                            <td>滚动截图</td>
+                            <td>截取长网页/文档</td>
+                        </tr>
+                        <tr>
+                            <td><span class="kbd">Ctrl</span>+<span class="kbd">V</span></td>
+                            <td>粘贴上传</td>
+                            <td>从剪贴板上传图片</td>
+                        </tr>
+                        <tr>
+                            <td><span class="kbd">Ctrl</span>+<span class="kbd">Shift</span>+<span class="kbd">C</span></td>
+                            <td>颜色拾取</td>
+                            <td>拾取屏幕颜色</td>
+                        </tr>
+                        <tr>
+                            <td><span class="kbd">Ctrl</span>+<span class="kbd">Shift</span>+<span class="kbd">P</span></td>
+                            <td>屏幕贴图</td>
+                            <td>将图片固定在屏幕顶层</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">截图操作详解</h2>
+            
+            <div class="feature-item">
+                <h3>📸 区域截图</h3>
+                <p>按下区域截图快捷键后，屏幕会变暗并显示十字光标。按住鼠标左键拖动选择截图区域，松开鼠标完成截图。在选中区域上会显示工具栏，可使用标注工具进行编辑。</p>
+                <div style="margin-top: 15px; padding: 15px; background: #f0f9ff; border-left: 4px solid #0ea5e9; border-radius: 4px;">
+                    <strong>💡 小技巧：</strong>在区域截图模式下，可以按 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">空格键</code> 切换到窗口捕获模式，点击窗口即可截取该窗口。
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <h3>📜 滚动截图</h3>
+                <p>滚动截图用于截取超长内容，如长网页、长文档等。启动滚动截图后，ShareX 会自动滚动页面并拼接截图，生成完整的长图。</p>
+                <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                    <li>选择"滚动捕获"模式</li>
+                    <li>将鼠标移动到可滚动区域</li>
+                    <li>ShareX 会自动滚动并截图</li>
+                    <li>按 Esc 键可手动停止</li>
+                </ul>
+            </div>
+
+            <div class="feature-item">
+                <h3>🎨 图像编辑</h3>
+                <p>截图后可在编辑器中添加标注。编辑器提供矩形、椭圆、箭头、文字、马赛克等多种工具。</p>
+                <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                    <li>选择工具后在截图上拖动绘制</li>
+                    <li>可在顶部工具栏调整颜色、粗细</li>
+                    <li>支持撤销/重做（Ctrl+Z / Ctrl+Y）</li>
+                    <li>编辑完成后点击保存或上传</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">录屏与 GIF 制作</h2>
+            <p class="section-subtitle">录制屏幕视频或生成 GIF 动图</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>🎬 视频录屏</h3>
+                    <p>按下录屏快捷键，选择录制区域后开始录制。录制为 MP4 格式，支持音频同步录制。首次使用需安装 FFmpeg。</p>
+                    <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                        <li>选择录制区域或窗口</li>
+                        <li>可设置帧率（推荐 30fps）</li>
+                        <li>支持录制系统音频和麦克风</li>
+                        <li>按相同快捷键停止录制</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>🎞️ GIF 制作</h3>
+                    <p>GIF 录制与视频录屏操作类似，但输出为 GIF 动图格式，适合分享简短的操作演示。</p>
+                    <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                        <li>选择"GIF 录制"模式</li>
+                        <li>建议录制时长不超过 30 秒</li>
+                        <li>可调整帧率控制文件大小</li>
+                        <li>自动优化调色板减少体积</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" id="workflow">
+        <div class="container">
+            <h2 class="section-title">配置自动化工作流</h2>
+            <p class="section-subtitle">让截图后的操作全自动完成</p>
+            
+            <div class="feature-item">
+                <h3>第一步：打开任务设置</h3>
+                <p>在主菜单中点击 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">截图后任务</code> → <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">任务设置</code>，进入任务配置界面。</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>第二步：配置截图后任务</h3>
+                <p>在"图像"选项卡中，勾选您希望截图后自动执行的操作：</p>
+                <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                    <li><strong>保存图像到文件</strong>：自动保存到指定目录</li>
+                    <li><strong>复制图像到剪贴板</strong>：方便粘贴到其他应用</li>
+                    <li><strong>在图像编辑器中打开</strong>：手动编辑后再处理</li>
+                    <li><strong>上传图像到主机</strong>：自动上传到云端</li>
+                    <li><strong>执行操作</strong>：运行自定义脚本或命令</li>
+                </ul>
+            </div>
+
+            <div class="feature-item">
+                <h3>第三步：配置上传目的地</h3>
+                <p>在"目的地"设置中，选择图片、文件、文本的上传目的地。例如将图片上传到 Imgur，文件上传到 FTP。</p>
+                <div style="margin-top: 15px; padding: 15px; background: #f5f3ff; border-left: 4px solid #4f46e5; border-radius: 4px;">
+                    <strong>💡 推荐：</strong>对于个人使用，可将图片上传到 Imgur（免注册），文件上传到 GitHub Gist 或自建 FTP。
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <h3>第四步：配置上传后任务</h3>
+                <p>上传完成后可自动执行：缩短 URL、复制链接到剪贴板、在浏览器中打开、显示二维码等。</p>
+                <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                    <li><strong>复制 URL 到剪贴板</strong>：最常用，方便粘贴分享</li>
+                    <li><strong>缩短 URL</strong>：使用短链接服务</li>
+                    <li><strong>打开 URL</strong>：在浏览器中查看上传结果</li>
+                    <li><strong>显示二维码</strong>：方便手机扫码访问</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title">OCR 文字识别</h2>
+            <p class="section-subtitle">一键提取图片中的文字</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>🔤 使用 OCR</h3>
+                    <p>ShareX 内置 Tesseract OCR 引擎，可识别图片中的中英文文字。</p>
+                    <ol style="margin: 15px 0; padding-left: 30px; color: #666; line-height: 2;">
+                        <li>截图或打开一张图片</li>
+                        <li>在主菜单选择 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">工具 → OCR</code></li>
+                        <li>首次使用会提示下载 OCR 语言包</li>
+                        <li>识别完成后文字自动复制到剪贴板</li>
+                    </ol>
+                </div>
+                <div class="feature-item">
+                    <h3>🌐 支持的语言</h3>
+                    <p>可下载多种语言包，支持中英文混合识别。</p>
+                    <ul style="margin: 15px 0; padding-left: 30px; color: #666;">
+                        <li>简体中文（chi_sim）</li>
+                        <li>繁体中文（chi_tra）</li>
+                        <li>英文（eng）</li>
+                        <li>日文（jpn）等多种语言</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">高级设置</h2>
+            
+            <div class="feature-item">
+                <h3>⚙️ 开机自启动</h3>
+                <p>在 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">主菜单 → 应用设置 → 常规</code> 中，勾选"开机时运行 ShareX"，即可实现开机自启动。</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>🎨 自定义水印</h3>
+                <p>在 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">任务设置 → 图像 → 水印</code> 中，可添加图片或文字水印，支持位置、透明度、边距等自定义。</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>📁 文件命名规则</h3>
+                <p>在 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">应用设置 → 文件命名</code> 中，可自定义截图文件的命名规则，支持时间戳、计数器、自定义文本等变量。</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>🔄 多工作流配置</h3>
+                <p>在 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">工作流设置</code> 中，可创建多套工作流，每套工作流可绑定不同快捷键，应对不同场景。</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>📤 自定义上传器</h3>
+                <p>在 <code style="background: #f3f4f6; padding: 2px 8px; border-radius: 4px;">目的地 → 自定义上传器</code> 中，可添加自定义的 API 上传服务，支持各种图床与云存储。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">还有问题？</h2>
+            <p class="cta-subtitle">查看常见问题或关于页面获取更多帮助</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="faq.html" class="btn btn-large btn-secondary">查看常见问题</a>
+                <a href="about.html" class="btn btn-large btn-secondary">关于</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ShareX</h4>
+                    <p>免费开源的截图录屏工具</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="download.html">下载</a></li>
+                        <li><a href="features.html">功能介绍</a></li>
+                        <li><a href="tutorial.html">使用教程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="faq.html">帮助中心</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="https://github.com/ShareX/ShareX" target="_blank" rel="noopener">GitHub 源码</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>版权信息</h4>
+                    <p>&copy; 2026 ShareX 中文网站</p>
+                    <p>基于 GPL-3.0 协议开源</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>本站为非官方中文资讯站，ShareX 软件版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
